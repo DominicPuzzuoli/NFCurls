@@ -21,30 +21,30 @@
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+         data-client_id="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com"
+         data-ux_mode="redirect"
+         data-login_uri="Pages/404.html">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
 
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com"/>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    
     <script>
-    function onSignIn(googleUser) {
-      var profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-      console.log('Name: ' + profile.getName());
-      console.log('Image URL: ' + profile.getImageUrl());
-      console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-    }
-
-    if (auth2.isSignedIn.get()) {
-      var profile = auth2.currentUser.get().getBasicProfile();
-      console.log('ID: ' + profile.getId());
-      console.log('Full Name: ' + profile.getName());
-      console.log('Given Name: ' + profile.getGivenName());
-      console.log('Family Name: ' + profile.getFamilyName());
-      console.log('Image URL: ' + profile.getImageUrl());
-      console.log('Email: ' + profile.getEmail());
-}
-  </script>
+      function handleCredentialResponse(response) {
+         // decodeJwtResponse() is a custom function defined by you
+         // to decode the credential response.
+         const responsePayload = decodeJwtResponse(response.credential);
+    
+         console.log("ID: " + responsePayload.sub);
+         console.log('Full Name: ' + responsePayload.name);
+         console.log('Given Name: ' + responsePayload.given_name);
+         console.log('Family Name: ' + responsePayload.family_name);
+         console.log("Image URL: " + responsePayload.picture);
+         console.log("Email: " + responsePayload.email);
+      }
+    </script>
 
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
