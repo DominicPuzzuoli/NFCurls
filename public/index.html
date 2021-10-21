@@ -16,7 +16,6 @@
     <script defer src="/__/firebase/9.1.2/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/9.1.2/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/9.1.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.1.2/firebase-performance-compat.js"></script>
     <!--
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -72,7 +71,7 @@
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li class="logged-in">
-                <a href="#" class="grey-text modal-trigger" data-target="modal-account">Account</a>
+                <a href="/logged-in" class="grey-text modal-trigger" data-target="modal-account">Account</a>
               </li>
               <li class="logged-in">
                 <a href="#" class="grey-text" id="logout">Logout</a>
@@ -158,6 +157,25 @@
       </ul>
     </div>
   </body>
+  <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
+    authDomain: "nfcurls.firebaseapp.com",
+    databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
+    projectId: "nfcurls",
+    storageBucket: "nfcurls.appspot.com",
+    messagingSenderId: "48180444980",
+    appId: "1:48180444980:web:682281cf5debcb7811ef61",
+    measurementId: "G-T2CF60NQPB"
+  };
+  const app = firebase.initializeApp(firebaseConfig);
+  const analytics = firebase.getAnalytics(app);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  // update firestore settings
+  db.settings({ timestampsInSnapshots: true});
+    </script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="scripts/auth.js"></script>
