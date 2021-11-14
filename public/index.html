@@ -19,6 +19,7 @@
           attachSignin(document.getElementById('customBtn'));
         });
       };
+      var db = firebase.firestore();
       function attachSignin(element) {
         console.log(element.id);
         auth2.attachClickHandler(element, {},
