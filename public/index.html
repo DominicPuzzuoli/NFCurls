@@ -16,12 +16,35 @@
     <script defer src="/__/firebase/9.1.2/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/9.1.2/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/9.1.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.1.2/firebase-performance-compat.js"></script>
     <!--
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+         data-client_id="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com"
+         data-ux_mode="redirect"
+         data-login_uri="Pages/404.html">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+
+
+    <script>
+      function handleCredentialResponse(response) {
+         // decodeJwtResponse() is a custom function defined by you
+         // to decode the credential response.
+         const responsePayload = decodeJwtResponse(response.credential);
+
+         console.log("ID: " + responsePayload.sub);
+         console.log('Full Name: ' + responsePayload.name);
+         console.log('Given Name: ' + responsePayload.given_name);
+         console.log('Family Name: ' + responsePayload.family_name);
+         console.log("Image URL: " + responsePayload.picture);
+         console.log("Email: " + responsePayload.email);
+      }
+    </script>
 
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
@@ -39,14 +62,124 @@
     </style>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete Tommy</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!YERRRRRRRRR!!!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <body class="grey lighten-3">
+      <!-- NAVBAR -->
+      <nav class="z-depth-0 grey lighten-4">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">
+            <img src="img/nfcurls.png" style="width: 180px; margin-top: 10px;">
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class="logged-in">
+                <a href="/logged-in" class="grey-text modal-trigger" data-target="modal-account">Account</a>
+              </li>
+              <li class="logged-in">
+                <a href="#" class="grey-text" id="logout">Logout</a>
+              </li>
+              <li class="logged-in">
+                <a href="#" class="grey-text modal-trigger" data-target="modal-create">Create Guide</a>
+              </li>
+              <li class="logged-out">
+                <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+              </li>
+              <li class="logged-out">
+                <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
 
+      <!-- SIGN UP MODAL -->
+      <div id="modal-signup" class="modal">
+       <div class="modal-content">
+         <h4>Sign up</h4><br />
+         <form id="signup-form">
+           <div class="input-field">
+             <input type="email" id="signup-email" required />
+             <label for="signup-email">Email address</label>
+           </div>
+           <div class="input-field">
+             <input type="password" id="signup-password" required />
+             <label for="signup-password">Choose password</label>
+           </div>
+           <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+         </form>
+       </div>
+      </div>
+
+      <!-- LOGIN MODAL -->
+      <div id="modal-login" class="modal">
+       <div class="modal-content">
+         <h4>Login</h4><br />
+         <form id="login-form">
+           <div class="input-field">
+             <input type="email" id="login-email" required />
+             <label for="login-email">Email address</label>
+           </div>
+           <div class="input-field">
+             <input type="password" id="login-password" required />
+             <label for="login-password">Your password</label>
+           </div>
+           <button class="btn yellow darken-2 z-depth-0">Login</button>
+         </form>
+       </div>
+      </div>
+
+      <!-- ACCOUNT MODAL -->
+      <div id="modal-account" class="modal">
+       <div class="modal-content center-align">
+         <h4>Account details</h4><br />
+         <div class="account-details"></div>
+       </div>
+      </div>
+
+    </body>
+    </html>
+    <!-- GUIDE LIST -->
+    <div class="container" style="margin-top: 40px;">
+      <ul class="collapsible z-depth-0 guides" style="border: none;">
+        <li>
+          <div class="collapsible-header grey lighten-4">Workout name</div>
+          <div class="collapsible-body white">Sample description for each workout</div>
+        </li>
+        <li>
+          <div class="collapsible-header grey lighten-4">Workout name</div>
+          <div class="collapsible-body white"><span>Sample description for each workout</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header grey lighten-4">Workout name</div>
+          <div class="collapsible-body white"><span>Sample description for each workout</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header grey lighten-4">Workout name</div>
+          <div class="collapsible-body white"><span>Sample description for each workout</span></div>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
+    authDomain: "nfcurls.firebaseapp.com",
+    databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
+    projectId: "nfcurls",
+    storageBucket: "nfcurls.appspot.com",
+    messagingSenderId: "48180444980",
+    appId: "1:48180444980:web:682281cf5debcb7811ef61",
+    measurementId: "G-T2CF60NQPB"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const analytics = firebase.getAnalytics(app);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  // update firestore settings
+  db.settings({ timestampsInSnapshots: true});
+    </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/index.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
