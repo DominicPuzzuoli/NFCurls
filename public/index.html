@@ -19,12 +19,11 @@
           attachSignin(document.getElementById('customBtn'));
         });
       };
-    
       function attachSignin(element) {
         console.log(element.id);
         auth2.attachClickHandler(element, {},
             function(googleUser) {
-              document.getElementById('name').innerText = "Signed in: " +
+                  document.getElementById('name').innerText = "Signed in: " +
                   googleUser.getBasicProfile().getName() + 
                   googleUser.getBasicProfile().getEmail() +
                   googleUser.getBasicProfile().getId();
@@ -94,40 +93,6 @@
     -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <div id="g_id_onload"
-         data-client_id="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com"
-         data-ux_mode="redirect"
-         data-login_uri="Pages/404.html">
-    </div>
-    <div class="g_id_signin" data-type="standard"></div>
-
-
-    <script>
-      function handleCredentialResponse(response) {
-         // decodeJwtResponse() is a custom function defined by you
-         // to decode the credential response.
-         const responsePayload = decodeJwtResponse(response.credential);
-
-         console.log("ID: " + responsePayload.sub);
-         console.log('Full Name: ' + responsePayload.name);
-         console.log('Given Name: ' + responsePayload.given_name);
-         console.log('Family Name: ' + responsePayload.family_name);
-         console.log("Image URL: " + responsePayload.picture);
-         console.log("Email: " + responsePayload.email);
-      }
-
-      if (auth2.isSignedIn.get()) {
-            var profile = auth2.currentUser.get().getBasicProfile();
-            console.log('ID: ' + profile.getId());
-            console.log('Full Name: ' + profile.getName());
-            console.log('Given Name: ' + profile.getGivenName());
-            console.log('Family Name: ' + profile.getFamilyName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail());
-          }
-    </script>
-
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -153,6 +118,7 @@
       </div>
     </div>
     <div id="name"></div>
+    
     <script>startApp();</script>
 
 
@@ -251,6 +217,9 @@
       </ul>
     </div>
   </body>
+
+
+  
   <script>
   const firebaseConfig = {
     apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
