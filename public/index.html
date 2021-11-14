@@ -1,97 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <script src="https://apis.google.com/js/api:client.js"></script>
-    
-    <script>
-      var googleUser = {};
-      var startApp = function() {
-        gapi.load('auth2', function(){
-          // Retrieve the singleton for the GoogleAuth library and set up the client.
-          auth2 = gapi.auth2.init({
-            client_id: '48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com',
-            cookiepolicy: 'single_host_origin',
-            // Request scopes in addition to 'profile' and 'email'
-            //scope: 'additional_scope'
-          });
-          attachSignin(document.getElementById('customBtn'));
-        });
-      };
-      var db = firebase.firestore();
-      function attachSignin(element) {
-        console.log(element.id);
-        auth2.attachClickHandler(element, {},
-            function(googleUser) {
-                  //document.getElementById('name').innerText = "Signed in: " +
-                  //googleUser.getBasicProfile().getName() + 
-                  //googleUser.getBasicProfile().getEmail() +
-                  //googleUser.getBasicProfile().getId();
-
-                  var inputName = googleUser.getBasicProfile().getName()
-                  var inputEmail = googleUser.getBasicProfile().getEmail()
-                  
-
-                  db.collection("users").doc(uid).set({
-                     Name: inputName,
-                     Email: inputEmail,
-                     
-
-                  })
-
-                  .then(function() {
-                    console.log("Success")
-                  })
-                  .catch(function(error) {
-                    console.error("Error writing doc", error)
-                  })
-                
-            }, function(error) {
-              alert(JSON.stringify(error, undefined, 2));
-            });
-      }
-      </script>
-    
-    <style type="text/css">
-      #customBtn {
-        display: inline-block;
-        background: white;
-        color: #444;
-        width: 190px;
-        border-radius: 5px;
-        border: thin solid #888;
-        box-shadow: 1px 1px 1px grey;
-        white-space: nowrap;
-      }
-      #customBtn:hover {
-        cursor: pointer;
-      }
-      span.label {
-        font-family: serif;
-        font-weight: normal;
-      }
-      span.icon {
-        background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
-        display: inline-block;
-        vertical-align: middle;
-        width: 42px;
-        height: 42px;
-      }
-      span.buttonText {
-        display: inline-block;
-        vertical-align: middle;
-        padding-left: 42px;
-        padding-right: 42px;
-        font-size: 14px;
-        font-weight: bold;
-        /* Use the Roboto font that is loaded in the <head> */
-        font-family: 'Roboto', sans-serif;
-      }
-    </style>
-
-
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Firebase Hosting</title>
@@ -113,6 +22,30 @@
     -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+         data-client_id="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com"
+         data-ux_mode="redirect"
+         data-login_uri="Pages/404.html">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+
+
+    <script>
+      function handleCredentialResponse(response) {
+         // decodeJwtResponse() is a custom function defined by you
+         // to decode the credential response.
+         const responsePayload = decodeJwtResponse(response.credential);
+
+         console.log("ID: " + responsePayload.sub);
+         console.log('Full Name: ' + responsePayload.name);
+         console.log('Given Name: ' + responsePayload.given_name);
+         console.log('Family Name: ' + responsePayload.family_name);
+         console.log("Image URL: " + responsePayload.picture);
+         console.log("Email: " + responsePayload.email);
+      }
+    </script>
+
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -129,20 +62,6 @@
     </style>
   </head>
   <body>
-  <script src="app.js" defer></script>
-
-    <div id="gSignInWrapper">
-      <span class="label">Sign in with:</span>
-      <div id="customBtn" class="customGPlusSignIn">
-        <span class="icon"></span>
-        <span class="buttonText">Google</span>
-      </div>
-    </div>
-    <div id="name"></div>
-    
-    <script>startApp();</script>
-
-
     <body class="grey lighten-3">
       <!-- NAVBAR -->
       <nav class="z-depth-0 grey lighten-4">
@@ -238,9 +157,66 @@
       </ul>
     </div>
   </body>
+  <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
+    authDomain: "nfcurls.firebaseapp.com",
+    databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
+    projectId: "nfcurls",
+    storageBucket: "nfcurls.appspot.com",
+    messagingSenderId: "48180444980",
+    appId: "1:48180444980:web:682281cf5debcb7811ef61",
+    measurementId: "G-T2CF60NQPB"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const analytics = firebase.getAnalytics(app);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
 
+  // update firestore settings
+  db.settings({ timestampsInSnapshots: true});
+    </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/index.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-  
-  
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth',
+            'database',
+            'firestore',
+            'functions',
+            'messaging',
+            'storage',
+            'analytics',
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
   </body>
 </html>
