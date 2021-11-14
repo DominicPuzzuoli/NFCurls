@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <script src="https://apis.google.com/js/api:client.js"></script>
@@ -19,7 +25,7 @@
           attachSignin(document.getElementById('customBtn'));
         });
       };
-      var db = firebase.firestore();
+
       function attachSignin(element) {
         console.log(element.id);
         auth2.attachClickHandler(element, {},
@@ -33,7 +39,7 @@
                   var inputEmail = googleUser.getBasicProfile().getEmail()
                   
 
-                  db.collection("users").doc(uid).set({
+                  db.collection("users").doc().set({
                      Name: inputName,
                      Email: inputEmail,
                      
