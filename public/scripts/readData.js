@@ -19,6 +19,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+const docRef = doc(db, "workouts/Basic/Basic/burpees", "name");
+const docSnap = await getDoc(docRef);
+
+if (docSnap.exists()) {
+  console.log("Document data:", docSnap.data());
+} else {
+  // doc.data() will be undefined in this case
+  console.log("No such document!");
+}
+/*
 // Get a list of users from your database
 async function getUsers(db) {
   const userCol = collection(db, 'users');
@@ -29,22 +39,4 @@ async function getUsers(db) {
 console.log(getUsers(db));
 alert("TEST")
 const dbRef = ref(getDatabase());
-/*
-var refDb = firebase.database().ref("users");
-
-dbRef.on("value", function(snapshot) {
-    var childData = snapshot.val();
-    var key = Object.keys(childData)[0];    //this will return 1st key.
-    console.log(childData[key].id);
-});
-
-get(child(dbRef, `users/${testUser}`)).then((snapshot) => {
-  if (snapshot.exists()) {
-    console.log(snapshot.val());
-  } else {
-    console.log("No data available");
-  }
-}).catch((error) => {
-  console.error(error);
-});
 */
