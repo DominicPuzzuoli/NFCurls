@@ -3,9 +3,9 @@ import { getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs
 alert("TEST")
 const dbRef = ref(getDatabase());
 
-var refDb = firebase.database().ref("users");
+//var refDb = firebase.database().ref("users");
 
-refDb.on("value", function(snapshot) {
+dbRef.on("value", function(snapshot) {
     var childData = snapshot.val();
     var key = Object.keys(childData)[0];    //this will return 1st key.
     console.log(childData[key].id);
