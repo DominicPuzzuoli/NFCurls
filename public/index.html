@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
-    
+
+
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,13 +13,13 @@
     <meta charset="utf-8"/>
     <title>Firebase example</title>
 
-    <script src="/scripts/onSignIn.js"></script>
+    <script type="module" src="/scripts/onSignIn.js"></script>
   </head>
   <body>
       <script type="module" src="/scripts/readData.js"></script>
       <script type="module" src="/scripts/writeData.js"></script>
 
-      
+
       <style>
         .data{
           display:none ;
@@ -27,7 +27,7 @@
       </style>
 
       <div class="g-signin2" data-onsuccess="onSignIn"></div>
-      
+
       <div class="data">
         <p>Profile Details</p>
         <img id="pic" class="img-circle" width="100" height="100"/>
@@ -36,6 +36,6 @@
         <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
       </div>
 
-  
+
   </body>
 </html>
