@@ -4,6 +4,7 @@ function onSignIn(googleUser)
     $(".g-signin2").css("display","none");
     $(".data").css("display","inline-block");
     $("#pic").attr('src',profile.getImageUrl());
+    $("#fullName").text(profile.getName())
     
 }
 
