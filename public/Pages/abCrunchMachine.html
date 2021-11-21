@@ -66,6 +66,7 @@
 
   <body>
     <section>
+      <div class="div-abCrunchMachine">
       <form id="abCrunchMachine" action="#" method="post">
         <fieldset>
           <legend> Ab Crunch Machine</legend>
@@ -73,24 +74,179 @@
           <input type="date" id="abCrunchMachine-Date" autocomplete="on">
           <br>
           <br>
-          <label for="Weight">Enter the Weight(In Lbs): </label>
-          <input type="number" Weight" id="abCrunchMachine-Weight">
+          <label>Choose the total amount of Sets: </label>
+          <select onchange="totSets(this);" name="Total Sets" id="abCrunchMachine-Sets">
+            <option value="1 Set">1 Sets</option>
+            <option value="2 Set">2 Sets</option>
+            <option value="3 Set">3 Sets</option>
+            <option value="4 Set">4 Sets</option>
+            <option value="5 Set">5 Sets</option>
+          </select>
           <br>
           <br>
-          <label for="reps"> Enter reps per set:</label>
-          <input type="number" name="reps" id="abCrunchMachine-Reps">
+          <label for="Weight" id="Weight1">Enter the Weight(In Lbs) for Set 1: </label>
+          <input type="number" id="abCrunchMachine-Weight1" required>
           <br>
           <br>
-          <label for="sets">Enter sets completed:</label>
-          <input type="number" name = "sets" id="abCrunchMachine-Sets">
+          <label for="reps" id="Reps1"> Enter total Reps for Set 1:</label>
+          <input type="number" name="reps" id="abCrunchMachine-Reps1" required>
           <br>
           <br>
-          <label for="time">Enter Total Time spent(In Minutes):</label>
-          <input type="number" name ="time" id="abCrunchMachine-Time">
+          <label for="Weight" id="Weight2">Enter the Weight(In Lbs) for Set 2: </label>
+          <input type="number" id="abCrunchMachine-Weight2" >
+          <br>
+          <br>
+          <label for="reps" id="Reps2"> Enter total Reps for Set 2:</label>
+          <input type="number" name="reps" id="abCrunchMachine-Reps2" >
+          <br>
+          <br>
+          <label for="Weight" id="Weight3">Enter the Weight(In Lbs) for Set 3: </label>
+          <input type="number" id="abCrunchMachine-Weight3" >
+          <br>
+          <br>
+          <label for="reps" id="Reps3"> Enter Total Reps for Set3:</label>
+          <input type="number" name="reps" id="abCrunchMachine-Reps3" >
+          <br>
+          <br>
+          <label for="Weight" id="Weight4">Enter the Weight(In Lbs for Set 4): </label>
+          <input type="number" id="abCrunchMachine-Weight4" >
+          <br>
+          <br>
+          <label for="reps" id="Reps4"> Enter Total Reps for Set 4:</label>
+          <input type="number" name="reps" id="abCrunchMachine-Reps4" >
+          <br>
+          <br>
+          <label for="Weight" id ="Weight5">Enter the Weight(In Lbs) for Set 5: </label>
+          <input type="number" id="abCrunchMachine-Weight5" >
+          <br>
+          <br>
+          <label for="reps" id="Reps5"> Enter Total Reps for Set 5:</label>
+          <input type="number" name="reps" id="abCrunchMachine-Reps5" >
+          <br>
           <br>
         <input type="submit" id="abCrunchMachine-submit" value="Save"
       </fieldset>
     </form>
+  </div>
   </section>
+  <script>
+    function totSets(that) {
+      if (that.value == "1 Set") {
+        document.getElementById("abCrunchMachine-Weight1").style.display = "block";
+        document.getElementById("abCrunchMachine-Reps1").style.display = "block";
+        document.getElementById("Reps1").style.display = "block";
+        document.getElementById("Weight1").style.display = "block";
+
+
+        document.getElementById("Weight2").style.display = "none";
+        document.getElementById("Reps2").style.display = "none";
+        document.getElementById("abCrunchMachine-Weight2").style.display = "none";
+        document.getElementById("abCrunchMachine-Reps2").style.display = "none";
+        document.getElementById("Weight3").style.display = "none";
+        document.getElementById("Reps3").style.display = "none";
+        document.getElementById("abCrunchMachine-Weight3").style.display = "none";
+        document.getElementById("abCrunchMachine-Reps3").style.display = "none";
+        document.getElementById("Weight4").style.display = "none";
+        document.getElementById("Reps4").style.display = "none";
+        document.getElementById("abCrunchMachine-Weight4").style.display = "none";
+        document.getElementById("abCrunchMachine-Reps4").style.display = "none";
+        document.getElementById("Weight5").style.display = "none";
+        document.getElementById("Reps5").style.display = "none";
+        document.getElementById("abCrunchMachine-Weight5").style.display = "none";
+        document.getElementById("abCrunchMachine-Reps5").style.display = "none";
+      } if (that.value == "2 Set"){
+          document.getElementById("abCrunchMachine-Weight1").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight2").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps2").style.display = "block";
+
+          document.getElementById("Weight3").style.display = "none";
+          document.getElementById("Reps3").style.display = "none";
+          document.getElementById("abCrunchMachine-Weight3").style.display = "none";
+          document.getElementById("abCrunchMachine-Reps3").style.display = "none";
+          document.getElementById("Weight4").style.display = "none";
+          document.getElementById("Reps4").style.display = "none";
+          document.getElementById("abCrunchMachine-Weight4").style.display = "none";
+          document.getElementById("abCrunchMachine-Reps4").style.display = "none";
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("abCrunchMachine-Weight5").style.display = "none";
+          document.getElementById("abCrunchMachine-Reps5").style.display = "none";
+      } if (that.value == "3 Set"){
+          document.getElementById("abCrunchMachine-Weight1").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight2").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight3").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps3").style.display = "block";
+          
+          document.getElementById("Weight4").style.display = "none";
+          document.getElementById("Reps4").style.display = "none";
+          document.getElementById("abCrunchMachine-Weight4").style.display = "none";
+          document.getElementById("abCrunchMachine-Reps4").style.display = "none";
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("abCrunchMachine-Weight5").style.display = "none";
+          document.getElementById("abCrunchMachine-Reps5").style.display = "none";
+      } if (that.value == "4 Set"){
+          document.getElementById("abCrunchMachine-Weight1").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight2").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight3").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps3").style.display = "block";
+          document.getElementById("Weight4").style.display = "block";
+          document.getElementById("Reps4").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight4").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps4").style.display = "block";
+          
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("abCrunchMachine-Weight5").style.display = "none";
+          document.getElementById("abCrunchMachine-Reps5").style.display = "none";
+
+      } if (that.value == "5 Set"){
+          document.getElementById("abCrunchMachine-Weight1").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight2").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight3").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps3").style.display = "block";
+          document.getElementById("Weight4").style.display = "block";
+          document.getElementById("Reps4").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight4").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps4").style.display = "block";
+          document.getElementById("Weight5").style.display = "block";
+          document.getElementById("Reps5").style.display = "block";
+          document.getElementById("abCrunchMachine-Weight5").style.display = "block";
+          document.getElementById("abCrunchMachine-Reps5").style.display = "block";
+          
+      }
+
+      
+    }
+  </script>
   </body>
   </html>
