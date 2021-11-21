@@ -228,3 +228,235 @@ float: inline-end;
 #hacksquat-Sets {
 float: inline-end;
 }
+
+#cableMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #cableMachine-Sets {
+  float: inline-end;
+  }
+  #cableMachine-Weight1 {
+  float: inline-end;
+  }
+  #cableMachine-Weight2 {
+  float: inline-end;
+  
+  }
+  #cableMachine-Weight3 {
+  float: inline-end;
+  
+  }
+  #cableMachine-Weight4 {
+  float: inline-end;
+  
+  }
+  #cableMachine-Weight5 {
+  float: inline-end;
+  
+  }
+  #cableMachine-Reps1 {
+  float: inline-end;
+  }
+  #cableMachine-Reps2 {
+  float: inline-end;
+  
+  }
+  #cableMachine-Reps3 {
+  float: inline-end;
+  
+  }
+  #cableMachine-Reps4 {
+  float: inline-end;
+  
+  }
+  #cableMachine-Reps5 {
+  float: inline-end;
+  
+  }
+  #cableMachine-Date {
+  float: inline-end;
+  }
+  
+  #cableMachine-Sets {
+  float: inline-end;
+  }
+
+  #chestFlyeMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #chestFlyeMachine-Sets {
+  float: inline-end;
+  }
+  #chestFlyeMachine-Weight1 {
+  float: inline-end;
+  }
+  #chestFlyeMachine-Weight2 {
+  float: inline-end;
+  
+  }
+  #chestFlyeMachine-Weight3 {
+  float: inline-end;
+  
+  }
+  #chestFlyeMachine-Weight4 {
+  float: inline-end;
+  
+  }
+  #chestFlyeMachine-Weight5 {
+  float: inline-end;
+  
+  }
+  #chestFlyeMachine-Reps1 {
+  float: inline-end;
+  }
+  #chestFlyeMachine-Reps2 {
+  float: inline-end;
+  
+  }
+  #chestFlyeMachine-Reps3 {
+  float: inline-end;
+  
+  }
+  #chestFlyeMachine-Reps4 {
+  float: inline-end;
+  
+  }
+  #chestFlyeMachine-Reps5 {
+  float: inline-end;
+  
+  }
+  #chestFlyeMachine-Date {
+  float: inline-end;
+  }
+  
+  #chestFlyeMachine-Sets {
+  float: inline-end;
+  }
+
+  #declinePressMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #declinePressMachine-Sets {
+  float: inline-end;
+  }
+  #declinePressMachine-Weight1 {
+  float: inline-end;
+  }
+  #declinePressMachine-Weight2 {
+  float: inline-end;
+  
+  }
+  #declinePressMachine-Weight3 {
+  float: inline-end;
+  
+  }
+  #declinePressMachine-Weight4 {
+  float: inline-end;
+  
+  }
+  #declinePressMachine-Weight5 {
+  float: inline-end;
+  
+  }
+  #declinePressMachine-Reps1 {
+  float: inline-end;
+  }
+  #declinePressMachine-Reps2 {
+  float: inline-end;
+  
+  }
+  #declinePressMachine-Reps3 {
+  float: inline-end;
+  
+  }
+  #declinePressMachine-Reps4 {
+  float: inline-end;
+  
+  }
+  #declinePressMachine-Reps5 {
+  float: inline-end;
+  
+  }
+  #declinePressMachine-Date {
+  float: inline-end;
+  }
+  
+  #declinePressMachine-Sets {
+  float: inline-end;
+  }
+  
+  #inclinePressMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #inclinePressMachine-Sets {
+  float: inline-end;
+  }
+  #inclinePressMachine-Weight1 {
+  float: inline-end;
+  }
+  #inclinePressMachine-Weight2 {
+  float: inline-end;
+  
+  }
+  #inclinePressMachine-Weight3 {
+  float: inline-end;
+  
+  }
+  #inclinePressMachine-Weight4 {
+  float: inline-end;
+  
+  }
+  #inclinePressMachine-Weight5 {
+  float: inline-end;
+  
+  }
+  #inclinePressMachine-Reps1 {
+  float: inline-end;
+  }
+  #inclinePressMachine-Reps2 {
+  float: inline-end;
+  
+  }
+  #inclinePressMachine-Reps3 {
+  float: inline-end;
+  
+  }
+  #inclinePressMachine-Reps4 {
+  float: inline-end;
+  
+  }
+  #inclinePressMachine-Reps5 {
+  float: inline-end;
+  
+  }
+  #inclinePressMachine-Date {
+  float: inline-end;
+  }
+  
+  #inclinePressMachine-Sets {
+  float: inline-end;
+  }
