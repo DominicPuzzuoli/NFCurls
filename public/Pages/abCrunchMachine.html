@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="/CSS/form.css" type="text/css">
 <meta charset="UTF-8">
   <head>
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
@@ -65,21 +66,29 @@
 
   <body>
     <section>
-      <form action="#" method="post">
+      <form id="abCrunchMachine" action="#" method="post">
         <fieldset>
-          <legend> Input Data</legend>
+          <legend> Ab Crunch Machine</legend>
           <label for="date"> Date:</label>
-          <input type="date" id="test_Date" autocomplete="on">
+          <input type="date" id="abCrunchMachine-Date" autocomplete="on">
+          <br>
+          <br>
+          <label for="Weight">Enter the Weight: </label>
+          <input name="Weight" id="abCrunchMachine-Weight">
+          <br>
+          <br>
           <label for="reps"> Enter reps per set:</label>
-          <input name="reps" id="reps">
-
+          <input name="reps" id="abCrunchMachine-Reps">
+          <br>
+          <br>
           <label for="sets">Enter sets completed:</label>
-          <input name = "sets" id="sets">
-
-          <label for="time">How much time did you spend?</label>
-          <input name ="time" id="time">
-
-        <input type="submit" id="submit" value="Save"
+          <input name = "sets" id="abCrunchMachine-Sets">
+          <br>
+          <br>
+          <label for="time">Enter Total Time spent:</label>
+          <input name ="time" id="abCrunchMachine-Time">
+          <br>
+        <input type="submit" id="abCrunchMachine-submit" value="Save"
       </fieldset>
     </form>
   </section>

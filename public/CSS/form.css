@@ -1,0 +1,18 @@
+#abCrunchMachine {
+    float:inline-start;
+}
+#abCrunchMachine-Weight {
+    float: inline-end;
+}
+#abCrunchMachine-Date {
+    float: inline-end;
+}
+#abCrunchMachine-Reps {
+    float: inline-end;
+}
+#abCrunchMachine-Sets {
+    float: inline-end;
+}
+#abCrunchMachine-Time {
+    float: inline-end;
+}
