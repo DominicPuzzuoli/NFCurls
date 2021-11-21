@@ -1,4 +1,4 @@
-#abCrunchMachine {
+#hacksquat {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
     text-align: left;
@@ -7,55 +7,56 @@
     margin-right: auto;
     height: auto;
 }
-#abCrunchMachine-Sets {
+#hacksquat-Sets {
     float: inline-end;
 }
-#abCrunchMachine-Weight1 {
+#hacksquat-Weight1 {
     float: inline-end;
 }
-#abCrunchMachine-Weight2 {
-    float: inline-end;
-    
-}
-#abCrunchMachine-Weight3 {
+#hacksquat-Weight2 {
     float: inline-end;
     
 }
-#abCrunchMachine-Weight4 {
+#hacksquat-Weight3 {
     float: inline-end;
     
 }
-#abCrunchMachine-Weight5 {
+#hacksquat-Weight4 {
     float: inline-end;
     
 }
-#abCrunchMachine-Reps1 {
-    float: inline-end;
-}
-#abCrunchMachine-Reps2 {
+#hacksquat-Weight5 {
     float: inline-end;
     
 }
-#abCrunchMachine-Reps3 {
+#hacksquat-Reps1 {
+    float: inline-end;
+}
+#hacksquat-Reps2 {
     float: inline-end;
     
 }
-#abCrunchMachine-Reps4 {
+#hacksquat-Reps3 {
     float: inline-end;
     
 }
-#abCrunchMachine-Reps5 {
+#hacksquat-Reps4 {
     float: inline-end;
     
 }
-#abCrunchMachine-Date {
+#hacksquat-Reps5 {
+    float: inline-end;
+    
+}
+#hacksquat-Date {
     float: inline-end;
 }
 
-#abCrunchMachine-Sets {
+#hacksquat-Sets {
     float: inline-end;
 }
 
+#hacksquat {
 #benchPress {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
@@ -64,6 +65,54 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
+}
+#hacksquat-Sets {
+    float: inline-end;
+}
+#hacksquat-Weight1 {
+    float: inline-end;
+}
+#hacksquat-Weight2 {
+    float: inline-end;
+    
+}
+#hacksquat-Weight3 {
+    float: inline-end;
+    
+}
+#hacksquat-Weight4 {
+    float: inline-end;
+    
+}
+#hacksquat-Weight5 {
+    float: inline-end;
+    
+}
+#hacksquat-Reps1 {
+    float: inline-end;
+}
+#hacksquat-Reps2 {
+    float: inline-end;
+    
+}
+#hacksquat-Reps3 {
+    float: inline-end;
+    
+}
+#hacksquat-Reps4 {
+    float: inline-end;
+    
+}
+#hacksquat-Reps5 {
+    float: inline-end;
+    
+}
+#hacksquat-Date {
+    float: inline-end;
+}
+
+#hacksquat-Sets {
+    float: inline-end;
 }
 #benchPress-Sets {
     float: inline-end;
