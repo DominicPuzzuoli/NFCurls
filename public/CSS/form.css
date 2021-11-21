@@ -1,4 +1,6 @@
 #abCrunchMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
     float:inline-start;
 }
 #abCrunchMachine-Weight {
