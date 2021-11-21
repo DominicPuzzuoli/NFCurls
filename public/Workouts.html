@@ -15,6 +15,7 @@
     <title>NFCurls</title>
 
     <script src="/scripts/onSignIn.js"></script>
+
   </head>
   <body>
       <script type="module" src="/scripts/readData.js"></script>
@@ -27,6 +28,27 @@
           display:none ;
         }
       </style>
+
+      <!-- The below styling code is for the positions of the columns-->
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create four equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
 
       <nav class ="myNav">
         <ul>
@@ -56,7 +78,34 @@
         <a href="#">Contact</a>
       </div>
       
-
+      <h1>Workouts</h1>
+      <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <a href ="basicworkouts.html">
+            <h2>Basic</h2>
+            </a>
+          <p>burpees, jump ropes, etc...</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+           <a href = "cardioworkouts.html"> 
+          <h2>Cardio</h2>
+          </a>
+          <p>bike,eliptical, etc...</p>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <a href = "machineworkouts.html">
+            <h2>Machines</h2>
+            </a>
+            <p>Ab crunch, leg curl, etc...</p>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <a href ="weightworkouts.html">
+            <h2>Weights</h2>
+            </a>
+            <p>bench press, chest press, etc...</p>
+          </div>
+      </div>
+    
       
       
       
