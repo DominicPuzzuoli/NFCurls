@@ -18,3 +18,22 @@
 #abCrunchMachine-Time {
     float: inline-end;
 }
+
+#benchPress {
+    float:inline-start;
+}
+#benchPress-Weight {
+    float: inline-end;
+}
+#benchPress-Date {
+    float: inline-end;
+}
+#benchPress-Reps {
+    float: inline-end;
+}
+#benchPress-Sets {
+    float: inline-end;
+}
+#benchPress-Time {
+    float: inline-end;
+}
