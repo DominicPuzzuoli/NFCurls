@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content = "width=device-width,
     initial-scale=1.0">
-    <title>Bench Press</title>
+    <title>Ab Crunch</title>
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
 
   </head>
@@ -59,31 +59,194 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="#">About</a>
           <a href="#">Services</a>
-          <a href="Workouts.html">Workouts</a>
+          <a href="/Pages/Workouts.html">Workouts</a>
           <a href="#">Clients</a>
           <a href="#">Contact</a>
         </div>
 
   <body>
     <section>
-      <form action="#" method="post">
+      <div class="div-benchPress">
+      <form id="benchPress" action="#" method="post">
         <fieldset>
-          <legend> Input Data</legend>
+          <legend> Bench Press</legend>
           <label for="date"> Date:</label>
-          <input input type="date" id="benchPress-date" autocomplete="on">
-
-          <label for="weight"> Enter weight:</label>
-          <input input type="number" name="weight" id="benchPress-weight">
-
-          <label for="reps"> Enter reps per set:</label>
-          <input input type="number" name="reps" id="benchPress-reps">
-
-          <label for="sets">Enter sets completed:</label>
-          <input input type="number" name = "sets" id="benchPress-sets">
-
-        <input type="submit" id="submit" value="Save"
+          <input type="date" id="benchPress-Date" autocomplete="on">
+          <br>
+          <br>
+          <label>Choose the total amount of Sets: </label>
+          <select onchange="totSets(this);" name="Total Sets" id="benchPress-Sets">
+            <option value="1 Set">1 Sets</option>
+            <option value="2 Set">2 Sets</option>
+            <option value="3 Set">3 Sets</option>
+            <option value="4 Set">4 Sets</option>
+            <option value="5 Set">5 Sets</option>
+          </select>
+          <br>
+          <br>
+          <label for="Weight" id="Weight1">Enter the Weight(In Lbs) for Set 1: </label>
+          <input type="number" id="benchPress-Weight1" required>
+          <br>
+          <br>
+          <label for="reps" id="Reps1"> Enter total Reps for Set 1:</label>
+          <input type="number" name="reps" id="benchPress-Reps1" required>
+          <br>
+          <br>
+          <label for="Weight" id="Weight2">Enter the Weight(In Lbs) for Set 2: </label>
+          <input type="number" id="benchPress-Weight2" >
+          <br>
+          <br>
+          <label for="reps" id="Reps2"> Enter total Reps for Set 2:</label>
+          <input type="number" name="reps" id="benchPress-Reps2" >
+          <br>
+          <br>
+          <label for="Weight" id="Weight3">Enter the Weight(In Lbs) for Set 3: </label>
+          <input type="number" id="benchPress-Weight3" >
+          <br>
+          <br>
+          <label for="reps" id="Reps3"> Enter Total Reps for Set3:</label>
+          <input type="number" name="reps" id="benchPress-Reps3" >
+          <br>
+          <br>
+          <label for="Weight" id="Weight4">Enter the Weight(In Lbs for Set 4): </label>
+          <input type="number" id="benchPress-Weight4" >
+          <br>
+          <br>
+          <label for="reps" id="Reps4"> Enter Total Reps for Set 4:</label>
+          <input type="number" name="reps" id="benchPress-Reps4" >
+          <br>
+          <br>
+          <label for="Weight" id ="Weight5">Enter the Weight(In Lbs) for Set 5: </label>
+          <input type="number" id="benchPress-Weight5" >
+          <br>
+          <br>
+          <label for="reps" id="Reps5"> Enter Total Reps for Set 5:</label>
+          <input type="number" name="reps" id="benchPress-Reps5" >
+          <br>
+          <br>
+        <input type="submit" id="benchPress-submit" value="Save"
       </fieldset>
     </form>
+  </div>
   </section>
+  <script>
+    function totSets(that) {
+      if (that.value == "1 Set") {
+        document.getElementById("benchPress-Weight1").style.display = "block";
+        document.getElementById("benchPress-Reps1").style.display = "block";
+        document.getElementById("Reps1").style.display = "block";
+        document.getElementById("Weight1").style.display = "block";
+
+
+        document.getElementById("Weight2").style.display = "none";
+        document.getElementById("Reps2").style.display = "none";
+        document.getElementById("benchPress-Weight2").style.display = "none";
+        document.getElementById("benchPress-Reps2").style.display = "none";
+        document.getElementById("Weight3").style.display = "none";
+        document.getElementById("Reps3").style.display = "none";
+        document.getElementById("benchPress-Weight3").style.display = "none";
+        document.getElementById("benchPress-Reps3").style.display = "none";
+        document.getElementById("Weight4").style.display = "none";
+        document.getElementById("Reps4").style.display = "none";
+        document.getElementById("benchPress-Weight4").style.display = "none";
+        document.getElementById("benchPress-Reps4").style.display = "none";
+        document.getElementById("Weight5").style.display = "none";
+        document.getElementById("Reps5").style.display = "none";
+        document.getElementById("benchPress-Weight5").style.display = "none";
+        document.getElementById("benchPress-Reps5").style.display = "none";
+      } if (that.value == "2 Set"){
+          document.getElementById("benchPress-Weight1").style.display = "block";
+          document.getElementById("benchPress-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("benchPress-Weight2").style.display = "block";
+          document.getElementById("benchPress-Reps2").style.display = "block";
+
+          document.getElementById("Weight3").style.display = "none";
+          document.getElementById("Reps3").style.display = "none";
+          document.getElementById("benchPress-Weight3").style.display = "none";
+          document.getElementById("benchPress-Reps3").style.display = "none";
+          document.getElementById("Weight4").style.display = "none";
+          document.getElementById("Reps4").style.display = "none";
+          document.getElementById("benchPress-Weight4").style.display = "none";
+          document.getElementById("benchPress-Reps4").style.display = "none";
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("benchPress-Weight5").style.display = "none";
+          document.getElementById("benchPress-Reps5").style.display = "none";
+      } if (that.value == "3 Set"){
+          document.getElementById("benchPress-Weight1").style.display = "block";
+          document.getElementById("benchPress-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("benchPress-Weight2").style.display = "block";
+          document.getElementById("benchPress-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("benchPress-Weight3").style.display = "block";
+          document.getElementById("benchPress-Reps3").style.display = "block";
+          
+          document.getElementById("Weight4").style.display = "none";
+          document.getElementById("Reps4").style.display = "none";
+          document.getElementById("benchPress-Weight4").style.display = "none";
+          document.getElementById("benchPress-Reps4").style.display = "none";
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("benchPress-Weight5").style.display = "none";
+          document.getElementById("benchPress-Reps5").style.display = "none";
+      } if (that.value == "4 Set"){
+          document.getElementById("benchPress-Weight1").style.display = "block";
+          document.getElementById("benchPress-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("benchPress-Weight2").style.display = "block";
+          document.getElementById("benchPress-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("benchPress-Weight3").style.display = "block";
+          document.getElementById("benchPress-Reps3").style.display = "block";
+          document.getElementById("Weight4").style.display = "block";
+          document.getElementById("Reps4").style.display = "block";
+          document.getElementById("benchPress-Weight4").style.display = "block";
+          document.getElementById("benchPress-Reps4").style.display = "block";
+          
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("benchPress-Weight5").style.display = "none";
+          document.getElementById("benchPress-Reps5").style.display = "none";
+
+      } if (that.value == "5 Set"){
+          document.getElementById("benchPress-Weight1").style.display = "block";
+          document.getElementById("benchPress-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("benchPress-Weight2").style.display = "block";
+          document.getElementById("benchPress-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("benchPress-Weight3").style.display = "block";
+          document.getElementById("benchPress-Reps3").style.display = "block";
+          document.getElementById("Weight4").style.display = "block";
+          document.getElementById("Reps4").style.display = "block";
+          document.getElementById("benchPress-Weight4").style.display = "block";
+          document.getElementById("benchPress-Reps4").style.display = "block";
+          document.getElementById("Weight5").style.display = "block";
+          document.getElementById("Reps5").style.display = "block";
+          document.getElementById("benchPress-Weight5").style.display = "block";
+          document.getElementById("benchPress-Reps5").style.display = "block";
+          
+      }
+
+      
+    }
+  </script>
   </body>
   </html>
