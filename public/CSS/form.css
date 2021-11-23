@@ -461,7 +461,817 @@ float: inline-end;
   float: inline-end;
   }
 
+  #chestPress {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #chestPress-Sets {
+  float: inline-end;
+  }
+  #chestPress-Weight1 {
+  float: inline-end;
+  }
+  #chestPress-Weight2 {
+  float: inline-end;
+  
+  }
+  #chestPress-Weight3 {
+  float: inline-end;
+  
+  }
+  #chestPress-Weight4 {
+  float: inline-end;
+  
+  }
+  #chestPress-Weight5 {
+  float: inline-end;
+  
+  }
+  #chestPress-Reps1 {
+  float: inline-end;
+  }
+  #chestPress-Reps2 {
+  float: inline-end;
+  
+  }
+  #chestPress-Reps3 {
+  float: inline-end;
+  
+  }
+  #chestPress-Reps4 {
+  float: inline-end;
+  
+  }
+  #chestPress-Reps5 {
+  float: inline-end;
+  
+  }
+  #chestPress-Date {
+  float: inline-end;
+  }
+  
+  #chestPress-Sets {
+  float: inline-end;
+  }
 
+  #latPulldown {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #latPulldown-Sets {
+  float: inline-end;
+  }
+  #latPulldown-Weight1 {
+  float: inline-end;
+  }
+  #latPulldown-Weight2 {
+  float: inline-end;
+  
+  }
+  #latPulldown-Weight3 {
+  float: inline-end;
+  
+  }
+  #latPulldown-Weight4 {
+  float: inline-end;
+  
+  }
+  #latPulldown-Weight5 {
+  float: inline-end;
+  
+  }
+  #latPulldown-Reps1 {
+  float: inline-end;
+  }
+  #latPulldown-Reps2 {
+  float: inline-end;
+  
+  }
+  #latPulldown-Reps3 {
+  float: inline-end;
+  
+  }
+  #latPulldown-Reps4 {
+  float: inline-end;
+  
+  }
+  #latPulldown-Reps5 {
+  float: inline-end;
+  
+  }
+  #latPulldown-Date {
+  float: inline-end;
+  }
+  
+  #latPulldown-Sets {
+  float: inline-end;
+  }
+
+  #legAbduction {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #legAbduction-Sets {
+  float: inline-end;
+  }
+  #legAbduction-Weight1 {
+  float: inline-end;
+  }
+  #legAbduction-Weight2 {
+  float: inline-end;
+  
+  }
+  #legAbduction-Weight3 {
+  float: inline-end;
+  
+  }
+  #legAbduction-Weight4 {
+  float: inline-end;
+  
+  }
+  #legAbduction-Weight5 {
+  float: inline-end;
+  
+  }
+  #legAbduction-Reps1 {
+  float: inline-end;
+  }
+  #legAbduction-Reps2 {
+  float: inline-end;
+  
+  }
+  #legAbduction-Reps3 {
+  float: inline-end;
+  
+  }
+  #legAbduction-Reps4 {
+  float: inline-end;
+  
+  }
+  #legAbduction-Reps5 {
+  float: inline-end;
+  
+  }
+  #legAbduction-Date {
+  float: inline-end;
+  }
+  
+  #legAbduction-Sets {
+  float: inline-end;
+  }
+
+  #legAdduction {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #legAdduction-Sets {
+  float: inline-end;
+  }
+  #legAdduction-Weight1 {
+  float: inline-end;
+  }
+  #legAdduction-Weight2 {
+  float: inline-end;
+  
+  }
+  #legAdduction-Weight3 {
+  float: inline-end;
+  
+  }
+  #legAdduction-Weight4 {
+  float: inline-end;
+  
+  }
+  #legAdduction-Weight5 {
+  float: inline-end;
+  
+  }
+  #legAdduction-Reps1 {
+  float: inline-end;
+  }
+  #legAdduction-Reps2 {
+  float: inline-end;
+  
+  }
+  #legAdduction-Reps3 {
+  float: inline-end;
+  
+  }
+  #legAdduction-Reps4 {
+  float: inline-end;
+  
+  }
+  #legAdduction-Reps5 {
+  float: inline-end;
+  
+  }
+  #legAdduction-Date {
+  float: inline-end;
+  }
+  
+  #legAdduction-Sets {
+  float: inline-end;
+  }
+
+  #legCurl {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #legCurl-Sets {
+  float: inline-end;
+  }
+  #legCurl-Weight1 {
+  float: inline-end;
+  }
+  #legCurl-Weight2 {
+  float: inline-end;
+  
+  }
+  #legCurl-Weight3 {
+  float: inline-end;
+  
+  }
+  #legCurl-Weight4 {
+  float: inline-end;
+  
+  }
+  #legCurl-Weight5 {
+  float: inline-end;
+  
+  }
+  #legCurl-Reps1 {
+  float: inline-end;
+  }
+  #legCurl-Reps2 {
+  float: inline-end;
+  
+  }
+  #legCurl-Reps3 {
+  float: inline-end;
+  
+  }
+  #legCurl-Reps4 {
+  float: inline-end;
+  
+  }
+  #legCurl-Reps5 {
+  float: inline-end;
+  
+  }
+  #legCurl-Date {
+  float: inline-end;
+  }
+  
+  #legCurl-Sets {
+  float: inline-end;
+  }
+
+  #legExtension {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #legExtension-Sets {
+  float: inline-end;
+  }
+  #legExtension-Weight1 {
+  float: inline-end;
+  }
+  #legExtension-Weight2 {
+  float: inline-end;
+  
+  }
+  #legExtension-Weight3 {
+  float: inline-end;
+  
+  }
+  #legExtension-Weight4 {
+  float: inline-end;
+  
+  }
+  #legExtension-Weight5 {
+  float: inline-end;
+  
+  }
+  #legExtension-Reps1 {
+  float: inline-end;
+  }
+  #legExtension-Reps2 {
+  float: inline-end;
+  
+  }
+  #legExtension-Reps3 {
+  float: inline-end;
+  
+  }
+  #legExtension-Reps4 {
+  float: inline-end;
+  
+  }
+  #legExtension-Reps5 {
+  float: inline-end;
+  
+  }
+  #legExtension-Date {
+  float: inline-end;
+  }
+  
+  #legExtension-Sets {
+  float: inline-end;
+  }
+
+  #lunges {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #lunges-Sets {
+  float: inline-end;
+  }
+  #lunges-Weight1 {
+  float: inline-end;
+  }
+  #lunges-Weight2 {
+  float: inline-end;
+  
+  }
+  #lunges-Weight3 {
+  float: inline-end;
+  
+  }
+  #lunges-Weight4 {
+  float: inline-end;
+  
+  }
+  #lunges-Weight5 {
+  float: inline-end;
+  
+  }
+  #lunges-Reps1 {
+  float: inline-end;
+  }
+  #lunges-Reps2 {
+  float: inline-end;
+  
+  }
+  #lunges-Reps3 {
+  float: inline-end;
+  
+  }
+  #lunges-Reps4 {
+  float: inline-end;
+  
+  }
+  #lunges-Reps5 {
+  float: inline-end;
+  
+  }
+  #lunges-Date {
+  float: inline-end;
+  }
+  
+  #lunges-Sets {
+  float: inline-end;
+  }
+
+  #rowingMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #rowingMachine-Sets {
+  float: inline-end;
+  }
+  #rowingMachine-Weight1 {
+  float: inline-end;
+  }
+  #rowingMachine-Weight2 {
+  float: inline-end;
+  
+  }
+  #rowingMachine-Weight3 {
+  float: inline-end;
+  
+  }
+  #rowingMachine-Weight4 {
+  float: inline-end;
+  
+  }
+  #rowingMachine-Weight5 {
+  float: inline-end;
+  
+  }
+  #rowingMachine-Reps1 {
+  float: inline-end;
+  }
+  #rowingMachine-Reps2 {
+  float: inline-end;
+  
+  }
+  #rowingMachine-Reps3 {
+  float: inline-end;
+  
+  }
+  #rowingMachine-Reps4 {
+  float: inline-end;
+  
+  }
+  #rowingMachine-Reps5 {
+  float: inline-end;
+  
+  }
+  #rowingMachine-Date {
+  float: inline-end;
+  }
+  
+  #rowingMachine-Sets {
+  float: inline-end;
+  }
+
+  #seatedArmCurl {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #seatedArmCurl-Sets {
+  float: inline-end;
+  }
+  #seatedArmCurl-Weight1 {
+  float: inline-end;
+  }
+  #seatedArmCurl-Weight2 {
+  float: inline-end;
+  
+  }
+  #seatedArmCurl-Weight3 {
+  float: inline-end;
+  
+  }
+  #seatedArmCurl-Weight4 {
+  float: inline-end;
+  
+  }
+  #seatedArmCurl-Weight5 {
+  float: inline-end;
+  
+  }
+  #seatedArmCurl-Reps1 {
+  float: inline-end;
+  }
+  #seatedArmCurl-Reps2 {
+  float: inline-end;
+  
+  }
+  #seatedArmCurl-Reps3 {
+  float: inline-end;
+  
+  }
+  #seatedArmCurl-Reps4 {
+  float: inline-end;
+  
+  }
+  #seatedArmCurl-Reps5 {
+  float: inline-end;
+  
+  }
+  #seatedArmCurl-Date {
+  float: inline-end;
+  }
+  
+  #seatedArmCurl-Sets {
+  float: inline-end;
+  }
+
+  #seatedArmExtension {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #seatedArmExtension-Sets {
+  float: inline-end;
+  }
+  #seatedArmExtension-Weight1 {
+  float: inline-end;
+  }
+  #seatedArmExtension-Weight2 {
+  float: inline-end;
+  
+  }
+  #seatedArmExtension-Weight3 {
+  float: inline-end;
+  
+  }
+  #seatedArmExtension-Weight4 {
+  float: inline-end;
+  
+  }
+  #seatedArmExtension-Weight5 {
+  float: inline-end;
+  
+  }
+  #seatedArmExtension-Reps1 {
+  float: inline-end;
+  }
+  #seatedArmExtension-Reps2 {
+  float: inline-end;
+  
+  }
+  #seatedArmExtension-Reps3 {
+  float: inline-end;
+  
+  }
+  #seatedArmExtension-Reps4 {
+  float: inline-end;
+  
+  }
+  #seatedArmExtension-Reps5 {
+  float: inline-end;
+  
+  }
+  #seatedArmExtension-Date {
+  float: inline-end;
+  }
+  
+  #seatedArmExtension-Sets {
+  float: inline-end;
+  }
+
+  #seatedCalfMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #seatedCalfMachine-Sets {
+  float: inline-end;
+  }
+  #seatedCalfMachine-Weight1 {
+  float: inline-end;
+  }
+  #seatedCalfMachine-Weight2 {
+  float: inline-end;
+  
+  }
+  #seatedCalfMachine-Weight3 {
+  float: inline-end;
+  
+  }
+  #seatedCalfMachine-Weight4 {
+  float: inline-end;
+  
+  }
+  #seatedCalfMachine-Weight5 {
+  float: inline-end;
+  
+  }
+  #seatedCalfMachine-Reps1 {
+  float: inline-end;
+  }
+  #seatedCalfMachine-Reps2 {
+  float: inline-end;
+  
+  }
+  #seatedCalfMachine-Reps3 {
+  float: inline-end;
+  
+  }
+  #seatedCalfMachine-Reps4 {
+  float: inline-end;
+  
+  }
+  #seatedCalfMachine-Reps5 {
+  float: inline-end;
+  
+  }
+  #seatedCalfMachine-Date {
+  float: inline-end;
+  }
+  
+  #seatedCalfMachine-Sets {
+  float: inline-end;
+  }
+
+  #squats {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #squats-Sets {
+  float: inline-end;
+  }
+  #squats-Weight1 {
+  float: inline-end;
+  }
+  #squats-Weight2 {
+  float: inline-end;
+  
+  }
+  #squats-Weight3 {
+  float: inline-end;
+  
+  }
+  #squats-Weight4 {
+  float: inline-end;
+  
+  }
+  #squats-Weight5 {
+  float: inline-end;
+  
+  }
+  #squats-Reps1 {
+  float: inline-end;
+  }
+  #squats-Reps2 {
+  float: inline-end;
+  
+  }
+  #squats-Reps3 {
+  float: inline-end;
+  
+  }
+  #squats-Reps4 {
+  float: inline-end;
+  
+  }
+  #squats-Reps5 {
+  float: inline-end;
+  
+  }
+  #squats-Date {
+  float: inline-end;
+  }
+  
+  #squats-Sets {
+  float: inline-end;
+  }
+
+  #standingCalfMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #standingCalfMachine-Sets {
+  float: inline-end;
+  }
+  #standingCalfMachine-Weight1 {
+  float: inline-end;
+  }
+  #standingCalfMachine-Weight2 {
+  float: inline-end;
+  
+  }
+  #standingCalfMachine-Weight3 {
+  float: inline-end;
+  
+  }
+  #standingCalfMachine-Weight4 {
+  float: inline-end;
+  
+  }
+  #standingCalfMachine-Weight5 {
+  float: inline-end;
+  
+  }
+  #standingCalfMachine-Reps1 {
+  float: inline-end;
+  }
+  #standingCalfMachine-Reps2 {
+  float: inline-end;
+  
+  }
+  #standingCalfMachine-Reps3 {
+  float: inline-end;
+  
+  }
+  #standingCalfMachine-Reps4 {
+  float: inline-end;
+  
+  }
+  #standingCalfMachine-Reps5 {
+  float: inline-end;
+  
+  }
+  #standingCalfMachine-Date {
+  float: inline-end;
+  }
+  
+  #standingCalfMachine-Sets {
+  float: inline-end;
+  }
+  
+  #hyperextensionBench {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #hyperextensionBench-Sets {
+  float: inline-end;
+  }
+  #hyperextensionBench-Weight1 {
+  float: inline-end;
+  }
+  #hyperextensionBench-Weight2 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Weight3 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Weight4 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Weight5 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Reps1 {
+  float: inline-end;
+  }
+  #hyperextensionBench-Reps2 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Reps3 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Reps4 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Reps5 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Date {
+  float: inline-end;
+  }
+  
+  #hyperextensionBench-Sets {
+  float: inline-end;
+  }
 #pushUps {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
