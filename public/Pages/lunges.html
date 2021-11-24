@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="/CSS/form.css" type="text/css">
+<meta charset="UTF-8">
+  <head>
+    <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content = "width=device-width,
+    initial-scale=1.0">
+    <title>Lunges</title>
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+
+  </head>
+
+
+      <script type ="module" src="/script.js"></script>
+      <meta charset="utf-8"/>
+      <title>NFCurls</title>
+
+      <script src="/scripts/onSignIn.js"></script>
+    </head>
+    <body>
+        <script type="module" src="/scripts/readData.js"></script>
+        <script type="module" src="/scripts/writeData.js"></script>
+        <script src="/scripts/sideBar.js"></script>
+
+
+        <style>
+          .data{
+            display:none ;
+          }
+        </style>
+
+        <nav class ="myNav">
+          <ul>
+          <div id="main">
+          <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
+          </div>
+
+            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+            <li><div class="data">
+              <img id="pic" class="img-circle" width="100" height="100"/>
+              <!---<a id ="fullName" href="" ></a>--->
+              <!--This above could be used to display the user name is we want-->
+              <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
+
+            </div></li>
+
+
+          </ul>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="/Pages/Workouts.html">Workouts</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+
+  <body>
+    <section>
+      <div class="div-lunges">
+      <form id="lunges" action="#" method="post">
+        <fieldset>
+          <legend> Lunges</legend>
+          <label for="date"> Date:</label>
+          <input type="date" id="lunges-Date" autocomplete="on" required>
+          <br>
+          <br>
+          <label>Choose the total amount of Sets: </label>
+          <select onchange="totSets(this);" name="Total Sets" id="lunges-Sets">
+            <option value="1 Set">1 Sets</option>
+            <option value="2 Set">2 Sets</option>
+            <option value="3 Set">3 Sets</option>
+            <option value="4 Set">4 Sets</option>
+            <option value="5 Set">5 Sets</option>
+          </select>
+          <br>
+          <br>
+          <label for="Weight" id="Weight1">Enter the Weight(In Lbs) for Set 1: </label>
+          <input type="number" id="lunges-Weight1" required>
+          <br>
+          <br>
+          <label for="reps" id="Reps1"> Enter total Reps for Set 1:</label>
+          <input type="number" name="reps" id="lunges-Reps1" required>
+          <br>
+          <br>
+          <label for="Weight" id="Weight2">Enter the Weight(In Lbs) for Set 2: </label>
+          <input type="number" id="lunges-Weight2" >
+          <br>
+          <br>
+          <label for="reps" id="Reps2"> Enter total Reps for Set 2:</label>
+          <input type="number" name="reps" id="lunges-Reps2" >
+          <br>
+          <br>
+          <label for="Weight" id="Weight3">Enter the Weight(In Lbs) for Set 3: </label>
+          <input type="number" id="lunges-Weight3" >
+          <br>
+          <br>
+          <label for="reps" id="Reps3"> Enter Total Reps for Set3:</label>
+          <input type="number" name="reps" id="lunges-Reps3" >
+          <br>
+          <br>
+          <label for="Weight" id="Weight4">Enter the Weight(In Lbs for Set 4): </label>
+          <input type="number" id="lunges-Weight4" >
+          <br>
+          <br>
+          <label for="reps" id="Reps4"> Enter Total Reps for Set 4:</label>
+          <input type="number" name="reps" id="lunges-Reps4" >
+          <br>
+          <br>
+          <label for="Weight" id ="Weight5">Enter the Weight(In Lbs) for Set 5: </label>
+          <input type="number" id="lunges-Weight5" >
+          <br>
+          <br>
+          <label for="reps" id="Reps5"> Enter Total Reps for Set 5:</label>
+          <input type="number" name="reps" id="lunges-Reps5" >
+          <br>
+          <br>
+        <input type="submit" id="lunges-submit" value="Save"
+        
+      </fieldset>
+    </form>
+  </div>
+  </section>
+  <script>
+    function totSets(that) {
+      if (that.value == "1 Set") {
+        document.getElementById("lunges-Weight1").style.display = "block";
+        document.getElementById("lunges-Reps1").style.display = "block";
+        document.getElementById("Reps1").style.display = "block";
+        document.getElementById("Weight1").style.display = "block";
+
+
+        document.getElementById("Weight2").style.display = "none";
+        document.getElementById("Reps2").style.display = "none";
+        document.getElementById("lunges-Weight2").style.display = "none";
+        document.getElementById("lunges-Reps2").style.display = "none";
+        document.getElementById("Weight3").style.display = "none";
+        document.getElementById("Reps3").style.display = "none";
+        document.getElementById("lunges-Weight3").style.display = "none";
+        document.getElementById("lunges-Reps3").style.display = "none";
+        document.getElementById("Weight4").style.display = "none";
+        document.getElementById("Reps4").style.display = "none";
+        document.getElementById("lunges-Weight4").style.display = "none";
+        document.getElementById("lunges-Reps4").style.display = "none";
+        document.getElementById("Weight5").style.display = "none";
+        document.getElementById("Reps5").style.display = "none";
+        document.getElementById("lunges-Weight5").style.display = "none";
+        document.getElementById("lunges-Reps5").style.display = "none";
+      } if (that.value == "2 Set"){
+          document.getElementById("lunges-Weight1").style.display = "block";
+          document.getElementById("lunges-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("lunges-Weight2").style.display = "block";
+          document.getElementById("lunges-Reps2").style.display = "block";
+
+          document.getElementById("Weight3").style.display = "none";
+          document.getElementById("Reps3").style.display = "none";
+          document.getElementById("lunges-Weight3").style.display = "none";
+          document.getElementById("lunges-Reps3").style.display = "none";
+          document.getElementById("Weight4").style.display = "none";
+          document.getElementById("Reps4").style.display = "none";
+          document.getElementById("lunges-Weight4").style.display = "none";
+          document.getElementById("lunges-Reps4").style.display = "none";
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("lunges-Weight5").style.display = "none";
+          document.getElementById("lunges-Reps5").style.display = "none";
+      } if (that.value == "3 Set"){
+          document.getElementById("lunges-Weight1").style.display = "block";
+          document.getElementById("lunges-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("lunges-Weight2").style.display = "block";
+          document.getElementById("lunges-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("lunges-Weight3").style.display = "block";
+          document.getElementById("lunges-Reps3").style.display = "block";
+          
+          document.getElementById("Weight4").style.display = "none";
+          document.getElementById("Reps4").style.display = "none";
+          document.getElementById("lunges-Weight4").style.display = "none";
+          document.getElementById("lunges-Reps4").style.display = "none";
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("lunges-Weight5").style.display = "none";
+          document.getElementById("lunges-Reps5").style.display = "none";
+      } if (that.value == "4 Set"){
+          document.getElementById("lunges-Weight1").style.display = "block";
+          document.getElementById("lunges-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("lunges-Weight2").style.display = "block";
+          document.getElementById("lunges-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("lunges-Weight3").style.display = "block";
+          document.getElementById("lunges-Reps3").style.display = "block";
+          document.getElementById("Weight4").style.display = "block";
+          document.getElementById("Reps4").style.display = "block";
+          document.getElementById("lunges-Weight4").style.display = "block";
+          document.getElementById("lunges-Reps4").style.display = "block";
+          
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("lunges-Weight5").style.display = "none";
+          document.getElementById("lunges-Reps5").style.display = "none";
+
+      } if (that.value == "5 Set"){
+          document.getElementById("lunges-Weight1").style.display = "block";
+          document.getElementById("lunges-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("lunges-Weight2").style.display = "block";
+          document.getElementById("lunges-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("lunges-Weight3").style.display = "block";
+          document.getElementById("lunges-Reps3").style.display = "block";
+          document.getElementById("Weight4").style.display = "block";
+          document.getElementById("Reps4").style.display = "block";
+          document.getElementById("lunges-Weight4").style.display = "block";
+          document.getElementById("lunges-Reps4").style.display = "block";
+          document.getElementById("Weight5").style.display = "block";
+          document.getElementById("Reps5").style.display = "block";
+          document.getElementById("lunges-Weight5").style.display = "block";
+          document.getElementById("lunges-Reps5").style.display = "block";
+          
+      }
+
+      
+    }
+  </script>
+  </body>
+  </html>

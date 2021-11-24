@@ -2,7 +2,7 @@
 <html>
   <link rel="stylesheet" href="/CSS/style.css" type="text/css">
   <meta charset="UTF-8">
-
+  
   <head>
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -15,50 +15,99 @@
     <title>NFCurls</title>
 
     <script src="/scripts/onSignIn.js"></script>
+
   </head>
   <body>
       <script type="module" src="/scripts/readData.js"></script>
       <script type="module" src="/scripts/writeData.js"></script>
       <script src="/scripts/sideBar.js"></script>
 
-
+      
       <style>
         .data{
           display:none ;
         }
       </style>
 
+      <!-- The below styling code is for the positions of the columns-->
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create four equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+
       <nav class ="myNav">
         <ul>
         <div id="main">
         <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
         </div>
-
+        
           <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
           <li><div class="data">
             <img id="pic" class="img-circle" width="100" height="100"/>
             <!---<a id ="fullName" href="" ></a>--->
             <!--This above could be used to display the user name is we want-->
             <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
-
+            
           </div></li>
-
-
+          
+          
         </ul>
       </nav>
 
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/Pages/about.html">About</a>
+        <a href="#">About</a>
         <a href="#">Services</a>
         <a href="/Pages/Workouts.html">Workouts</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
       </div>
-
-
-
-
-
+      
+      <h1>Workouts</h1>
+      <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <a href ="basicworkouts.html">
+            <h2>Basic</h2>
+            </a>
+          <p>burpees, jump ropes, etc...</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+           <a href = "cardioworkouts.html"> 
+          <h2>Cardio</h2>
+          </a>
+          <p>bike,eliptical, etc...</p>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <a href = "machineworkouts.html">
+            <h2>Machines</h2>
+            </a>
+            <p>Ab crunch, leg curl, etc...</p>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <a href ="weightworkouts.html">
+            <h2>Weights</h2>
+            </a>
+            <p>bench press, chest press, etc...</p>
+          </div>
+      </div>
+    
+      
+      
+      
   </body>
 </html>
