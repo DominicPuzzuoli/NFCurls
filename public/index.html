@@ -57,6 +57,11 @@
 
         </ul>
       </nav>
+      <div id="former">
+        <input type="text" placeholder="workout" id="workout">
+        <button id="addDataBtn">Add Data</button>
+
+      </div>
 
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -131,6 +136,27 @@
     })
   }
     checkAuthState()
+    
+    document.getElementById('addDataBtn').addEventListener('click', addData)
+    
+    function addData(){
+
+      let workout = document.getElementById('workout').value
+
+      let obj = {
+        workouttype : workout
+
+      }
+      firebase.firestore().collection('workoutdata').add(obj).then(doc=>{
+        console.log(doc.id)
+      }).catch(e=>{
+          console.log(e)
+      })
+    }
+
+    //reference
+
+    
    </script>
 
 
