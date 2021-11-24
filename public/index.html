@@ -2,6 +2,7 @@
 <html>
   <head>
 
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <script src="https://apis.google.com/js/api:client.js"></script>
     
@@ -19,7 +20,7 @@
           attachSignin(document.getElementById('customBtn'));
         });
       };
-      var db = firebase.firestore();
+      var db = firebase.firestore;
       function attachSignin(element) {
         console.log(element.id);
         auth2.attachClickHandler(element, {},
