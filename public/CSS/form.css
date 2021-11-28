@@ -56,63 +56,6 @@
     float: inline-end;
 }
 
-#legPress {
-        background-color: rgb(247, 242, 242);
-        box-sizing: border-box;
-        text-align: left;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-    }
-#legPress-Sets {
-    float: inline-end;
-}
-#legPress-Weight1 {
-    float: inline-end;
-}
-#legPress-Weight2 {
-    float: inline-end;
-    
-}
-#legPress-Weight3 {
-    float: inline-end;
-    
-}
-#legPress-Weight4 {
-    float: inline-end;
-    
-}
-#legPress-Weight5 {
-    float: inline-end;
-    
-}
-#legPress-Reps1 {
-    float: inline-end;
-}
-#legPress-Reps2 {
-    float: inline-end;
-    
-}
-#legPress-Reps3 {
-    float: inline-end;
-    
-}
-#legPress-Reps4 {
-    float: inline-end;
-    
-}
-#legPress-Reps5 {
-    float: inline-end;
-    
-}
-#legPress-Date {
-    float: inline-end;
-}
-
-#legPress-Sets {
-    float: inline-end;
-}
 #benchPress {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
@@ -171,63 +114,15 @@
     float: inline-end;
 }
 
-#hacksquat {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-#hacksquat-Sets {
-float: inline-end;
-}
-#hacksquat-Weight1 {
-float: inline-end;
-}
-#hacksquat-Weight2 {
-float: inline-end;
-
-}
-#hacksquat-Weight3 {
-float: inline-end;
-
-}
-#hacksquat-Weight4 {
-float: inline-end;
-
-}
-#hacksquat-Weight5 {
-float: inline-end;
-
-}
-#hacksquat-Reps1 {
-float: inline-end;
-}
-#hacksquat-Reps2 {
-float: inline-end;
-
-}
-#hacksquat-Reps3 {
-float: inline-end;
-
-}
-#hacksquat-Reps4 {
-float: inline-end;
-
-}
-#hacksquat-Reps5 {
-float: inline-end;
-
-}
-#hacksquat-Date {
-float: inline-end;
-}
-
-#hacksquat-Sets {
-float: inline-end;
-}
+#legPress {
+        background-color: rgb(247, 242, 242);
+        box-sizing: border-box;
+        text-align: left;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
 
 #cableMachine {
     background-color: rgb(247, 242, 242);
@@ -345,6 +240,64 @@ float: inline-end;
   float: inline-end;
   }
 
+  #chestPress {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #chestPress-Sets {
+  float: inline-end;
+  }
+  #chestPress-Weight1 {
+  float: inline-end;
+  }
+  #chestPress-Weight2 {
+  float: inline-end;
+  
+  }
+  #chestPress-Weight3 {
+  float: inline-end;
+  
+  }
+  #chestPress-Weight4 {
+  float: inline-end;
+  
+  }
+  #chestPress-Weight5 {
+  float: inline-end;
+  
+  }
+  #chestPress-Reps1 {
+  float: inline-end;
+  }
+  #chestPress-Reps2 {
+  float: inline-end;
+  
+  }
+  #chestPress-Reps3 {
+  float: inline-end;
+  
+  }
+  #chestPress-Reps4 {
+  float: inline-end;
+  
+  }
+  #chestPress-Reps5 {
+  float: inline-end;
+  
+  }
+  #chestPress-Date {
+  float: inline-end;
+  }
+  
+  #chestPress-Sets {
+  float: inline-end;
+  }
+
   #declinePressMachine {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
@@ -402,7 +355,123 @@ float: inline-end;
   #declinePressMachine-Sets {
   float: inline-end;
   }
+
+  #hacksquat {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+#hacksquat-Sets {
+float: inline-end;
+}
+#hacksquat-Weight1 {
+float: inline-end;
+}
+#hacksquat-Weight2 {
+float: inline-end;
+
+}
+#hacksquat-Weight3 {
+float: inline-end;
+
+}
+#hacksquat-Weight4 {
+float: inline-end;
+
+}
+#hacksquat-Weight5 {
+float: inline-end;
+
+}
+#hacksquat-Reps1 {
+float: inline-end;
+}
+#hacksquat-Reps2 {
+float: inline-end;
+
+}
+#hacksquat-Reps3 {
+float: inline-end;
+
+}
+#hacksquat-Reps4 {
+float: inline-end;
+
+}
+#hacksquat-Reps5 {
+float: inline-end;
+
+}
+#hacksquat-Date {
+float: inline-end;
+}
+
+#hacksquat-Sets {
+float: inline-end;
+}
+
+  #hyperextensionBench {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #hyperextensionBench-Sets {
+  float: inline-end;
+  }
+  #hyperextensionBench-Weight1 {
+  float: inline-end;
+  }
+  #hyperextensionBench-Weight2 {
+  float: inline-end;
   
+  }
+  #hyperextensionBench-Weight3 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Weight4 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Weight5 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Reps1 {
+  float: inline-end;
+  }
+  #hyperextensionBench-Reps2 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Reps3 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Reps4 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Reps5 {
+  float: inline-end;
+  
+  }
+  #hyperextensionBench-Date {
+  float: inline-end;
+  }
+  
+  #hyperextensionBench-Sets {
+  float: inline-end;
+  }
+   
   #inclinePressMachine {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
@@ -458,64 +527,6 @@ float: inline-end;
   }
   
   #inclinePressMachine-Sets {
-  float: inline-end;
-  }
-
-  #chestPress {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
-  #chestPress-Sets {
-  float: inline-end;
-  }
-  #chestPress-Weight1 {
-  float: inline-end;
-  }
-  #chestPress-Weight2 {
-  float: inline-end;
-  
-  }
-  #chestPress-Weight3 {
-  float: inline-end;
-  
-  }
-  #chestPress-Weight4 {
-  float: inline-end;
-  
-  }
-  #chestPress-Weight5 {
-  float: inline-end;
-  
-  }
-  #chestPress-Reps1 {
-  float: inline-end;
-  }
-  #chestPress-Reps2 {
-  float: inline-end;
-  
-  }
-  #chestPress-Reps3 {
-  float: inline-end;
-  
-  }
-  #chestPress-Reps4 {
-  float: inline-end;
-  
-  }
-  #chestPress-Reps5 {
-  float: inline-end;
-  
-  }
-  #chestPress-Date {
-  float: inline-end;
-  }
-  
-  #chestPress-Sets {
   float: inline-end;
   }
 
@@ -809,6 +820,55 @@ float: inline-end;
   float: inline-end;
   }
 
+  #legPress-Sets {
+    float: inline-end;
+}
+#legPress-Weight1 {
+    float: inline-end;
+}
+#legPress-Weight2 {
+    float: inline-end;
+    
+}
+#legPress-Weight3 {
+    float: inline-end;
+    
+}
+#legPress-Weight4 {
+    float: inline-end;
+    
+}
+#legPress-Weight5 {
+    float: inline-end;
+    
+}
+#legPress-Reps1 {
+    float: inline-end;
+}
+#legPress-Reps2 {
+    float: inline-end;
+    
+}
+#legPress-Reps3 {
+    float: inline-end;
+    
+}
+#legPress-Reps4 {
+    float: inline-end;
+    
+}
+#legPress-Reps5 {
+    float: inline-end;
+    
+}
+#legPress-Date {
+    float: inline-end;
+}
+
+#legPress-Sets {
+    float: inline-end;
+}
+
   #lunges {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
@@ -864,64 +924,6 @@ float: inline-end;
   }
   
   #lunges-Sets {
-  float: inline-end;
-  }
-
-  #rowingMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
-  #rowingMachine-Sets {
-  float: inline-end;
-  }
-  #rowingMachine-Weight1 {
-  float: inline-end;
-  }
-  #rowingMachine-Weight2 {
-  float: inline-end;
-  
-  }
-  #rowingMachine-Weight3 {
-  float: inline-end;
-  
-  }
-  #rowingMachine-Weight4 {
-  float: inline-end;
-  
-  }
-  #rowingMachine-Weight5 {
-  float: inline-end;
-  
-  }
-  #rowingMachine-Reps1 {
-  float: inline-end;
-  }
-  #rowingMachine-Reps2 {
-  float: inline-end;
-  
-  }
-  #rowingMachine-Reps3 {
-  float: inline-end;
-  
-  }
-  #rowingMachine-Reps4 {
-  float: inline-end;
-  
-  }
-  #rowingMachine-Reps5 {
-  float: inline-end;
-  
-  }
-  #rowingMachine-Date {
-  float: inline-end;
-  }
-  
-  #rowingMachine-Sets {
   float: inline-end;
   }
 
@@ -1215,64 +1217,6 @@ float: inline-end;
   float: inline-end;
   }
   
-  #hyperextensionBench {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
-  #hyperextensionBench-Sets {
-  float: inline-end;
-  }
-  #hyperextensionBench-Weight1 {
-  float: inline-end;
-  }
-  #hyperextensionBench-Weight2 {
-  float: inline-end;
-  
-  }
-  #hyperextensionBench-Weight3 {
-  float: inline-end;
-  
-  }
-  #hyperextensionBench-Weight4 {
-  float: inline-end;
-  
-  }
-  #hyperextensionBench-Weight5 {
-  float: inline-end;
-  
-  }
-  #hyperextensionBench-Reps1 {
-  float: inline-end;
-  }
-  #hyperextensionBench-Reps2 {
-  float: inline-end;
-  
-  }
-  #hyperextensionBench-Reps3 {
-  float: inline-end;
-  
-  }
-  #hyperextensionBench-Reps4 {
-  float: inline-end;
-  
-  }
-  #hyperextensionBench-Reps5 {
-  float: inline-end;
-  
-  }
-  #hyperextensionBench-Date {
-  float: inline-end;
-  }
-  
-  #hyperextensionBench-Sets {
-  float: inline-end;
-  }
-  
   #burpees {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
@@ -1391,3 +1335,85 @@ float: inline-end;
 #elliptical-Total {
     float: inline-end;
     }
+
+    #rowingmachine {
+        background-color: rgb(247, 242, 242);
+        box-sizing: border-box;
+        text-align: left;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+      }
+      #rowingmachine-Date {
+        float: inline-end;
+        }
+      
+      #rowingmachine-Total {
+        float: inline-end;
+        }
+
+        #spinbike {
+            background-color: rgb(247, 242, 242);
+            box-sizing: border-box;
+            text-align: left;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+          }
+          #spinbike-Date {
+            float: inline-end;
+            }
+          
+          #spinbike-Total {
+            float: inline-end;
+            }
+            #stairmaster {
+                background-color: rgb(247, 242, 242);
+                box-sizing: border-box;
+                text-align: left;
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+              }
+              #stairmaster-Date {
+                float: inline-end;
+                }
+              
+              #stairmaster-Total {
+                float: inline-end;
+                }
+                #treadmill {
+                    background-color: rgb(247, 242, 242);
+                    box-sizing: border-box;
+                    text-align: left;
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: auto;
+                  }
+                  #treadmill-Date {
+                    float: inline-end;
+                    }
+                  
+                  #treadmill-Total {
+                    float: inline-end;
+                    }
+                    #uprightbike {
+                        background-color: rgb(247, 242, 242);
+                        box-sizing: border-box;
+                        text-align: left;
+                        display: inline-block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: auto;
+                      }
+                      #uprightbike-Date {
+                        float: inline-end;
+                        }
+                      
+                      #uprightbike-Total {
+                        float: inline-end;
+                        }
