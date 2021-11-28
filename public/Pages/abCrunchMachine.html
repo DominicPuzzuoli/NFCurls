@@ -49,7 +49,7 @@
     <!--Form Submission-->
     <section>
       <div class="div-abCrunchMachine">
-      <form id="abCrunchMachine" action="#" method="post">
+      <form id="abCrunchMachine">
         <fieldset>
           <legend> Ab Crunch Machine</legend>
           <label for="date"> Date:</label>
@@ -106,9 +106,10 @@
           <input type="number" name="reps" id="abCrunchMachine-Reps5" >
           <br>
           <br>
-        <input type="submit" id="abCrunchMachine-submit" value="Save"
+        
       </fieldset>
     </form>
+    <button id="abCrunchMachine-submit">Submit Data</button>
   </div>
   </section>
   <script>
@@ -267,6 +268,8 @@
         })
       }
       function showUserDetails(user){
+
+        let userID = user.uid
             document.getElementById('userDetails').innerHTML = `
               <img src="${user.photoURL}" style="width:10%">
               <p>Name: ${user.displayName}</p>
@@ -303,7 +306,10 @@
         document.getElementById('abCrunchMachine-submit').addEventListener('click', addData)
         
         function addData(){
-    
+          
+          
+          let date = document.getElementById('abCrunchMachine-Date').value
+
           let Weight1 = document.getElementById('abCrunchMachine-Weight1').value
           let Weight2 = document.getElementById('abCrunchMachine-Weight2').value
           let Weight3 = document.getElementById('abCrunchMachine-Weight3').value
@@ -317,15 +323,30 @@
           let Reps5 = document.getElementById('abCrunchMachine-Reps5').value
 
     
-          let obj = {
-            Weight : Weight1
-    
+          
+            let obj = {
+            Date: date,
+            Weight_1: Weight1,
+            Reps_1: Reps1,
+            Weight_2: Weight2,
+            Reps_2: Reps2,
+            Weight_3: Weight3,
+            Reps_3: Reps3,
+            Weight_4: Weight4,
+            Reps_4: Reps4,
+            Weight_5: Weight5,
+            Reps_5: Reps5,
+            
           }
+          
           firebase.firestore().collection('abCrunchMachine').add(obj).then(doc=>{
             console.log(doc.id)
           }).catch(e=>{
               console.log(e)
           })
+
+          document.getElementById("abCrunchMachine").reset();
+          alert("Data Submission Successful!")
         }
     
         //reference
