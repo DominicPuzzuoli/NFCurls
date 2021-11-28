@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="/CSS/style.css" type="text/css">
-<link rel="stylesheet" href="/CSS/form.css" type="text/css">
-<meta charset="UTF-8">
-  <head>
-    <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <meta charset="utf-8">
-    <meta name="viewport" content = "width=device-width,
-    initial-scale=1.0">
-    <title>Ab Crunch</title>
-      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+  <link rel="stylesheet" href="/CSS/form.css" type="text/css">
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.memory.js"></script>
+<!-- Don't change the format for any other products. -->
+<script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
   </head>
-
-
-      <script type ="module" src="/script.js"></script>
-      <meta charset="utf-8"/>
-      <title>NFCurls</title>
-
-      <script src="/scripts/onSignIn.js"></script>
+  <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="utf-8"/>
+  <title>Ab Crunch Machine</title>
     </head>
     <body>
         <script type="module" src="/scripts/readData.js"></script>
@@ -35,25 +26,15 @@
             display:none ;
           }
         </style>
-
-        <nav class ="myNav">
-          <ul>
-          <div id="main">
-          <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
-          </div>
-
-            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
-            <li><div class="data">
-              <img id="pic" class="img-circle" width="100" height="100"/>
-              <!---<a id ="fullName" href="" ></a>--->
-              <!--This above could be used to display the user name is we want-->
-              <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
-
-            </div></li>
-
-
-          </ul>
-        </nav>
+        <div id ="LoginScreen">
+          <button id="login">Login with google</button>
+    
+        </div>
+    
+        <div id= "dashboard">
+          <div id="userDetails"> </div>
+          <button id="logout">logout</button>
+        </div>
 
         <div id="mySidebar" class="sidebar">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -65,6 +46,7 @@
         </div>
 
   <body>
+    <!--Form Submission-->
     <section>
       <div class="div-abCrunchMachine">
       <form id="abCrunchMachine" action="#" method="post">
@@ -248,6 +230,113 @@
       
     }
   </script>
+
+
+
+
+    <!--Google Authentication-->
+    <script>
+      var firebaseConfig ={
+      apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
+      authDomain: "nfcurls.firebaseapp.com",
+      databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
+      projectId: "nfcurls",
+      storageBucket: "nfcurls.appspot.com",
+      messagingSenderId: "48180444980",
+      appId: "1:48180444980:web:682281cf5debcb7811ef61",
+      measurementId: "G-T2CF60NQPB"
+    };
+      firebase.initializeApp(firebaseConfig);
+      document.getElementById('dashboard').style.display="none"
+    
+    
+      document.getElementById('login').addEventListener('click', GoogleLogin)
+      document.getElementById('logout').addEventListener('click', LogoutUser)
+      
+      let provider = new firebase.auth.GoogleAuthProvider()
+    
+      function GoogleLogin(){
+        console.log('Login Btn Call')
+        firebase.auth().signInWithPopup(provider).then(res=>{
+          console.log(res.user)
+          document.getElementById('LoginScreen').style.display="none"
+          document.getElementById('dashboard').style.display="block"
+          showUserDetails(res.user)
+        }).catch(e=>{
+          console.log(e)
+        })
+      }
+      function showUserDetails(user){
+            document.getElementById('userDetails').innerHTML = `
+              <img src="${user.photoURL}" style="width:10%">
+              <p>Name: ${user.displayName}</p>
+              <p>Email: ${user.email}</p>
+              <p>UID: ${user.uid}</p>
+            `
+          }
+    
+          function checkAuthState(){
+            firebase.auth().onAuthStateChanged(user=>{
+              if(user){
+                document.getElementById('LoginScreen').style.display="none"
+                document.getElementById('dashboard').style.display="block"
+                showUserDetails(user)
+              }else{
+    
+              }
+            })
+          }
+    
+      function LogoutUser(){
+        console.log('Logout Btn Call')
+        firebase.auth().signOut().then(()=>{
+          document.getElementById('LoginScreen').style.display="block"
+          document.getElementById('dashboard').style.display="none"
+    
+        }).catch(e=>{
+    
+          console.log(e)
+        })
+      }
+        checkAuthState()
+        
+        document.getElementById('abCrunchMachine-submit').addEventListener('click', addData)
+        
+        function addData(){
+    
+          let Weight1 = document.getElementById('abCrunchMachine-Weight1').value
+          let Weight2 = document.getElementById('abCrunchMachine-Weight2').value
+          let Weight3 = document.getElementById('abCrunchMachine-Weight3').value
+          let Weight4 = document.getElementById('abCrunchMachine-Weight4').value
+          let Weight5 = document.getElementById('abCrunchMachine-Weight5').value
+
+          let Reps1 = document.getElementById('abCrunchMachine-Reps1').value
+          let Reps2 = document.getElementById('abCrunchMachine-Reps2').value
+          let Reps3 = document.getElementById('abCrunchMachine-Reps3').value
+          let Reps4 = document.getElementById('abCrunchMachine-Reps4').value
+          let Reps5 = document.getElementById('abCrunchMachine-Reps5').value
+
+    
+          let obj = {
+            Weight : Weight1
+    
+          }
+          firebase.firestore().collection('abCrunchMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+        }
+    
+        //reference
+    
+        
+       </script>
+
+
+
+
+    
   </body>
   </html>
 
