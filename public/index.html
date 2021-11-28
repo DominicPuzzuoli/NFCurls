@@ -139,12 +139,14 @@
     
     document.getElementById('addDataBtn').addEventListener('click', addData)
     
-    function addData(){
+    function addData(user){
 
       let workout = document.getElementById('workout').value
+      let userid = user.id
 
       let obj = {
-        workouttype : workout
+        workouttype : workout,
+        userident : userid
 
       }
       firebase.firestore().collection('workoutdata').add(obj).then(doc=>{
