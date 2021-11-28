@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="/CSS/form.css" type="text/css">
+<meta charset="UTF-8">
+  <head>
+    <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content = "width=device-width,
+    initial-scale=1.0">
+    <title>situps</title>
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+
+  </head>
+
+
+      <script type ="module" src="/script.js"></script>
+      <meta charset="utf-8"/>
+      <title>NFCurls</title>
+
+      <script src="/scripts/onSignIn.js"></script>
+    </head>
+    <body>
+        <script type="module" src="/scripts/readData.js"></script>
+        <script type="module" src="/scripts/writeData.js"></script>
+        <script src="/scripts/sideBar.js"></script>
+
+
+        <style>
+          .data{
+            display:none ;
+          }
+        </style>
+
+        <nav class ="myNav">
+          <ul>
+          <div id="main">
+          <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
+          </div>
+
+            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+            <li><div class="data">
+              <img id="pic" class="img-circle" width="100" height="100"/>
+              <!---<a id ="fullName" href="" ></a>--->
+              <!--This above could be used to display the user name is we want-->
+              <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
+
+            </div></li>
+
+
+          </ul>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="/Pages/Workouts.html">Workouts</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+<section>
+    <div class="div-situps">
+    <form id="situps" action="#" method="post">
+      <fieldset>
+        <legend>situps</legend>
+        <label for="date" > Date:</label>
+        <input type="date" id="situps-Date" autocomplete="on" required>
+        <br>
+        <br>
+        <label for="totalsitups" id="situps">Enter the total number of situps: </label>
+        <input type="number" id="situps-Total" required>
+        <br>
+      <input type="submit" id="situps-submit" value="Save"
+    </fieldset>
+  </form>
+</div>
+</section>
+</body>
+</html>
