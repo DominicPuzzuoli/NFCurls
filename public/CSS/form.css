@@ -1281,13 +1281,13 @@ float: inline-end;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-  }
-  #burpees-Date {
-  float: inline-end;
+}
+#burpees-Date {
+    float: inline-end;
     }
-  
-  #burpees-Total {
-  float: inline-end;
+
+#burpees-Total {
+    float: inline-end;
     }
 
     #jumpRope {
@@ -1308,21 +1308,21 @@ float: inline-end;
         }
     
         #planks {
-  background-color: rgb(247, 242, 242);
-  box-sizing: border-box;
-  text-align: left;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-}
-#planks-Date {
-  float: inline-end;
-  }
-
-#planks-Total {
-  float: inline-end;
-  }
+            background-color: rgb(247, 242, 242);
+            box-sizing: border-box;
+            text-align: left;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+          }
+          #planks-Date {
+            float: inline-end;
+            }
+          
+          #planks-Total {
+            float: inline-end;
+            } 
 
 #pushUps {
     background-color: rgb(247, 242, 242);
@@ -1356,7 +1356,7 @@ float: inline-end;
       
       #pullups-Total {
         float: inline-end;
-        }
+        } 
 
         #situps {
             background-color: rgb(247, 242, 242);
@@ -1373,7 +1373,7 @@ float: inline-end;
           
           #situps-Total {
             float: inline-end;
-            }
+            } 
 
 #elliptical {
     background-color: rgb(247, 242, 242);
