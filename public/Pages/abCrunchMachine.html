@@ -269,7 +269,7 @@
       }
       function showUserDetails(user){
 
-        let userID = user.uid
+        
             document.getElementById('userDetails').innerHTML = `
               <img src="${user.photoURL}" style="width:10%">
               <p>Name: ${user.displayName}</p>
@@ -307,7 +307,10 @@
         
         function addData(){
           
-          
+          let user = firebase.auth().currentUser;
+
+          let uid = user.uid
+
           let date = document.getElementById('abCrunchMachine-Date').value
 
           let Weight1 = document.getElementById('abCrunchMachine-Weight1').value
@@ -326,6 +329,7 @@
           
             let obj = {
             Date: date,
+            User_ID: uid,
             Weight_1: Weight1,
             Reps_1: Reps1,
             Weight_2: Weight2,
