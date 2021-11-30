@@ -21,6 +21,23 @@
         <script src="/scripts/sideBar.js"></script>
 
 
+        <nav class ="myNav">
+          
+          <div id="main">
+          <button class="openbtn" onclick="openNav()">&#9776; View Pages</button>
+          <br>
+          </div>
+        
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/Pages/about.html">About</a>
+          <a href="#">Services</a>
+          <a href="/Pages/Workouts.html">Workouts</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+
+
         <style>
           .data{
             display:none ;
@@ -109,6 +126,7 @@
         
       </fieldset>
     </form>
+    <br>
     <button id="abCrunchMachine-submit">Submit Data</button>
   </div>
   </section>
@@ -311,22 +329,172 @@
 
           let uid = user.uid
 
-          let date = document.getElementById('abCrunchMachine-Date').value
+          let date1 = document.getElementById('abCrunchMachine-Date').value
+         
+          const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
 
-          let Weight1 = document.getElementById('abCrunchMachine-Weight1').value
-          let Weight2 = document.getElementById('abCrunchMachine-Weight2').value
-          let Weight3 = document.getElementById('abCrunchMachine-Weight3').value
-          let Weight4 = document.getElementById('abCrunchMachine-Weight4').value
-          let Weight5 = document.getElementById('abCrunchMachine-Weight5').value
-
-          let Reps1 = document.getElementById('abCrunchMachine-Reps1').value
-          let Reps2 = document.getElementById('abCrunchMachine-Reps2').value
-          let Reps3 = document.getElementById('abCrunchMachine-Reps3').value
-          let Reps4 = document.getElementById('abCrunchMachine-Reps4').value
-          let Reps5 = document.getElementById('abCrunchMachine-Reps5').value
-
-    
+          var val = document.getElementById('abCrunchMachine-Sets').value;
           
+          if (val =='1 Set'){
+            let Weight_1 = document.getElementById('abCrunchMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+
+            let Reps_1 = document.getElementById('abCrunchMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,            
+          }
+          
+          firebase.firestore().collection('abCrunchMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+
+          document.getElementById("abCrunchMachine").reset();
+          alert("Data Submission Successful!")
+          
+          }
+          else if (val =='2 Set') {
+            let Weight_1 = document.getElementById('abCrunchMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+            let Weight_2 = document.getElementById('abCrunchMachine-Weight2').value
+            const Weight2 = Number(Weight_2);
+
+
+            let Reps_1 = document.getElementById('abCrunchMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let Reps_2 = document.getElementById('abCrunchMachine-Reps2').value
+            const Reps2 = Number(Reps_2);
+
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,
+            Weight_2: Weight2,
+            Reps_2: Reps2,
+           
+          }
+          
+          firebase.firestore().collection('abCrunchMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+
+          document.getElementById("abCrunchMachine").reset();
+          alert("Data Submission Successful!")
+          
+          }
+          else if (val =='3 Set'){
+            let Weight_1 = document.getElementById('abCrunchMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+            let Weight_2 = document.getElementById('abCrunchMachine-Weight2').value
+            const Weight2 = Number(Weight_2);
+            let Weight_3 = document.getElementById('abCrunchMachine-Weight3').value
+            const Weight3 = Number(Weight_3);
+
+
+            let Reps_1 = document.getElementById('abCrunchMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let Reps_2 = document.getElementById('abCrunchMachine-Reps2').value
+            const Reps2 = Number(Reps_2);
+            let Reps_3 = document.getElementById('abCrunchMachine-Reps3').value
+            const Reps3 = Number(Reps_3);
+
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,
+            Weight_2: Weight2,
+            Reps_2: Reps2,
+            Weight_3: Weight3,
+            Reps_3: Reps3,           
+          }
+          
+          firebase.firestore().collection('abCrunchMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+
+          document.getElementById("abCrunchMachine").reset();
+          alert("Data Submission Successful!")
+          
+          }
+          else if (val =='4 Set') {
+            let Weight_1 = document.getElementById('abCrunchMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+            let Weight_2 = document.getElementById('abCrunchMachine-Weight2').value
+            const Weight2 = Number(Weight_2);
+            let Weight_3 = document.getElementById('abCrunchMachine-Weight3').value
+            const Weight3 = Number(Weight_3);
+            let Weight_4 = document.getElementById('abCrunchMachine-Weight4').value
+            const Weight4 = Number(Weight_4);
+
+
+            let Reps_1 = document.getElementById('abCrunchMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let Reps_2 = document.getElementById('abCrunchMachine-Reps2').value
+            const Reps2 = Number(Reps_2);
+            let Reps_3 = document.getElementById('abCrunchMachine-Reps3').value
+            const Reps3 = Number(Reps_3);
+            let Reps_4 = document.getElementById('abCrunchMachine-Reps4').value
+            const Reps4 = Number(Reps_4);
+
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,
+            Weight_2: Weight2,
+            Reps_2: Reps2,
+            Weight_3: Weight3,
+            Reps_3: Reps3,
+            Weight_4: Weight4,
+            Reps_4: Reps4,
+
+            
+          }
+          
+          firebase.firestore().collection('abCrunchMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+
+          document.getElementById("abCrunchMachine").reset();
+          alert("Data Submission Successful!")
+          
+          }
+          else if (val =='5 Set'){
+            let Weight_1 = document.getElementById('abCrunchMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+            let Weight_2 = document.getElementById('abCrunchMachine-Weight2').value
+            const Weight2 = Number(Weight_2);
+            let Weight_3 = document.getElementById('abCrunchMachine-Weight3').value
+            const Weight3 = Number(Weight_3);
+            let Weight_4 = document.getElementById('abCrunchMachine-Weight4').value
+            const Weight4 = Number(Weight_4);
+            let Weight_5 = document.getElementById('abCrunchMachine-Weight5').value
+            const Weight5 = Number(Weight_5);
+
+            let Reps_1 = document.getElementById('abCrunchMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let Reps_2 = document.getElementById('abCrunchMachine-Reps2').value
+            const Reps2 = Number(Reps_2);
+            let Reps_3 = document.getElementById('abCrunchMachine-Reps3').value
+            const Reps3 = Number(Reps_3);
+            let Reps_4 = document.getElementById('abCrunchMachine-Reps4').value
+            const Reps4 = Number(Reps_4);
+            let Reps_5 = document.getElementById('abCrunchMachine-Reps5').value
+            const Reps5 = Number(Reps_5);
+
             let obj = {
             Date: date,
             User_ID: uid,
@@ -351,11 +519,8 @@
 
           document.getElementById("abCrunchMachine").reset();
           alert("Data Submission Successful!")
-        }
-    
-        //reference
-    
-        
+          }
+        }  
        </script>
 
 
