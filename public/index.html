@@ -15,137 +15,118 @@
     <meta charset="utf-8"/>
     <title>NFCurls</title>
 
-    <script src="/scripts/onSignIn.js"></script>
-  </head>
-  <body>
-    <div id ="LoginScreen">
-      <button id="login"><img src="img/signin-button.png"  height="50" width="150"></button>
-
-    </div>
-
-    <div id= "dashboard">
-      <div id="userDetails"> </div>
-      <button id="logout">logout</button>
-    </div>
-      <script type="module" src="/scripts/readData.js"></script>
-      <script type="module" src="/scripts/writeData.js"></script>
-      <script src="/scripts/sideBar.js"></script>
-
-
-      <style>
-        .data{
-          display:none ;
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+      }
+      
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+      }
+      .bgimg-1 {
+        background-image: url('img/pexels-victor-freitas-841130.jpg');
+        min-height: 100%;
+      }
+      
+      .bgimg-2 {
+        background-image: url('img/pexels-leon-ardho-1552242.jpg');
+        min-height: 400px;
+      }
+      
+      .bgimg-3 {
+        background-image: url('img/pexels-leon-ardho-1552106.jpg');
+        min-height: 400px;
+      }
+      
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+      
+      .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+      
+      h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+      }
+      
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
         }
+      }
       </style>
-
-      <nav class ="myNav">
-        <ul>
-        <div id="main">
-        <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
-      </nav>
-      <div id="former">
-        <input type="text" placeholder="workout" id="workout">
-        <button id="addDataBtn">Add Data</button>
-
+      </head>
+      <body>
+      
+      <div class="bgimg-1">
+        <div class="caption">
+        <span class="border">Welcome</span>
+        </div>
       </div>
-
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/Pages/about.html">About</a>
-        <a href="#">Services</a>
-        <a href="/Pages/Workouts.html">Workouts</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+      
+      <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">About our service</h3>
+        <p>We are a smart gym fitness website that allows users to input their fitness data by simply tapping the users phone onto one of our tags that have been placed onto the gym equipment.</p>
       </div>
+      
+      <div class="bgimg-2">
+        <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Simple and Convenient</span>
+        </div>
+      </div>
+      
+      <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Our website allows users to enter their fitness easy and also allows the user to track and chart their own fitness data over time.</p>
+        </div>
+      </div>
+      
+      <div class="bgimg-3">
+        <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">NFC Technology</span>
+        </div>
+      </div>
+      
+      <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>The tags that are placed on the gym equipment are known as NFC tags which allows your phone to communicate with them if they are simply placed in close proxmity of each other. 
+          When a user taps their phone onto one of the NFC tags they are brought to the specific page of the tag that was scanned, this allows them to quickly input their fitness data and go back to their workout routine.
+        </p>
+        </div>
+      </div>
+      
+      <div class="bgimg-1">
+        <div class="caption">
+        <a href="Homepage.html">
+        <span class="border" >Enter the site</span>
+        </a>
+        </div>
+      </div>
+      
+      </body>
+      
 
-   <script>
-  var firebaseConfig ={
-  apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
-  authDomain: "nfcurls.firebaseapp.com",
-  databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
-  projectId: "nfcurls",
-  storageBucket: "nfcurls.appspot.com",
-  messagingSenderId: "48180444980",
-  appId: "1:48180444980:web:682281cf5debcb7811ef61",
-  measurementId: "G-T2CF60NQPB"
-};
-  firebase.initializeApp(firebaseConfig);
-  document.getElementById('dashboard').style.display="none"
-
-
-  document.getElementById('login').addEventListener('click', GoogleLogin)
-  document.getElementById('logout').addEventListener('click', LogoutUser)
-  
-  let provider = new firebase.auth.GoogleAuthProvider()
-
-  function GoogleLogin(){
-    console.log('Login Btn Call')
-    firebase.auth().signInWithPopup(provider).then(res=>{
-      console.log(res.user)
-      document.getElementById('LoginScreen').style.display="none"
-      document.getElementById('dashboard').style.display="block"
-      showUserDetails(res.user)
-    }).catch(e=>{
-      console.log(e)
-    })
-  }
-  function showUserDetails(user){
-        document.getElementById('userDetails').innerHTML = `
-          <img src="${user.photoURL}" style="width:10%">
-          <p>Name: ${user.displayName}</p>
-          <p>Email: ${user.email}</p>
-          <p>UID: ${user.uid}</p>
-        `
-      }
-
-      function checkAuthState(){
-        firebase.auth().onAuthStateChanged(user=>{
-          if(user){
-            document.getElementById('LoginScreen').style.display="none"
-            document.getElementById('dashboard').style.display="block"
-            showUserDetails(user)
-          }else{
-
-          }
-        })
-      }
-
-  function LogoutUser(){
-    console.log('Logout Btn Call')
-    firebase.auth().signOut().then(()=>{
-      document.getElementById('LoginScreen').style.display="block"
-      document.getElementById('dashboard').style.display="none"
-
-    }).catch(e=>{
-
-      console.log(e)
-    })
-  }
-    checkAuthState()
-    
-    document.getElementById('addDataBtn').addEventListener('click', addData)
-    
-    function addData(){
-
-      let workout = document.getElementById('workout').value
-
-      let obj = {
-        workouttype : workout
-
-      }
-      firebase.firestore().collection('workoutdata').add(obj).then(doc=>{
-        console.log(doc.id)
-      }).catch(e=>{
-          console.log(e)
-      })
-    }
-
-    //reference
-
-    
-   </script>
-
-
-
-  </body>
 </html>
