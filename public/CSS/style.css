@@ -32,6 +32,12 @@
     height: 50;
 }
 
+.LogoutScreen {
+    float: top right;
+    padding: 25px 16px;
+    
+}
+
 
 #pic {
     float: inline-end;
