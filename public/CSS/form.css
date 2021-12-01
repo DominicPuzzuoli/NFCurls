@@ -1325,45 +1325,37 @@ float: inline-end;
   max-width:400px;
 	margin:50px 20px;
 	background:#fff;
-	border-radius:2px;
 	padding:2px;
 
 }
-.div-elliptical input {
-  border: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: lightgreen;
-  padding: 12px;
-  border-radius: 3px;
-  width: 250px;
-  font-size: 14px;
-}
+
 .div-elliptical legend {
   text-align:center;
   font-weight:100;
   font-size:2em;
   margin-bottom:10px;
 }
+
 .div-elliptical label {
   display: block;
   font-size: large;
 }
 #elliptical-submit {
-  background-color: #4CAF50; /* Green */
+  background-color: #04AA6D;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin: 4px 2px;
+
 }
 #elliptical-Date {
   background-color: #4CAF50; /* Green */
   border: none;
+  border-radius: 12px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -1383,9 +1375,6 @@ float: inline-end;
     margin-right: auto;
     height: auto;
 }
-#elliptical-Date {
-    float: inline-end;
-    }
 
 #elliptical-Total {
     float: inline-end;
