@@ -142,12 +142,12 @@
     function addData(user){
 
       let workout = document.getElementById('workout').value
-      let userid = user.id
+      let userident = user.uid
 
       let obj = {
         workouttype : workout,
-        userident : userid
-
+        userid: userident
+       
       }
       firebase.firestore().collection('workoutdata').add(obj).then(doc=>{
         console.log(doc.id)
