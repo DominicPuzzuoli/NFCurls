@@ -1218,20 +1218,56 @@ float: inline-end;
   }
 
   #burpees {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-#burpees-Date {
-    float: inline-end;
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-burpees {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
     }
 
-#burpees-Total {
-    float: inline-end;
+    .div-burpees legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-burpees label {
+      display: block;
+      font-size: large;
+    }
+    #burpees-submit {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #burpees-Date {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
     }
 
     #jumpRope {
@@ -1243,13 +1279,49 @@ float: inline-end;
         margin-right: auto;
         height: auto;
       }
-      #jumpRope-Date {
-        float: inline-end;
-        }
+      .div-jumpRope {
 
-      #jumpRope-Total {
-        float: inline-end;
-        }
+        margin: 0 auto;
+        max-width:400px;
+        margin:50px 20px;
+        background:#fff;
+        padding:2px;
+
+      }
+
+      .div-jumpRope legend {
+        text-align:center;
+        font-weight:100;
+        font-size:2em;
+        margin-bottom:10px;
+      }
+
+      .div-jumpRope label {
+        display: block;
+        font-size: large;
+      }
+      #jumpRope-submit {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #jumpRope-Date {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
 
         #planks {
             background-color: rgb(247, 242, 242);
@@ -1260,64 +1332,208 @@ float: inline-end;
             margin-right: auto;
             height: auto;
           }
-          #planks-Date {
-            float: inline-end;
-            }
+          .div-planks {
 
-          #planks-Total {
-            float: inline-end;
-            }
+            margin: 0 auto;
+            max-width:400px;
+            margin:50px 20px;
+            background:#fff;
+            padding:2px;
 
-#pushUps {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-#pushUps-Date {
-    float: inline-end;
-    }
-
-#pushUps-Total {
-    float: inline-end;
-    }
-
-    #pullups {
-        background-color: rgb(247, 242, 242);
-        box-sizing: border-box;
-        text-align: left;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-      }
-      #pullups-Date {
-        float: inline-end;
-        }
-
-      #pullups-Total {
-        float: inline-end;
-        }
-
-        #situps {
-            background-color: rgb(247, 242, 242);
-            box-sizing: border-box;
-            text-align: left;
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            height: auto;
           }
-          #situps-Date {
-            float: inline-end;
-            }
 
-          #situps-Total {
-            float: inline-end;
-            }
+          .div-planks legend {
+            text-align:center;
+            font-weight:100;
+            font-size:2em;
+            margin-bottom:10px;
+          }
+
+          .div-planks label {
+            display: block;
+            font-size: large;
+          }
+          #planks-submit {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+          #planks-Date {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+
+            #pushUps {
+                background-color: rgb(247, 242, 242);
+                box-sizing: border-box;
+                text-align: left;
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+              }
+              .div-pushUps {
+
+                margin: 0 auto;
+                max-width:400px;
+                margin:50px 20px;
+                background:#fff;
+                padding:2px;
+
+              }
+
+              .div-pushUps legend {
+                text-align:center;
+                font-weight:100;
+                font-size:2em;
+                margin-bottom:10px;
+              }
+
+              .div-pushUps label {
+                display: block;
+                font-size: large;
+              }
+              #pushUps-submit {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+              }
+              #pushUps-Date {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+              }
+
+              #pullups {
+                  background-color: rgb(247, 242, 242);
+                  box-sizing: border-box;
+                  text-align: left;
+                  display: inline-block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  height: auto;
+                }
+                .div-pullups {
+
+                  margin: 0 auto;
+                  max-width:400px;
+                  margin:50px 20px;
+                  background:#fff;
+                  padding:2px;
+
+                }
+
+                .div-pullups legend {
+                  text-align:center;
+                  font-weight:100;
+                  font-size:2em;
+                  margin-bottom:10px;
+                }
+
+                .div-pullups label {
+                  display: block;
+                  font-size: large;
+                }
+                #pullups-submit {
+                  background-color: #4CAF50; /* Green */
+                  border: none;
+                  border-radius: 12px;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+                #pullups-Date {
+                  background-color: #4CAF50; /* Green */
+                  border: none;
+                  border-radius: 12px;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+
+                #situps {
+                    background-color: rgb(247, 242, 242);
+                    box-sizing: border-box;
+                    text-align: left;
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: auto;
+                  }
+                  .div-situps {
+
+                    margin: 0 auto;
+                    max-width:400px;
+                    margin:50px 20px;
+                    background:#fff;
+                    padding:2px;
+
+                  }
+
+                  .div-situps legend {
+                    text-align:center;
+                    font-weight:100;
+                    font-size:2em;
+                    margin-bottom:10px;
+                  }
+
+                  .div-situps label {
+                    display: block;
+                    font-size: large;
+                  }
+                  #situps-submit {
+                    background-color: #4CAF50; /* Green */
+                    border: none;
+                    border-radius: 12px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                  }
+                  #situps-Date {
+                    background-color: #4CAF50; /* Green */
+                    border: none;
+                    border-radius: 12px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                  }
 
 .div-elliptical {
 
@@ -1363,9 +1579,7 @@ float: inline-end;
   display: inline-block;
   font-size: 16px;
 }
-.div-elliptical {
 
-}
  #elliptical {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
@@ -1389,15 +1603,102 @@ float: inline-end;
         margin-right: auto;
         height: auto;
       }
+      .div-rowingmachine {
+
+        margin: 0 auto;
+        max-width:400px;
+      	margin:50px 20px;
+      	background:#fff;
+      	padding:2px;
+
+      }
+
+      .div-rowingmachine legend {
+        text-align:center;
+        font-weight:100;
+        font-size:2em;
+        margin-bottom:10px;
+      }
+
+      .div-rowingmachine label {
+        display: block;
+        font-size: large;
+      }
+      #rowingmachine-submit {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
       #rowingmachine-Date {
-        float: inline-end;
+        background-color: #4CAF50; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #spinbike {
+          background-color: rgb(247, 242, 242);
+          box-sizing: border-box;
+          text-align: left;
+          display: inline-block;
+          margin-left: auto;
+          margin-right: auto;
+          height: auto;
+        }
+        .div-spinbike {
+
+          margin: 0 auto;
+          max-width:400px;
+          margin:50px 20px;
+          background:#fff;
+          padding:2px;
+
         }
 
-      #rowingmachine-Total {
-        float: inline-end;
+        .div-spinbike legend {
+          text-align:center;
+          font-weight:100;
+          font-size:2em;
+          margin-bottom:10px;
         }
 
-        #spinbike {
+        .div-spinbike label {
+          display: block;
+          font-size: large;
+        }
+        #spinbike-submit {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          border-radius: 12px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+        #spinbike-Date {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          border-radius: 12px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+        #stairmaster {
             background-color: rgb(247, 242, 242);
             box-sizing: border-box;
             text-align: left;
@@ -1406,14 +1707,102 @@ float: inline-end;
             margin-right: auto;
             height: auto;
           }
-          #spinbike-Date {
-            float: inline-end;
+          .div-stairmaster {
+
+            margin: 0 auto;
+            max-width:400px;
+            margin:50px 20px;
+            background:#fff;
+            padding:2px;
+
+          }
+
+          .div-stairmaster legend {
+            text-align:center;
+            font-weight:100;
+            font-size:2em;
+            margin-bottom:10px;
+          }
+
+          .div-stairmaster label {
+            display: block;
+            font-size: large;
+          }
+          #stairmaster-submit {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+          #stairmaster-Date {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+          #treadmill {
+              background-color: rgb(247, 242, 242);
+              box-sizing: border-box;
+              text-align: left;
+              display: inline-block;
+              margin-left: auto;
+              margin-right: auto;
+              height: auto;
+            }
+            .div-treadmill {
+
+              margin: 0 auto;
+              max-width:400px;
+              margin:50px 20px;
+              background:#fff;
+              padding:2px;
+
             }
 
-          #spinbike-Total {
-            float: inline-end;
+            .div-treadmill legend {
+              text-align:center;
+              font-weight:100;
+              font-size:2em;
+              margin-bottom:10px;
             }
-            #stairmaster {
+
+            .div-treadmill label {
+              display: block;
+              font-size: large;
+            }
+            #treadmill-submit {
+              background-color: #4CAF50; /* Green */
+              border: none;
+              border-radius: 12px;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+            }
+            #treadmill-Date {
+              background-color: #4CAF50; /* Green */
+              border: none;
+              border-radius: 12px;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+            }
+            #uprightbike {
                 background-color: rgb(247, 242, 242);
                 box-sizing: border-box;
                 text-align: left;
@@ -1422,42 +1811,46 @@ float: inline-end;
                 margin-right: auto;
                 height: auto;
               }
-              #stairmaster-Date {
-                float: inline-end;
-                }
+              .div-uprightbike {
 
-              #stairmaster-Total {
-                float: inline-end;
-                }
-                #treadmill {
-                    background-color: rgb(247, 242, 242);
-                    box-sizing: border-box;
-                    text-align: left;
-                    display: inline-block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    height: auto;
-                  }
-                  #treadmill-Date {
-                    float: inline-end;
-                    }
+                margin: 0 auto;
+                max-width:400px;
+                margin:50px 20px;
+                background:#fff;
+                padding:2px;
 
-                  #treadmill-Total {
-                    float: inline-end;
-                    }
-                    #uprightbike {
-                        background-color: rgb(247, 242, 242);
-                        box-sizing: border-box;
-                        text-align: left;
-                        display: inline-block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        height: auto;
-                      }
-                      #uprightbike-Date {
-                        float: inline-end;
-                        }
+              }
 
-                      #uprightbike-Total {
-                        float: inline-end;
-                        }
+              .div-uprightbike legend {
+                text-align:center;
+                font-weight:100;
+                font-size:2em;
+                margin-bottom:10px;
+              }
+
+              .div-uprightbike label {
+                display: block;
+                font-size: large;
+              }
+              #uprightbike-submit {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+              }
+              #uprightbike-Date {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+              }
