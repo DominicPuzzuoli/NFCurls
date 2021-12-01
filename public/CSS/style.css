@@ -33,11 +33,20 @@
 }
 
 .LogoutScreen {
-    float: top right;
+    float: right;
     padding: 25px 16px;
-    
 }
 
+.button {
+  float: right ;
+}
+
+.userDetails {
+  position: relative;
+  right: 110px; bottom:70px;
+  color: white
+  
+}
 
 #pic {
     float: inline-end;
@@ -127,3 +136,5 @@
     text-align: center;
     color: white;
   }
+
+

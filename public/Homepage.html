@@ -42,8 +42,8 @@
         </div>
     
         <div id= "LogoutScreen" class="LogoutScreen">
-          <div id="userDetails"> </div>
-          <button id="logout"><img src="img/signout.png" height="40" width="90" alt =""></button>
+          <button id="logout"><img src="img/signout.png" height="40" width="100" alt =""></button>
+          <div id="userDetails" class="userDetails"> </div>
         </div>
 
           </div></li>
@@ -63,7 +63,6 @@
         <a href="/index.html">About</a>
         <a href="/Pages/Workouts.html">Workouts</a>
         <a href="/Pages/about.html">Contact</a>
-
       </div>
 
    <script>
@@ -99,7 +98,7 @@
   }
   function showUserDetails(user){
         document.getElementById('userDetails').innerHTML = `
-          <img src="${user.photoURL}" style="width:30%"> 
+          <img src="${user.photoURL}" style="width:40%"> 
           <p> ${user.displayName}</p>
         `
       }
