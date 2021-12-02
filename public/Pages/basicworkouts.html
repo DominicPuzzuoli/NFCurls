@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+  <link rel="stylesheet" href="/CSS/pageLists.css" type="text/css">
   <meta charset="UTF-8">
-  
+
   <head>
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -21,7 +22,7 @@
       <script type="module" src="/scripts/writeData.js"></script>
       <script src="/scripts/sideBar.js"></script>
 
-      
+
       <style>
         .data{
           display:none ;
@@ -33,17 +34,17 @@
         <div id="main">
         <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
         </div>
-        
+
           <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
           <li><div class="data">
             <img id="pic" class="img-circle" width="100" height="100"/>
             <!---<a id ="fullName" href="" ></a>--->
             <!--This above could be used to display the user name is we want-->
             <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
-            
+
           </div></li>
-          
-          
+
+
         </ul>
       </nav>
 
@@ -55,7 +56,7 @@
         <a href="#">Clients</a>
         <a href="#">Contact</a>
       </div>
-
+    <div class="container" id="basicDiv">
       <h1 style="text-align: center;">Basic Workouts</h1>
 
       <h2> <a href= "burpees.html">Burpees</a></h2>
@@ -67,7 +68,7 @@
       <br>
 
       <h2><a href= "lunges.html">Lunges</h2>
-      
+
       <br>
 
       <h2><a href= "planks.html">Planks</a>
@@ -75,7 +76,7 @@
       <br>
 
       <h2><a href= "pullups.html">Pullups</a>
-      
+
       <br>
 
       <h2> <a href= "pushups.html">Pushups</a></h2>
@@ -86,13 +87,9 @@
 
       <br>
 
-      <h2><a href= "squats.html">Squats</h2>  
+      <h2><a href= "squats.html">Squats</h2>
 
       <br>
-
-
-      
-   
-      
+    </div>
   </body>
 </html>

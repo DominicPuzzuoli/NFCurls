@@ -6,7 +6,68 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
-}
+  }
+  .div-abCrunchMachine {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-abCrunchMachine legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-abCrunchMachine label {
+    display: block;
+    font-size: large;
+  }
+  .div-abCrunchMachine input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-abCrunchMachine select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #abCrunchMachine-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #abCrunchMachine-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 #abCrunchMachine-Sets {
     float: inline-end;
 }
@@ -15,38 +76,38 @@
 }
 #abCrunchMachine-Weight2 {
     float: inline-end;
-    
+
 }
 #abCrunchMachine-Weight3 {
     float: inline-end;
-    
+
 }
 #abCrunchMachine-Weight4 {
     float: inline-end;
-    
+
 }
 #abCrunchMachine-Weight5 {
     float: inline-end;
-    
+
 }
 #abCrunchMachine-Reps1 {
     float: inline-end;
 }
 #abCrunchMachine-Reps2 {
     float: inline-end;
-    
+
 }
 #abCrunchMachine-Reps3 {
     float: inline-end;
-    
+
 }
 #abCrunchMachine-Reps4 {
     float: inline-end;
-    
+
 }
 #abCrunchMachine-Reps5 {
     float: inline-end;
-    
+
 }
 #abCrunchMachine-Date {
     float: inline-end;
@@ -64,7 +125,68 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
-}
+  }
+  .div-benchPress {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-benchPress legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-benchPress label {
+    display: block;
+    font-size: large;
+  }
+  .div-benchPress input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-benchPress select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #benchPress-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #benchPress-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 #benchPress-Sets {
     float: inline-end;
 }
@@ -73,38 +195,38 @@
 }
 #benchPress-Weight2 {
     float: inline-end;
-    
+
 }
 #benchPress-Weight3 {
     float: inline-end;
-    
+
 }
 #benchPress-Weight4 {
     float: inline-end;
-    
+
 }
 #benchPress-Weight5 {
     float: inline-end;
-    
+
 }
 #benchPress-Reps1 {
     float: inline-end;
 }
 #benchPress-Reps2 {
     float: inline-end;
-    
+
 }
 #benchPress-Reps3 {
     float: inline-end;
-    
+
 }
 #benchPress-Reps4 {
     float: inline-end;
-    
+
 }
 #benchPress-Reps5 {
     float: inline-end;
-    
+
 }
 #benchPress-Date {
     float: inline-end;
@@ -114,7 +236,8 @@
     float: inline-end;
 }
 
-#legPress {
+
+    #cableMachine {
         background-color: rgb(247, 242, 242);
         box-sizing: border-box;
         text-align: left;
@@ -122,17 +245,68 @@
         margin-left: auto;
         margin-right: auto;
         height: auto;
-    }
+      }
+      .div-cableMachine {
 
-#cableMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+        margin: 0 auto;
+        max-width:400px;
+        margin:50px 20px;
+        background:#fff;
+        padding:2px;
+
+      }
+
+      .div-cableMachine legend {
+        text-align:center;
+        font-weight:100;
+        font-size:2em;
+        margin-bottom:10px;
+      }
+
+      .div-cableMachine label {
+        display: block;
+        font-size: large;
+      }
+      .div-cableMachine input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .div-cableMachine select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      #cableMachine-submit {
+        background-color: #4B646E; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #cableMachine-Date {
+        background-color: #4B646E; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
   #cableMachine-Sets {
   float: inline-end;
   }
@@ -141,56 +315,117 @@
   }
   #cableMachine-Weight2 {
   float: inline-end;
-  
+
   }
   #cableMachine-Weight3 {
   float: inline-end;
-  
+
   }
   #cableMachine-Weight4 {
   float: inline-end;
-  
+
   }
   #cableMachine-Weight5 {
   float: inline-end;
-  
+
   }
   #cableMachine-Reps1 {
   float: inline-end;
   }
   #cableMachine-Reps2 {
   float: inline-end;
-  
+
   }
   #cableMachine-Reps3 {
   float: inline-end;
-  
+
   }
   #cableMachine-Reps4 {
   float: inline-end;
-  
+
   }
   #cableMachine-Reps5 {
   float: inline-end;
-  
+
   }
   #cableMachine-Date {
   float: inline-end;
   }
-  
+
   #cableMachine-Sets {
   float: inline-end;
   }
 
-  #chestFlyeMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+  #chestFlyMachine {
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-chestFlyMachine {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-chestFlyMachine legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-chestFlyMachine label {
+      display: block;
+      font-size: large;
+    }
+    .div-chestFlyMachine input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-chestFlyMachine select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #chestFlyMachine-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #chestFlyMachine-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #chestFlyeMachine-Sets {
   float: inline-end;
   }
@@ -199,56 +434,117 @@
   }
   #chestFlyeMachine-Weight2 {
   float: inline-end;
-  
+
   }
   #chestFlyeMachine-Weight3 {
   float: inline-end;
-  
+
   }
   #chestFlyeMachine-Weight4 {
   float: inline-end;
-  
+
   }
   #chestFlyeMachine-Weight5 {
   float: inline-end;
-  
+
   }
   #chestFlyeMachine-Reps1 {
   float: inline-end;
   }
   #chestFlyeMachine-Reps2 {
   float: inline-end;
-  
+
   }
   #chestFlyeMachine-Reps3 {
   float: inline-end;
-  
+
   }
   #chestFlyeMachine-Reps4 {
   float: inline-end;
-  
+
   }
   #chestFlyeMachine-Reps5 {
   float: inline-end;
-  
+
   }
   #chestFlyeMachine-Date {
   float: inline-end;
   }
-  
+
   #chestFlyeMachine-Sets {
   float: inline-end;
   }
 
   #chestPress {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-chestPress {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-chestPress legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-chestPress label {
+      display: block;
+      font-size: large;
+    }
+    .div-chestPress input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-chestPress select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #chestPress-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #chestPress-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #chestPress-Sets {
   float: inline-end;
   }
@@ -257,56 +553,117 @@
   }
   #chestPress-Weight2 {
   float: inline-end;
-  
+
   }
   #chestPress-Weight3 {
   float: inline-end;
-  
+
   }
   #chestPress-Weight4 {
   float: inline-end;
-  
+
   }
   #chestPress-Weight5 {
   float: inline-end;
-  
+
   }
   #chestPress-Reps1 {
   float: inline-end;
   }
   #chestPress-Reps2 {
   float: inline-end;
-  
+
   }
   #chestPress-Reps3 {
   float: inline-end;
-  
+
   }
   #chestPress-Reps4 {
   float: inline-end;
-  
+
   }
   #chestPress-Reps5 {
   float: inline-end;
-  
+
   }
   #chestPress-Date {
   float: inline-end;
   }
-  
+
   #chestPress-Sets {
   float: inline-end;
   }
 
   #declinePressMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-declinePressMachine {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-declinePressMachine legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-declinePressMachine label {
+      display: block;
+      font-size: large;
+    }
+    .div-declinePressMachine input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-declinePressMachine select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #declinePressMachine-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #declinePressMachine-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #declinePressMachine-Sets {
   float: inline-end;
   }
@@ -315,56 +672,117 @@
   }
   #declinePressMachine-Weight2 {
   float: inline-end;
-  
+
   }
   #declinePressMachine-Weight3 {
   float: inline-end;
-  
+
   }
   #declinePressMachine-Weight4 {
   float: inline-end;
-  
+
   }
   #declinePressMachine-Weight5 {
   float: inline-end;
-  
+
   }
   #declinePressMachine-Reps1 {
   float: inline-end;
   }
   #declinePressMachine-Reps2 {
   float: inline-end;
-  
+
   }
   #declinePressMachine-Reps3 {
   float: inline-end;
-  
+
   }
   #declinePressMachine-Reps4 {
   float: inline-end;
-  
+
   }
   #declinePressMachine-Reps5 {
   float: inline-end;
-  
+
   }
   #declinePressMachine-Date {
   float: inline-end;
   }
-  
+
   #declinePressMachine-Sets {
   float: inline-end;
   }
 
   #hacksquat {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-hacksquat {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-hacksquat legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-hacksquat label {
+      display: block;
+      font-size: large;
+    }
+    .div-hacksquat input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-hacksquat select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #hacksquat-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #hacksquat-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
 #hacksquat-Sets {
 float: inline-end;
 }
@@ -414,7 +832,7 @@ float: inline-end;
 float: inline-end;
 }
 
-  #hyperextensionBench {
+#hyperextensionBench {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
     text-align: left;
@@ -422,6 +840,67 @@ float: inline-end;
     margin-left: auto;
     margin-right: auto;
     height: auto;
+  }
+  .div-hyperextensionBench {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-hyperextensionBench legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-hyperextensionBench label {
+    display: block;
+    font-size: large;
+  }
+  .div-hyperextensionBench input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-hyperextensionBench select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #hyperextensionBench-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #hyperextensionBench-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
   #hyperextensionBench-Sets {
   float: inline-end;
@@ -431,56 +910,117 @@ float: inline-end;
   }
   #hyperextensionBench-Weight2 {
   float: inline-end;
-  
+
   }
   #hyperextensionBench-Weight3 {
   float: inline-end;
-  
+
   }
   #hyperextensionBench-Weight4 {
   float: inline-end;
-  
+
   }
   #hyperextensionBench-Weight5 {
   float: inline-end;
-  
+
   }
   #hyperextensionBench-Reps1 {
   float: inline-end;
   }
   #hyperextensionBench-Reps2 {
   float: inline-end;
-  
+
   }
   #hyperextensionBench-Reps3 {
   float: inline-end;
-  
+
   }
   #hyperextensionBench-Reps4 {
   float: inline-end;
-  
+
   }
   #hyperextensionBench-Reps5 {
   float: inline-end;
-  
+
   }
   #hyperextensionBench-Date {
   float: inline-end;
   }
-  
+
   #hyperextensionBench-Sets {
   float: inline-end;
   }
-   
+
   #inclinePressMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-inclinePressMachine {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-inclinePressMachine legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-inclinePressMachine label {
+      display: block;
+      font-size: large;
+    }
+    .div-inclinePressMachine input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-inclinePressMachine select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #inclinePressMachine-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #inclinePressMachine-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #inclinePressMachine-Sets {
   float: inline-end;
   }
@@ -489,56 +1029,117 @@ float: inline-end;
   }
   #inclinePressMachine-Weight2 {
   float: inline-end;
-  
+
   }
   #inclinePressMachine-Weight3 {
   float: inline-end;
-  
+
   }
   #inclinePressMachine-Weight4 {
   float: inline-end;
-  
+
   }
   #inclinePressMachine-Weight5 {
   float: inline-end;
-  
+
   }
   #inclinePressMachine-Reps1 {
   float: inline-end;
   }
   #inclinePressMachine-Reps2 {
   float: inline-end;
-  
+
   }
   #inclinePressMachine-Reps3 {
   float: inline-end;
-  
+
   }
   #inclinePressMachine-Reps4 {
   float: inline-end;
-  
+
   }
   #inclinePressMachine-Reps5 {
   float: inline-end;
-  
+
   }
   #inclinePressMachine-Date {
   float: inline-end;
   }
-  
+
   #inclinePressMachine-Sets {
   float: inline-end;
   }
 
   #latPulldown {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-latPulldown {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-latPulldown legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-latPulldown label {
+      display: block;
+      font-size: large;
+    }
+    .div-latPulldown input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-latPulldown select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #latPulldown-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #latPulldown-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #latPulldown-Sets {
   float: inline-end;
   }
@@ -547,56 +1148,117 @@ float: inline-end;
   }
   #latPulldown-Weight2 {
   float: inline-end;
-  
+
   }
   #latPulldown-Weight3 {
   float: inline-end;
-  
+
   }
   #latPulldown-Weight4 {
   float: inline-end;
-  
+
   }
   #latPulldown-Weight5 {
   float: inline-end;
-  
+
   }
   #latPulldown-Reps1 {
   float: inline-end;
   }
   #latPulldown-Reps2 {
   float: inline-end;
-  
+
   }
   #latPulldown-Reps3 {
   float: inline-end;
-  
+
   }
   #latPulldown-Reps4 {
   float: inline-end;
-  
+
   }
   #latPulldown-Reps5 {
   float: inline-end;
-  
+
   }
   #latPulldown-Date {
   float: inline-end;
   }
-  
+
   #latPulldown-Sets {
   float: inline-end;
   }
 
   #legAbduction {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legAbduction {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legAbduction legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legAbduction label {
+      display: block;
+      font-size: large;
+    }
+    .div-legAbduction input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legAbduction select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legAbduction-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legAbduction-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legAbduction-Sets {
   float: inline-end;
   }
@@ -605,56 +1267,117 @@ float: inline-end;
   }
   #legAbduction-Weight2 {
   float: inline-end;
-  
+
   }
   #legAbduction-Weight3 {
   float: inline-end;
-  
+
   }
   #legAbduction-Weight4 {
   float: inline-end;
-  
+
   }
   #legAbduction-Weight5 {
   float: inline-end;
-  
+
   }
   #legAbduction-Reps1 {
   float: inline-end;
   }
   #legAbduction-Reps2 {
   float: inline-end;
-  
+
   }
   #legAbduction-Reps3 {
   float: inline-end;
-  
+
   }
   #legAbduction-Reps4 {
   float: inline-end;
-  
+
   }
   #legAbduction-Reps5 {
   float: inline-end;
-  
+
   }
   #legAbduction-Date {
   float: inline-end;
   }
-  
+
   #legAbduction-Sets {
   float: inline-end;
   }
 
   #legAdduction {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legAdduction {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legAdduction legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legAdduction label {
+      display: block;
+      font-size: large;
+    }
+    .div-legAdduction input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legAdduction select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legAdduction-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legAdduction-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legAdduction-Sets {
   float: inline-end;
   }
@@ -663,56 +1386,117 @@ float: inline-end;
   }
   #legAdduction-Weight2 {
   float: inline-end;
-  
+
   }
   #legAdduction-Weight3 {
   float: inline-end;
-  
+
   }
   #legAdduction-Weight4 {
   float: inline-end;
-  
+
   }
   #legAdduction-Weight5 {
   float: inline-end;
-  
+
   }
   #legAdduction-Reps1 {
   float: inline-end;
   }
   #legAdduction-Reps2 {
   float: inline-end;
-  
+
   }
   #legAdduction-Reps3 {
   float: inline-end;
-  
+
   }
   #legAdduction-Reps4 {
   float: inline-end;
-  
+
   }
   #legAdduction-Reps5 {
   float: inline-end;
-  
+
   }
   #legAdduction-Date {
   float: inline-end;
   }
-  
+
   #legAdduction-Sets {
   float: inline-end;
   }
 
   #legCurl {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legCurl {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legCurl legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legCurl label {
+      display: block;
+      font-size: large;
+    }
+    .div-legCurl input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legCurl select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legCurl-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legCurl-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legCurl-Sets {
   float: inline-end;
   }
@@ -721,56 +1505,117 @@ float: inline-end;
   }
   #legCurl-Weight2 {
   float: inline-end;
-  
+
   }
   #legCurl-Weight3 {
   float: inline-end;
-  
+
   }
   #legCurl-Weight4 {
   float: inline-end;
-  
+
   }
   #legCurl-Weight5 {
   float: inline-end;
-  
+
   }
   #legCurl-Reps1 {
   float: inline-end;
   }
   #legCurl-Reps2 {
   float: inline-end;
-  
+
   }
   #legCurl-Reps3 {
   float: inline-end;
-  
+
   }
   #legCurl-Reps4 {
   float: inline-end;
-  
+
   }
   #legCurl-Reps5 {
   float: inline-end;
-  
+
   }
   #legCurl-Date {
   float: inline-end;
   }
-  
+
   #legCurl-Sets {
   float: inline-end;
   }
 
   #legExtension {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legExtension {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legExtension legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legExtension label {
+      display: block;
+      font-size: large;
+    }
+    .div-legExtension input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legExtension select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legExtension-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legExtension-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legExtension-Sets {
   float: inline-end;
   }
@@ -779,47 +1624,117 @@ float: inline-end;
   }
   #legExtension-Weight2 {
   float: inline-end;
-  
+
   }
   #legExtension-Weight3 {
   float: inline-end;
-  
+
   }
   #legExtension-Weight4 {
   float: inline-end;
-  
+
   }
   #legExtension-Weight5 {
   float: inline-end;
-  
+
   }
   #legExtension-Reps1 {
   float: inline-end;
   }
   #legExtension-Reps2 {
   float: inline-end;
-  
+
   }
   #legExtension-Reps3 {
   float: inline-end;
-  
+
   }
   #legExtension-Reps4 {
   float: inline-end;
-  
+
   }
   #legExtension-Reps5 {
   float: inline-end;
-  
+
   }
   #legExtension-Date {
   float: inline-end;
   }
-  
+
   #legExtension-Sets {
   float: inline-end;
   }
 
+  #legPress {
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legPress {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legPress legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legPress label {
+      display: block;
+      font-size: large;
+    }
+    .div-legPress input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legPress select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legPress-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legPress-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legPress-Sets {
     float: inline-end;
 }
@@ -828,38 +1743,38 @@ float: inline-end;
 }
 #legPress-Weight2 {
     float: inline-end;
-    
+
 }
 #legPress-Weight3 {
     float: inline-end;
-    
+
 }
 #legPress-Weight4 {
     float: inline-end;
-    
+
 }
 #legPress-Weight5 {
     float: inline-end;
-    
+
 }
 #legPress-Reps1 {
     float: inline-end;
 }
 #legPress-Reps2 {
     float: inline-end;
-    
+
 }
 #legPress-Reps3 {
     float: inline-end;
-    
+
 }
 #legPress-Reps4 {
     float: inline-end;
-    
+
 }
 #legPress-Reps5 {
     float: inline-end;
-    
+
 }
 #legPress-Date {
     float: inline-end;
@@ -869,7 +1784,7 @@ float: inline-end;
     float: inline-end;
 }
 
-  #lunges {
+#lunges {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
     text-align: left;
@@ -877,6 +1792,67 @@ float: inline-end;
     margin-left: auto;
     margin-right: auto;
     height: auto;
+  }
+  .div-lunges {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-lunges legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-lunges label {
+    display: block;
+    font-size: large;
+  }
+  .div-lunges input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-lunges select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #lunges-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #lunges-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
   #lunges-Sets {
   float: inline-end;
@@ -886,56 +1862,117 @@ float: inline-end;
   }
   #lunges-Weight2 {
   float: inline-end;
-  
+
   }
   #lunges-Weight3 {
   float: inline-end;
-  
+
   }
   #lunges-Weight4 {
   float: inline-end;
-  
+
   }
   #lunges-Weight5 {
   float: inline-end;
-  
+
   }
   #lunges-Reps1 {
   float: inline-end;
   }
   #lunges-Reps2 {
   float: inline-end;
-  
+
   }
   #lunges-Reps3 {
   float: inline-end;
-  
+
   }
   #lunges-Reps4 {
   float: inline-end;
-  
+
   }
   #lunges-Reps5 {
   float: inline-end;
-  
+
   }
   #lunges-Date {
   float: inline-end;
   }
-  
+
   #lunges-Sets {
   float: inline-end;
   }
 
   #seatedArmCurl {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-seatedArmCurl {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-seatedArmCurl legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-seatedArmCurl label {
+      display: block;
+      font-size: large;
+    }
+    .div-seatedArmCurl input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-seatedArmCurl select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #seatedArmCurl-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #seatedArmCurl-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #seatedArmCurl-Sets {
   float: inline-end;
   }
@@ -944,56 +1981,117 @@ float: inline-end;
   }
   #seatedArmCurl-Weight2 {
   float: inline-end;
-  
+
   }
   #seatedArmCurl-Weight3 {
   float: inline-end;
-  
+
   }
   #seatedArmCurl-Weight4 {
   float: inline-end;
-  
+
   }
   #seatedArmCurl-Weight5 {
   float: inline-end;
-  
+
   }
   #seatedArmCurl-Reps1 {
   float: inline-end;
   }
   #seatedArmCurl-Reps2 {
   float: inline-end;
-  
+
   }
   #seatedArmCurl-Reps3 {
   float: inline-end;
-  
+
   }
   #seatedArmCurl-Reps4 {
   float: inline-end;
-  
+
   }
   #seatedArmCurl-Reps5 {
   float: inline-end;
-  
+
   }
   #seatedArmCurl-Date {
   float: inline-end;
   }
-  
+
   #seatedArmCurl-Sets {
   float: inline-end;
   }
 
   #seatedArmExtension {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-seatedArmExtension {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-seatedArmExtension legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-seatedArmExtension label {
+      display: block;
+      font-size: large;
+    }
+    .div-seatedArmExtension input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-seatedArmExtension select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #seatedArmExtension-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #seatedArmExtension-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #seatedArmExtension-Sets {
   float: inline-end;
   }
@@ -1002,56 +2100,117 @@ float: inline-end;
   }
   #seatedArmExtension-Weight2 {
   float: inline-end;
-  
+
   }
   #seatedArmExtension-Weight3 {
   float: inline-end;
-  
+
   }
   #seatedArmExtension-Weight4 {
   float: inline-end;
-  
+
   }
   #seatedArmExtension-Weight5 {
   float: inline-end;
-  
+
   }
   #seatedArmExtension-Reps1 {
   float: inline-end;
   }
   #seatedArmExtension-Reps2 {
   float: inline-end;
-  
+
   }
   #seatedArmExtension-Reps3 {
   float: inline-end;
-  
+
   }
   #seatedArmExtension-Reps4 {
   float: inline-end;
-  
+
   }
   #seatedArmExtension-Reps5 {
   float: inline-end;
-  
+
   }
   #seatedArmExtension-Date {
   float: inline-end;
   }
-  
+
   #seatedArmExtension-Sets {
   float: inline-end;
   }
 
-  #seatedCalfMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+  #seatedArmExtension {
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-seatedArmExtension {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-seatedArmExtension legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-seatedArmExtension label {
+      display: block;
+      font-size: large;
+    }
+    .div-seatedArmExtension input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-seatedArmExtension select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #seatedArmExtension-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #seatedArmExtension-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #seatedCalfMachine-Sets {
   float: inline-end;
   }
@@ -1060,56 +2219,117 @@ float: inline-end;
   }
   #seatedCalfMachine-Weight2 {
   float: inline-end;
-  
+
   }
   #seatedCalfMachine-Weight3 {
   float: inline-end;
-  
+
   }
   #seatedCalfMachine-Weight4 {
   float: inline-end;
-  
+
   }
   #seatedCalfMachine-Weight5 {
   float: inline-end;
-  
+
   }
   #seatedCalfMachine-Reps1 {
   float: inline-end;
   }
   #seatedCalfMachine-Reps2 {
   float: inline-end;
-  
+
   }
   #seatedCalfMachine-Reps3 {
   float: inline-end;
-  
+
   }
   #seatedCalfMachine-Reps4 {
   float: inline-end;
-  
+
   }
   #seatedCalfMachine-Reps5 {
   float: inline-end;
-  
+
   }
   #seatedCalfMachine-Date {
   float: inline-end;
   }
-  
+
   #seatedCalfMachine-Sets {
   float: inline-end;
   }
 
   #squats {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-squats {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-squats legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-squats label {
+      display: block;
+      font-size: large;
+    }
+    .div-squats input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-squats select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #squats-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #squats-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #squats-Sets {
   float: inline-end;
   }
@@ -1118,56 +2338,117 @@ float: inline-end;
   }
   #squats-Weight2 {
   float: inline-end;
-  
+
   }
   #squats-Weight3 {
   float: inline-end;
-  
+
   }
   #squats-Weight4 {
   float: inline-end;
-  
+
   }
   #squats-Weight5 {
   float: inline-end;
-  
+
   }
   #squats-Reps1 {
   float: inline-end;
   }
   #squats-Reps2 {
   float: inline-end;
-  
+
   }
   #squats-Reps3 {
   float: inline-end;
-  
+
   }
   #squats-Reps4 {
   float: inline-end;
-  
+
   }
   #squats-Reps5 {
   float: inline-end;
-  
+
   }
   #squats-Date {
   float: inline-end;
   }
-  
+
   #squats-Sets {
   float: inline-end;
   }
 
   #standingCalfMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-standingCalfMachine {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-standingCalfMachine legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-standingCalfMachine label {
+      display: block;
+      font-size: large;
+    }
+    .div-standingCalfMachine input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-standingCalfMachine select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #standingCalfMachine-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #standingCalfMachine-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #standingCalfMachine-Sets {
   float: inline-end;
   }
@@ -1176,62 +2457,98 @@ float: inline-end;
   }
   #standingCalfMachine-Weight2 {
   float: inline-end;
-  
+
   }
   #standingCalfMachine-Weight3 {
   float: inline-end;
-  
+
   }
   #standingCalfMachine-Weight4 {
   float: inline-end;
-  
+
   }
   #standingCalfMachine-Weight5 {
   float: inline-end;
-  
+
   }
   #standingCalfMachine-Reps1 {
   float: inline-end;
   }
   #standingCalfMachine-Reps2 {
   float: inline-end;
-  
+
   }
   #standingCalfMachine-Reps3 {
   float: inline-end;
-  
+
   }
   #standingCalfMachine-Reps4 {
   float: inline-end;
-  
+
   }
   #standingCalfMachine-Reps5 {
   float: inline-end;
-  
+
   }
   #standingCalfMachine-Date {
   float: inline-end;
   }
-  
+
   #standingCalfMachine-Sets {
   float: inline-end;
   }
-  
+
   #burpees {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-#burpees-Date {
-    float: inline-end;
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-burpees {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
     }
 
-#burpees-Total {
-    float: inline-end;
+    .div-burpees legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-burpees label {
+      display: block;
+      font-size: large;
+    }
+    #burpees-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #burpees-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
     }
 
     #jumpRope {
@@ -1243,14 +2560,50 @@ float: inline-end;
         margin-right: auto;
         height: auto;
       }
+      .div-jumpRope {
+
+        margin: 0 auto;
+        max-width:400px;
+        margin:50px 20px;
+        background:#fff;
+        padding:2px;
+
+      }
+
+      .div-jumpRope legend {
+        text-align:center;
+        font-weight:100;
+        font-size:2em;
+        margin-bottom:10px;
+      }
+
+      .div-jumpRope label {
+        display: block;
+        font-size: large;
+      }
+      #jumpRope-submit {
+        background-color: #4B646E; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
       #jumpRope-Date {
-        float: inline-end;
-        }
-      
-      #jumpRope-Total {
-        float: inline-end;
-        }
-    
+        background-color: #4B646E; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
         #planks {
             background-color: rgb(247, 242, 242);
             box-sizing: border-box;
@@ -1260,77 +2613,263 @@ float: inline-end;
             margin-right: auto;
             height: auto;
           }
-          #planks-Date {
-            float: inline-end;
-            }
-          
-          #planks-Total {
-            float: inline-end;
-            } 
+          .div-planks {
 
-#pushUps {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-#pushUps-Date {
-    float: inline-end;
-    }
+            margin: 0 auto;
+            max-width:400px;
+            margin:50px 20px;
+            background:#fff;
+            padding:2px;
 
-#pushUps-Total {
-    float: inline-end;
-    }
-
-    #pullups {
-        background-color: rgb(247, 242, 242);
-        box-sizing: border-box;
-        text-align: left;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-      }
-      #pullups-Date {
-        float: inline-end;
-        }
-      
-      #pullups-Total {
-        float: inline-end;
-        } 
-
-        #situps {
-            background-color: rgb(247, 242, 242);
-            box-sizing: border-box;
-            text-align: left;
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            height: auto;
           }
-          #situps-Date {
-            float: inline-end;
-            }
-          
-          #situps-Total {
-            float: inline-end;
-            } 
 
-#elliptical {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+          .div-planks legend {
+            text-align:center;
+            font-weight:100;
+            font-size:2em;
+            margin-bottom:10px;
+          }
+
+          .div-planks label {
+            display: block;
+            font-size: large;
+          }
+          #planks-submit {
+            background-color: #4B646E; /* Green */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+          #planks-Date {
+            background-color: #4B646E; /* Green */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+
+            #pushUps {
+                background-color: rgb(247, 242, 242);
+                box-sizing: border-box;
+                text-align: left;
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+              }
+              .div-pushUps {
+
+                margin: 0 auto;
+                max-width:400px;
+                margin:50px 20px;
+                background:#fff;
+                padding:2px;
+
+              }
+
+              .div-pushUps legend {
+                text-align:center;
+                font-weight:100;
+                font-size:2em;
+                margin-bottom:10px;
+              }
+
+              .div-pushUps label {
+                display: block;
+                font-size: large;
+              }
+              #pushUps-submit {
+                background-color: #4B646E; /* Green */
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+              }
+              #pushUps-Date {
+                background-color: #4B646E; /* Green */
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+              }
+
+              #pullups {
+                  background-color: rgb(247, 242, 242);
+                  box-sizing: border-box;
+                  text-align: left;
+                  display: inline-block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  height: auto;
+                }
+                .div-pullups {
+
+                  margin: 0 auto;
+                  max-width:400px;
+                  margin:50px 20px;
+                  background:#fff;
+                  padding:2px;
+
+                }
+
+                .div-pullups legend {
+                  text-align:center;
+                  font-weight:100;
+                  font-size:2em;
+                  margin-bottom:10px;
+                }
+
+                .div-pullups label {
+                  display: block;
+                  font-size: large;
+                }
+                #pullups-submit {
+                  background-color: #4B646E; /* Green */
+                  border: none;
+                  border-radius: 12px;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+                #pullups-Date {
+                  background-color: #4B646E; /* Green */
+                  border: none;
+                  border-radius: 12px;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+
+                #situps {
+                    background-color: rgb(247, 242, 242);
+                    box-sizing: border-box;
+                    text-align: left;
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: auto;
+                  }
+                  .div-situps {
+
+                    margin: 0 auto;
+                    max-width:400px;
+                    margin:50px 20px;
+                    background:#fff;
+                    padding:2px;
+
+                  }
+
+                  .div-situps legend {
+                    text-align:center;
+                    font-weight:100;
+                    font-size:2em;
+                    margin-bottom:10px;
+                  }
+
+                  .div-situps label {
+                    display: block;
+                    font-size: large;
+                  }
+                  #situps-submit {
+                    background-color: #4B646E; /* Green */
+                    border: none;
+                    border-radius: 12px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                  }
+                  #situps-Date {
+                    background-color: #4B646E; /* Green */
+                    border: none;
+                    border-radius: 12px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                  }
+
+.div-elliptical {
+
+  margin: 0 auto;
+  max-width:400px;
+	margin:50px 20px;
+	background:#fff;
+	padding:2px;
+
+}
+
+.div-elliptical legend {
+  text-align:center;
+  font-weight:100;
+  font-size:2em;
+  margin-bottom:10px;
+}
+
+.div-elliptical label {
+  display: block;
+  font-size: large;
+}
+#elliptical-submit {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+
 }
 #elliptical-Date {
-    float: inline-end;
-    }
+  background-color: #4B646E; /* Green */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+ #elliptical {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
 
 #elliptical-Total {
     float: inline-end;
@@ -1345,15 +2884,102 @@ float: inline-end;
         margin-right: auto;
         height: auto;
       }
+      .div-rowingmachine {
+
+        margin: 0 auto;
+        max-width:400px;
+      	margin:50px 20px;
+      	background:#fff;
+      	padding:2px;
+
+      }
+
+      .div-rowingmachine legend {
+        text-align:center;
+        font-weight:100;
+        font-size:2em;
+        margin-bottom:10px;
+      }
+
+      .div-rowingmachine label {
+        display: block;
+        font-size: large;
+      }
+      #rowingmachine-submit {
+        background-color: #4B646E; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
       #rowingmachine-Date {
-        float: inline-end;
+        background-color: #4B646E; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #spinbike {
+          background-color: rgb(247, 242, 242);
+          box-sizing: border-box;
+          text-align: left;
+          display: inline-block;
+          margin-left: auto;
+          margin-right: auto;
+          height: auto;
         }
-      
-      #rowingmachine-Total {
-        float: inline-end;
+        .div-spinbike {
+
+          margin: 0 auto;
+          max-width:400px;
+          margin:50px 20px;
+          background:#fff;
+          padding:2px;
+
         }
 
-        #spinbike {
+        .div-spinbike legend {
+          text-align:center;
+          font-weight:100;
+          font-size:2em;
+          margin-bottom:10px;
+        }
+
+        .div-spinbike label {
+          display: block;
+          font-size: large;
+        }
+        #spinbike-submit {
+          background-color: #4B646E; /* Green */
+          border: none;
+          border-radius: 12px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+        #spinbike-Date {
+          background-color: #4B646E; /* Green */
+          border: none;
+          border-radius: 12px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+        #stairmaster {
             background-color: rgb(247, 242, 242);
             box-sizing: border-box;
             text-align: left;
@@ -1362,14 +2988,102 @@ float: inline-end;
             margin-right: auto;
             height: auto;
           }
-          #spinbike-Date {
-            float: inline-end;
+          .div-stairmaster {
+
+            margin: 0 auto;
+            max-width:400px;
+            margin:50px 20px;
+            background:#fff;
+            padding:2px;
+
+          }
+
+          .div-stairmaster legend {
+            text-align:center;
+            font-weight:100;
+            font-size:2em;
+            margin-bottom:10px;
+          }
+
+          .div-stairmaster label {
+            display: block;
+            font-size: large;
+          }
+          #stairmaster-submit {
+            background-color: #4B646E; /* Green */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+          #stairmaster-Date {
+            background-color: #4B646E; /* Green */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+          #treadmill {
+              background-color: rgb(247, 242, 242);
+              box-sizing: border-box;
+              text-align: left;
+              display: inline-block;
+              margin-left: auto;
+              margin-right: auto;
+              height: auto;
             }
-          
-          #spinbike-Total {
-            float: inline-end;
+            .div-treadmill {
+
+              margin: 0 auto;
+              max-width:400px;
+              margin:50px 20px;
+              background:#fff;
+              padding:2px;
+
             }
-            #stairmaster {
+
+            .div-treadmill legend {
+              text-align:center;
+              font-weight:100;
+              font-size:2em;
+              margin-bottom:10px;
+            }
+
+            .div-treadmill label {
+              display: block;
+              font-size: large;
+            }
+            #treadmill-submit {
+              background-color: #4B646E; /* Green */
+              border: none;
+              border-radius: 12px;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+            }
+            #treadmill-Date {
+              background-color: #4B646E; /* Green */
+              border: none;
+              border-radius: 12px;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+            }
+            #uprightbike {
                 background-color: rgb(247, 242, 242);
                 box-sizing: border-box;
                 text-align: left;
@@ -1378,42 +3092,46 @@ float: inline-end;
                 margin-right: auto;
                 height: auto;
               }
-              #stairmaster-Date {
-                float: inline-end;
-                }
-              
-              #stairmaster-Total {
-                float: inline-end;
-                }
-                #treadmill {
-                    background-color: rgb(247, 242, 242);
-                    box-sizing: border-box;
-                    text-align: left;
-                    display: inline-block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    height: auto;
-                  }
-                  #treadmill-Date {
-                    float: inline-end;
-                    }
-                  
-                  #treadmill-Total {
-                    float: inline-end;
-                    }
-                    #uprightbike {
-                        background-color: rgb(247, 242, 242);
-                        box-sizing: border-box;
-                        text-align: left;
-                        display: inline-block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        height: auto;
-                      }
-                      #uprightbike-Date {
-                        float: inline-end;
-                        }
-                      
-                      #uprightbike-Total {
-                        float: inline-end;
-                        }
+              .div-uprightbike {
+
+                margin: 0 auto;
+                max-width:400px;
+                margin:50px 20px;
+                background:#fff;
+                padding:2px;
+
+              }
+
+              .div-uprightbike legend {
+                text-align:center;
+                font-weight:100;
+                font-size:2em;
+                margin-bottom:10px;
+              }
+
+              .div-uprightbike label {
+                display: block;
+                font-size: large;
+              }
+              #uprightbike-submit {
+                background-color: #4B646E; /* Green */
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+              }
+              #uprightbike-Date {
+                background-color: #4B646E; /* Green */
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+              }
