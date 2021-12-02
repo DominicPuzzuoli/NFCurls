@@ -32,6 +32,15 @@
     height: 50;
 }
 
+<<<<<<< Updated upstream
+=======
+#logoimg {
+  float: center;
+  position: absolute;
+  left: 550px;
+}
+
+>>>>>>> Stashed changes
 .LogoutScreen {
     float: right;
     padding: 25px 16px;
