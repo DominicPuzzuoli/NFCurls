@@ -14,12 +14,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <meta charset="utf-8"/>
   <title>Leg Adduction</title>
+  <link rel="shortcut icon" type="image/jpg" href="/img/curl.jpg"/>
   </head>
 
 
       <script type ="module" src="/script.js"></script>
       <meta charset="utf-8"/>
-      <title>NFCurls</title>
 
       <script src="/scripts/onSignIn.js"></script>
     </head>
@@ -36,9 +36,9 @@
         </style>
         <div id ="LoginScreen">
           <button id="login">Login with google</button>
-    
+
         </div>
-    
+
         <div id= "dashboard">
           <div id="userDetails"> </div>
           <button id="logout">logout</button>
@@ -132,8 +132,8 @@
           <input type="number" name="reps" id="legAdduction-Reps5" >
           <br>
           <br>
-        
-        
+
+
       </fieldset>
     </form>
     <br>
@@ -200,7 +200,7 @@
           document.getElementById("Reps3").style.display = "block";
           document.getElementById("legAdduction-Weight3").style.display = "block";
           document.getElementById("legAdduction-Reps3").style.display = "block";
-          
+
           document.getElementById("Weight4").style.display = "none";
           document.getElementById("Reps4").style.display = "none";
           document.getElementById("legAdduction-Weight4").style.display = "none";
@@ -226,7 +226,7 @@
           document.getElementById("Reps4").style.display = "block";
           document.getElementById("legAdduction-Weight4").style.display = "block";
           document.getElementById("legAdduction-Reps4").style.display = "block";
-          
+
           document.getElementById("Weight5").style.display = "none";
           document.getElementById("Reps5").style.display = "none";
           document.getElementById("legAdduction-Weight5").style.display = "none";
@@ -253,10 +253,10 @@
           document.getElementById("Reps5").style.display = "block";
           document.getElementById("legAdduction-Weight5").style.display = "block";
           document.getElementById("legAdduction-Reps5").style.display = "block";
-          
+
       }
 
-      
+
     }
   </script>
 
@@ -278,7 +278,7 @@
 
   document.getElementById('login').addEventListener('click', GoogleLogin)
   document.getElementById('logout').addEventListener('click', LogoutUser)
-  
+
   let provider = new firebase.auth.GoogleAuthProvider()
 
   function GoogleLogin(){
@@ -294,7 +294,7 @@
   }
   function showUserDetails(user){
 
-    
+
         document.getElementById('userDetails').innerHTML = `
           <img src="${user.photoURL}" style="width:10%">
           <p>Name: ${user.displayName}</p>
@@ -327,21 +327,21 @@
     })
   }
     checkAuthState()
-    
+
     document.getElementById('legAdduction-submit').addEventListener('click', addData)
-    
+
     function addData(){
-      
+
       let user = firebase.auth().currentUser;
 
       let uid = user.uid
 
       let date1 = document.getElementById('legAdduction-Date').value
-     
+
       const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
 
       var val = document.getElementById('legAdduction-Sets').value;
-      
+
       if (val =='1 Set'){
         let Weight_1 = document.getElementById('legAdduction-Weight1').value
         const Weight1 = Number(Weight_1);
@@ -352,9 +352,9 @@
         Date: date,
         User_ID: uid,
         Weight_1: Weight1,
-        Reps_1: Reps1,            
+        Reps_1: Reps1,
       }
-      
+
       firebase.firestore().collection('legAdduction').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
@@ -363,7 +363,7 @@
 
       document.getElementById("legAdduction").reset();
       alert("Data Submission Successful!")
-      
+
       }
       else if (val =='2 Set') {
         let Weight_1 = document.getElementById('legAdduction-Weight1').value
@@ -384,9 +384,9 @@
         Reps_1: Reps1,
         Weight_2: Weight2,
         Reps_2: Reps2,
-       
+
       }
-      
+
       firebase.firestore().collection('legAdduction').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
@@ -395,7 +395,7 @@
 
       document.getElementById("legAdduction").reset();
       alert("Data Submission Successful!")
-      
+
       }
       else if (val =='3 Set'){
         let Weight_1 = document.getElementById('legAdduction-Weight1').value
@@ -421,9 +421,9 @@
         Weight_2: Weight2,
         Reps_2: Reps2,
         Weight_3: Weight3,
-        Reps_3: Reps3,           
+        Reps_3: Reps3,
       }
-      
+
       firebase.firestore().collection('legAdduction').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
@@ -432,7 +432,7 @@
 
       document.getElementById("legAdduction").reset();
       alert("Data Submission Successful!")
-      
+
       }
       else if (val =='4 Set') {
         let Weight_1 = document.getElementById('legAdduction-Weight1').value
@@ -466,9 +466,9 @@
         Weight_4: Weight4,
         Reps_4: Reps4,
 
-        
+
       }
-      
+
       firebase.firestore().collection('legAdduction').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
@@ -477,7 +477,7 @@
 
       document.getElementById("legAdduction").reset();
       alert("Data Submission Successful!")
-      
+
       }
       else if (val =='5 Set'){
         let Weight_1 = document.getElementById('legAdduction-Weight1').value
@@ -515,9 +515,9 @@
         Reps_4: Reps4,
         Weight_5: Weight5,
         Reps_5: Reps5,
-        
+
       }
-      
+
       firebase.firestore().collection('legAdduction').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
@@ -527,7 +527,7 @@
       document.getElementById("legAdduction").reset();
       alert("Data Submission Successful!")
       }
-    }  
+    }
    </script>
   </body>
   </html>

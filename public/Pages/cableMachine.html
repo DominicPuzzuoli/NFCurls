@@ -20,7 +20,7 @@
       <script type ="module" src="/script.js"></script>
       <meta charset="utf-8"/>
       <title>NFCurls</title>
-
+      <link rel="shortcut icon" type="image/jpg" href="/img/curl.jpg"/>
       <script src="/scripts/onSignIn.js"></script>
     </head>
     <body>
@@ -32,12 +32,12 @@
             display:none ;
           }
         </style>
-        
+
         <div id ="LoginScreen">
           <button id="login">Login with google</button>
-    
+
         </div>
-    
+
         <div id= "dashboard">
           <div id="userDetails"> </div>
           <button id="logout">logout</button>
@@ -131,7 +131,7 @@
           <input type="number" name="reps" id="cableMachine-Reps5" >
           <br>
           <br>
-        
+
       </fieldset>
     </form>
     <br>
@@ -198,7 +198,7 @@
           document.getElementById("Reps3").style.display = "block";
           document.getElementById("cableMachine-Weight3").style.display = "block";
           document.getElementById("cableMachine-Reps3").style.display = "block";
-          
+
           document.getElementById("Weight4").style.display = "none";
           document.getElementById("Reps4").style.display = "none";
           document.getElementById("cableMachine-Weight4").style.display = "none";
@@ -224,7 +224,7 @@
           document.getElementById("Reps4").style.display = "block";
           document.getElementById("cableMachine-Weight4").style.display = "block";
           document.getElementById("cableMachine-Reps4").style.display = "block";
-          
+
           document.getElementById("Weight5").style.display = "none";
           document.getElementById("Reps5").style.display = "none";
           document.getElementById("cableMachine-Weight5").style.display = "none";
@@ -251,10 +251,10 @@
           document.getElementById("Reps5").style.display = "block";
           document.getElementById("cableMachine-Weight5").style.display = "block";
           document.getElementById("cableMachine-Reps5").style.display = "block";
-          
+
       }
 
-      
+
     }
   </script>
       <!--Google Authentication-->
@@ -271,13 +271,13 @@
       };
         firebase.initializeApp(firebaseConfig);
         document.getElementById('dashboard').style.display="none"
-      
-      
+
+
         document.getElementById('login').addEventListener('click', GoogleLogin)
         document.getElementById('logout').addEventListener('click', LogoutUser)
-        
+
         let provider = new firebase.auth.GoogleAuthProvider()
-      
+
         function GoogleLogin(){
           console.log('Login Btn Call')
           firebase.auth().signInWithPopup(provider).then(res=>{
@@ -290,8 +290,8 @@
           })
         }
         function showUserDetails(user){
-  
-          
+
+
               document.getElementById('userDetails').innerHTML = `
                 <img src="${user.photoURL}" style="width:10%">
                 <p>Name: ${user.displayName}</p>
@@ -299,7 +299,7 @@
                 <p>UID: ${user.uid}</p>
               `
             }
-      
+
             function checkAuthState(){
               firebase.auth().onAuthStateChanged(user=>{
                 if(user){
@@ -307,73 +307,73 @@
                   document.getElementById('dashboard').style.display="block"
                   showUserDetails(user)
                 }else{
-      
+
                 }
               })
             }
-      
+
         function LogoutUser(){
           console.log('Logout Btn Call')
           firebase.auth().signOut().then(()=>{
             document.getElementById('LoginScreen').style.display="block"
             document.getElementById('dashboard').style.display="none"
-      
+
           }).catch(e=>{
-      
+
             console.log(e)
           })
         }
           checkAuthState()
-          
+
           document.getElementById('cableMachine-submit').addEventListener('click', addData)
-          
+
           function addData(){
-            
+
             let user = firebase.auth().currentUser;
-  
+
             let uid = user.uid
-  
+
             let date1 = document.getElementById('cableMachine-Date').value
-           
+
             const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
-  
+
             var val = document.getElementById('cableMachine-Sets').value;
-            
+
             if (val =='1 Set'){
               let Weight_1 = document.getElementById('cableMachine-Weight1').value
               const Weight1 = Number(Weight_1);
-  
+
               let Reps_1 = document.getElementById('cableMachine-Reps1').value
               const Reps1 = Number(Reps_1);
               let obj = {
               Date: date,
               User_ID: uid,
               Weight_1: Weight1,
-              Reps_1: Reps1,            
+              Reps_1: Reps1,
             }
-            
+
             firebase.firestore().collection('cableMachine').add(obj).then(doc=>{
               console.log(doc.id)
             }).catch(e=>{
                 console.log(e)
             })
-  
+
             document.getElementById("cableMachine").reset();
             alert("Data Submission Successful!")
-            
+
             }
             else if (val =='2 Set') {
               let Weight_1 = document.getElementById('cableMachine-Weight1').value
               const Weight1 = Number(Weight_1);
               let Weight_2 = document.getElementById('cableMachine-Weight2').value
               const Weight2 = Number(Weight_2);
-  
-  
+
+
               let Reps_1 = document.getElementById('cableMachine-Reps1').value
               const Reps1 = Number(Reps_1);
               let Reps_2 = document.getElementById('cableMachine-Reps2').value
               const Reps2 = Number(Reps_2);
-  
+
               let obj = {
               Date: date,
               User_ID: uid,
@@ -381,18 +381,18 @@
               Reps_1: Reps1,
               Weight_2: Weight2,
               Reps_2: Reps2,
-             
+
             }
-            
+
             firebase.firestore().collection('cableMachine').add(obj).then(doc=>{
               console.log(doc.id)
             }).catch(e=>{
                 console.log(e)
             })
-  
+
             document.getElementById("cableMachine").reset();
             alert("Data Submission Successful!")
-            
+
             }
             else if (val =='3 Set'){
               let Weight_1 = document.getElementById('cableMachine-Weight1').value
@@ -401,15 +401,15 @@
               const Weight2 = Number(Weight_2);
               let Weight_3 = document.getElementById('cableMachine-Weight3').value
               const Weight3 = Number(Weight_3);
-  
-  
+
+
               let Reps_1 = document.getElementById('cableMachine-Reps1').value
               const Reps1 = Number(Reps_1);
               let Reps_2 = document.getElementById('cableMachine-Reps2').value
               const Reps2 = Number(Reps_2);
               let Reps_3 = document.getElementById('cableMachine-Reps3').value
               const Reps3 = Number(Reps_3);
-  
+
               let obj = {
               Date: date,
               User_ID: uid,
@@ -418,18 +418,18 @@
               Weight_2: Weight2,
               Reps_2: Reps2,
               Weight_3: Weight3,
-              Reps_3: Reps3,           
+              Reps_3: Reps3,
             }
-            
+
             firebase.firestore().collection('cableMachine').add(obj).then(doc=>{
               console.log(doc.id)
             }).catch(e=>{
                 console.log(e)
             })
-  
+
             document.getElementById("cableMachine").reset();
             alert("Data Submission Successful!")
-            
+
             }
             else if (val =='4 Set') {
               let Weight_1 = document.getElementById('cableMachine-Weight1').value
@@ -440,8 +440,8 @@
               const Weight3 = Number(Weight_3);
               let Weight_4 = document.getElementById('cableMachine-Weight4').value
               const Weight4 = Number(Weight_4);
-  
-  
+
+
               let Reps_1 = document.getElementById('cableMachine-Reps1').value
               const Reps1 = Number(Reps_1);
               let Reps_2 = document.getElementById('cableMachine-Reps2').value
@@ -450,7 +450,7 @@
               const Reps3 = Number(Reps_3);
               let Reps_4 = document.getElementById('cableMachine-Reps4').value
               const Reps4 = Number(Reps_4);
-  
+
               let obj = {
               Date: date,
               User_ID: uid,
@@ -462,19 +462,19 @@
               Reps_3: Reps3,
               Weight_4: Weight4,
               Reps_4: Reps4,
-  
-              
+
+
             }
-            
+
             firebase.firestore().collection('cableMachine').add(obj).then(doc=>{
               console.log(doc.id)
             }).catch(e=>{
                 console.log(e)
             })
-  
+
             document.getElementById("cableMachine").reset();
             alert("Data Submission Successful!")
-            
+
             }
             else if (val =='5 Set'){
               let Weight_1 = document.getElementById('cableMachine-Weight1').value
@@ -487,7 +487,7 @@
               const Weight4 = Number(Weight_4);
               let Weight_5 = document.getElementById('cableMachine-Weight5').value
               const Weight5 = Number(Weight_5);
-  
+
               let Reps_1 = document.getElementById('cableMachine-Reps1').value
               const Reps1 = Number(Reps_1);
               let Reps_2 = document.getElementById('cableMachine-Reps2').value
@@ -498,7 +498,7 @@
               const Reps4 = Number(Reps_4);
               let Reps_5 = document.getElementById('cableMachine-Reps5').value
               const Reps5 = Number(Reps_5);
-  
+
               let obj = {
               Date: date,
               User_ID: uid,
@@ -512,19 +512,19 @@
               Reps_4: Reps4,
               Weight_5: Weight5,
               Reps_5: Reps5,
-              
+
             }
-            
+
             firebase.firestore().collection('cableMachine').add(obj).then(doc=>{
               console.log(doc.id)
             }).catch(e=>{
                 console.log(e)
             })
-  
+
             document.getElementById("cableMachine").reset();
             alert("Data Submission Successful!")
             }
-          }  
+          }
          </script>
 
 

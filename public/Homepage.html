@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <meta charset="utf-8"/>
     <title>NFCurls</title>
-
+    <link rel="shortcut icon" type="image/jpg" href="/img/curl.jpg"/>
     <script src="/scripts/onSignIn.js"></script>
   </head>
   <body>
@@ -32,7 +32,7 @@
       <script src="/scripts/sideBar.js"></script>
 
 
-      <style>    
+      <style>
         .data{
           display:none ;
         }
@@ -46,9 +46,9 @@
 
         <div id ="LoginScreen" class="LoginScreen">
           <button id="login"><img src="img/signin-button.png" height="50" width="200" alt=""></button>
-    
+
         </div>
-    
+
         <div id= "LogoutScreen" class="LogoutScreen">
           <button id="logout"><img src="img/signout.png" height="40" width="100" alt =""></button>
           <div id="userDetails" class="userDetails"> </div>
@@ -95,7 +95,7 @@
 
   document.getElementById('login').addEventListener('click', GoogleLogin)
   document.getElementById('logout').addEventListener('click', LogoutUser)
-  
+
   let provider = new firebase.auth.GoogleAuthProvider()
 
   function GoogleLogin(){
@@ -111,7 +111,7 @@
   }
   function showUserDetails(user){
         document.getElementById('userDetails').innerHTML = `
-          <img src="${user.photoURL}" style="width:40%"> 
+          <img src="${user.photoURL}" style="width:40%">
           <p> ${user.displayName}</p>
         `
       }
@@ -140,9 +140,9 @@
     })
   }
     checkAuthState()
-    
+
     document.getElementById('addDataBtn').addEventListener('click', addData)
-    
+
     function addData(){
 
       let workout = document.getElementById('workout').value
@@ -160,7 +160,7 @@
 
     //reference
 
-    
+
    </script>
 
 

@@ -1,0 +1,30 @@
+
+.container {
+  width: 100%;
+  /*background-color: rgb(222,255,254); */
+  box-sizing: border-box;
+  text-align: left;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border: 12px solid grey;
+}
+
+.container h1 {
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: darkblue;
+}
+.container h2 {
+  display: block;
+  border: 10px solid darkgray;
+  border-bottom-style: hidden;
+  border-right-style: hidden;
+  height:60px;
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+}
+.container a {
+  color: black;
+}

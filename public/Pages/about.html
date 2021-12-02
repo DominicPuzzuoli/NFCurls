@@ -1,5 +1,73 @@
 <!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+  <link rel="stylesheet" href="/CSS/form.css" type="text/css">
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.memory.js"></script>
+<!-- Don't change the format for any other products. -->
+<script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
+  </head>
+  <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <meta charset="utf-8"/>
+
+<title>About/Contact</title>
+<link rel="shortcut icon" type="image/jpg" href="/img/curl.jpg"/>
 <link rel="stylesheet" type="text/css" href="/CSS/about.css">
+
+
+      <script src="/scripts/onSignIn.js"></script>
+    </head>
+    <body>
+        <script src="/scripts/sideBar.js"></script>
+
+
+        <style>
+          .data{
+            display:none ;
+          }
+        </style>
+<!--
+        <div id ="LoginScreen">
+          <button id="login">Login with google</button>
+
+        </div>
+
+        <div id= "dashboard">
+          <div id="userDetails"> </div>
+          <button id="logout">logout</button>
+        </div>
+      -->
+        <nav class ="myNav">
+          <ul>
+          <div id="main">
+          <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
+          </div>
+
+            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+            <li><div class="data">
+              <img id="pic" class="img-circle" width="100" height="100"/>
+              <!---<a id ="fullName" href="" ></a>--->
+              <!--This above could be used to display the user name is we want-->
+              <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
+
+            </div></li>
+
+
+          </ul>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="/Pages/Workouts.html">Workouts</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
 <div class="about-section">
   <h1>NFCurls</h1>
   <p>Welcome to NFCurls, where we streamline fitness</p>
@@ -14,7 +82,7 @@
         <p class="title">Developer</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>blumsden@oakland.edu</p>
-        <p> <button onclick="location.href='mailto:blumsden@oakland.edu'" class="button" type="button">Contact</button></p>
+        <p class="contactbutton"> <button onclick="location.href='mailto:blumsden@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -26,7 +94,7 @@
         <p class="title">Product Owner</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>chad@oakland.edu</p>
-        <p> <button onclick="location.href='mailto:chad@oakland.edu'" class="button" type="button">Contact</button></p>
+        <p class="contactbutton"> <button onclick="location.href='mailto:chad@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -38,7 +106,7 @@
         <p class="title">Developer</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>cjivory@oakland.edu</p>
-        <p> <button onclick="location.href='mailto:cjivory@oakland.edu'" class="button" type="button">Contact</button></p>
+        <p class="contactbutton"> <button onclick="location.href='mailto:cjivory@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -50,7 +118,7 @@
         <p class="title">Scrum Master</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>jaboro@oakland.edu</p>
-        <p> <button onclick="location.href='mailto:jaboro@oakland.edu'" class="button" type="button">Contact</button></p>
+        <p class="contactbutton"> <button onclick="location.href='mailto:jaboro@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -61,7 +129,7 @@
         <p class="title">Developer</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>puzzuoli@oakland.edu</p>
-        <p> <button onclick="location.href='mailto:puzzuoli@oakland.edu'" class="button" type="button">Contact</button></p>
+        <p class="contactbutton"> <button onclick="location.href='mailto:puzzuoli@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
     </div>
   </div>
