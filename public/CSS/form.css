@@ -6,7 +6,68 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
-}
+  }
+  .div-abCrunchMachine {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-abCrunchMachine legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-abCrunchMachine label {
+    display: block;
+    font-size: large;
+  }
+  .div-abCrunchMachine input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-abCrunchMachine select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #abCrunchMachine-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #abCrunchMachine-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 #abCrunchMachine-Sets {
     float: inline-end;
 }
@@ -64,7 +125,68 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
-}
+  }
+  .div-benchPress {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-benchPress legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-benchPress label {
+    display: block;
+    font-size: large;
+  }
+  .div-benchPress input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-benchPress select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #benchPress-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #benchPress-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 #benchPress-Sets {
     float: inline-end;
 }
@@ -114,7 +236,8 @@
     float: inline-end;
 }
 
-#legPress {
+
+    #cableMachine {
         background-color: rgb(247, 242, 242);
         box-sizing: border-box;
         text-align: left;
@@ -122,17 +245,68 @@
         margin-left: auto;
         margin-right: auto;
         height: auto;
-    }
+      }
+      .div-cableMachine {
 
-#cableMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+        margin: 0 auto;
+        max-width:400px;
+        margin:50px 20px;
+        background:#fff;
+        padding:2px;
+
+      }
+
+      .div-cableMachine legend {
+        text-align:center;
+        font-weight:100;
+        font-size:2em;
+        margin-bottom:10px;
+      }
+
+      .div-cableMachine label {
+        display: block;
+        font-size: large;
+      }
+      .div-cableMachine input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .div-cableMachine select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      #cableMachine-submit {
+        background-color: #4B646E; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #cableMachine-Date {
+        background-color: #4B646E; /* Green */
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
   #cableMachine-Sets {
   float: inline-end;
   }
@@ -182,15 +356,76 @@
   float: inline-end;
   }
 
-  #chestFlyeMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+  #chestFlyMachine {
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-chestFlyMachine {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-chestFlyMachine legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-chestFlyMachine label {
+      display: block;
+      font-size: large;
+    }
+    .div-chestFlyMachine input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-chestFlyMachine select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #chestFlyMachine-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #chestFlyMachine-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #chestFlyeMachine-Sets {
   float: inline-end;
   }
@@ -241,14 +476,75 @@
   }
 
   #chestPress {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-chestPress {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-chestPress legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-chestPress label {
+      display: block;
+      font-size: large;
+    }
+    .div-chestPress input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-chestPress select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #chestPress-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #chestPress-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #chestPress-Sets {
   float: inline-end;
   }
@@ -299,14 +595,75 @@
   }
 
   #declinePressMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-declinePressMachine {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-declinePressMachine legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-declinePressMachine label {
+      display: block;
+      font-size: large;
+    }
+    .div-declinePressMachine input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-declinePressMachine select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #declinePressMachine-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #declinePressMachine-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #declinePressMachine-Sets {
   float: inline-end;
   }
@@ -357,14 +714,75 @@
   }
 
   #hacksquat {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-hacksquat {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-hacksquat legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-hacksquat label {
+      display: block;
+      font-size: large;
+    }
+    .div-hacksquat input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-hacksquat select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #hacksquat-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #hacksquat-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
 #hacksquat-Sets {
 float: inline-end;
 }
@@ -414,7 +832,7 @@ float: inline-end;
 float: inline-end;
 }
 
-  #hyperextensionBench {
+#hyperextensionBench {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
     text-align: left;
@@ -422,6 +840,67 @@ float: inline-end;
     margin-left: auto;
     margin-right: auto;
     height: auto;
+  }
+  .div-hyperextensionBench {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-hyperextensionBench legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-hyperextensionBench label {
+    display: block;
+    font-size: large;
+  }
+  .div-hyperextensionBench input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-hyperextensionBench select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #hyperextensionBench-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #hyperextensionBench-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
   #hyperextensionBench-Sets {
   float: inline-end;
@@ -473,14 +952,75 @@ float: inline-end;
   }
 
   #inclinePressMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-inclinePressMachine {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-inclinePressMachine legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-inclinePressMachine label {
+      display: block;
+      font-size: large;
+    }
+    .div-inclinePressMachine input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-inclinePressMachine select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #inclinePressMachine-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #inclinePressMachine-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #inclinePressMachine-Sets {
   float: inline-end;
   }
@@ -531,14 +1071,75 @@ float: inline-end;
   }
 
   #latPulldown {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-latPulldown {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-latPulldown legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-latPulldown label {
+      display: block;
+      font-size: large;
+    }
+    .div-latPulldown input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-latPulldown select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #latPulldown-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #latPulldown-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #latPulldown-Sets {
   float: inline-end;
   }
@@ -589,14 +1190,75 @@ float: inline-end;
   }
 
   #legAbduction {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legAbduction {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legAbduction legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legAbduction label {
+      display: block;
+      font-size: large;
+    }
+    .div-legAbduction input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legAbduction select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legAbduction-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legAbduction-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legAbduction-Sets {
   float: inline-end;
   }
@@ -647,14 +1309,75 @@ float: inline-end;
   }
 
   #legAdduction {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legAdduction {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legAdduction legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legAdduction label {
+      display: block;
+      font-size: large;
+    }
+    .div-legAdduction input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legAdduction select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legAdduction-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legAdduction-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legAdduction-Sets {
   float: inline-end;
   }
@@ -705,14 +1428,75 @@ float: inline-end;
   }
 
   #legCurl {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legCurl {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legCurl legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legCurl label {
+      display: block;
+      font-size: large;
+    }
+    .div-legCurl input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legCurl select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legCurl-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legCurl-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legCurl-Sets {
   float: inline-end;
   }
@@ -763,14 +1547,75 @@ float: inline-end;
   }
 
   #legExtension {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legExtension {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legExtension legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legExtension label {
+      display: block;
+      font-size: large;
+    }
+    .div-legExtension input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legExtension select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legExtension-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legExtension-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legExtension-Sets {
   float: inline-end;
   }
@@ -820,6 +1665,76 @@ float: inline-end;
   float: inline-end;
   }
 
+  #legPress {
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-legPress {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-legPress legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-legPress label {
+      display: block;
+      font-size: large;
+    }
+    .div-legPress input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-legPress select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #legPress-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #legPress-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #legPress-Sets {
     float: inline-end;
 }
@@ -869,7 +1784,7 @@ float: inline-end;
     float: inline-end;
 }
 
-  #lunges {
+#lunges {
     background-color: rgb(247, 242, 242);
     box-sizing: border-box;
     text-align: left;
@@ -877,6 +1792,67 @@ float: inline-end;
     margin-left: auto;
     margin-right: auto;
     height: auto;
+  }
+  .div-lunges {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-lunges legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-lunges label {
+    display: block;
+    font-size: large;
+  }
+  .div-lunges input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-lunges select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #lunges-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #lunges-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
   #lunges-Sets {
   float: inline-end;
@@ -928,14 +1904,75 @@ float: inline-end;
   }
 
   #seatedArmCurl {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-seatedArmCurl {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-seatedArmCurl legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-seatedArmCurl label {
+      display: block;
+      font-size: large;
+    }
+    .div-seatedArmCurl input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-seatedArmCurl select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #seatedArmCurl-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #seatedArmCurl-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #seatedArmCurl-Sets {
   float: inline-end;
   }
@@ -986,14 +2023,75 @@ float: inline-end;
   }
 
   #seatedArmExtension {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-seatedArmExtension {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-seatedArmExtension legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-seatedArmExtension label {
+      display: block;
+      font-size: large;
+    }
+    .div-seatedArmExtension input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-seatedArmExtension select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #seatedArmExtension-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #seatedArmExtension-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #seatedArmExtension-Sets {
   float: inline-end;
   }
@@ -1043,15 +2141,76 @@ float: inline-end;
   float: inline-end;
   }
 
-  #seatedCalfMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+  #seatedArmExtension {
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-seatedArmExtension {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-seatedArmExtension legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-seatedArmExtension label {
+      display: block;
+      font-size: large;
+    }
+    .div-seatedArmExtension input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-seatedArmExtension select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #seatedArmExtension-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #seatedArmExtension-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #seatedCalfMachine-Sets {
   float: inline-end;
   }
@@ -1102,14 +2261,75 @@ float: inline-end;
   }
 
   #squats {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-squats {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-squats legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-squats label {
+      display: block;
+      font-size: large;
+    }
+    .div-squats input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-squats select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #squats-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #squats-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #squats-Sets {
   float: inline-end;
   }
@@ -1160,14 +2380,75 @@ float: inline-end;
   }
 
   #standingCalfMachine {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
+      background-color: rgb(247, 242, 242);
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+    .div-standingCalfMachine {
+
+      margin: 0 auto;
+      max-width:400px;
+      margin:50px 20px;
+      background:#fff;
+      padding:2px;
+
+    }
+
+    .div-standingCalfMachine legend {
+      text-align:center;
+      font-weight:100;
+      font-size:2em;
+      margin-bottom:10px;
+    }
+
+    .div-standingCalfMachine label {
+      display: block;
+      font-size: large;
+    }
+    .div-standingCalfMachine input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .div-standingCalfMachine select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    #standingCalfMachine-submit {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #standingCalfMachine-Date {
+      background-color: #4B646E; /* Green */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   #standingCalfMachine-Sets {
   float: inline-end;
   }
@@ -1248,7 +2529,7 @@ float: inline-end;
       font-size: large;
     }
     #burpees-submit {
-      background-color: #4CAF50; /* Green */
+      background-color: #4B646E; /* Green */
       border: none;
       border-radius: 12px;
       color: white;
@@ -1259,7 +2540,7 @@ float: inline-end;
       font-size: 16px;
     }
     #burpees-Date {
-      background-color: #4CAF50; /* Green */
+      background-color: #4B646E; /* Green */
       border: none;
       border-radius: 12px;
       color: white;
@@ -1301,7 +2582,7 @@ float: inline-end;
         font-size: large;
       }
       #jumpRope-submit {
-        background-color: #4CAF50; /* Green */
+        background-color: #4B646E; /* Green */
         border: none;
         border-radius: 12px;
         color: white;
@@ -1312,7 +2593,7 @@ float: inline-end;
         font-size: 16px;
       }
       #jumpRope-Date {
-        background-color: #4CAF50; /* Green */
+        background-color: #4B646E; /* Green */
         border: none;
         border-radius: 12px;
         color: white;
@@ -1354,7 +2635,7 @@ float: inline-end;
             font-size: large;
           }
           #planks-submit {
-            background-color: #4CAF50; /* Green */
+            background-color: #4B646E; /* Green */
             border: none;
             border-radius: 12px;
             color: white;
@@ -1365,7 +2646,7 @@ float: inline-end;
             font-size: 16px;
           }
           #planks-Date {
-            background-color: #4CAF50; /* Green */
+            background-color: #4B646E; /* Green */
             border: none;
             border-radius: 12px;
             color: white;
@@ -1407,7 +2688,7 @@ float: inline-end;
                 font-size: large;
               }
               #pushUps-submit {
-                background-color: #4CAF50; /* Green */
+                background-color: #4B646E; /* Green */
                 border: none;
                 border-radius: 12px;
                 color: white;
@@ -1418,7 +2699,7 @@ float: inline-end;
                 font-size: 16px;
               }
               #pushUps-Date {
-                background-color: #4CAF50; /* Green */
+                background-color: #4B646E; /* Green */
                 border: none;
                 border-radius: 12px;
                 color: white;
@@ -1460,7 +2741,7 @@ float: inline-end;
                   font-size: large;
                 }
                 #pullups-submit {
-                  background-color: #4CAF50; /* Green */
+                  background-color: #4B646E; /* Green */
                   border: none;
                   border-radius: 12px;
                   color: white;
@@ -1471,7 +2752,7 @@ float: inline-end;
                   font-size: 16px;
                 }
                 #pullups-Date {
-                  background-color: #4CAF50; /* Green */
+                  background-color: #4B646E; /* Green */
                   border: none;
                   border-radius: 12px;
                   color: white;
@@ -1513,7 +2794,7 @@ float: inline-end;
                     font-size: large;
                   }
                   #situps-submit {
-                    background-color: #4CAF50; /* Green */
+                    background-color: #4B646E; /* Green */
                     border: none;
                     border-radius: 12px;
                     color: white;
@@ -1524,7 +2805,7 @@ float: inline-end;
                     font-size: 16px;
                   }
                   #situps-Date {
-                    background-color: #4CAF50; /* Green */
+                    background-color: #4B646E; /* Green */
                     border: none;
                     border-radius: 12px;
                     color: white;
@@ -1569,7 +2850,7 @@ float: inline-end;
 
 }
 #elliptical-Date {
-  background-color: #4CAF50; /* Green */
+  background-color: #4B646E; /* Green */
   border: none;
   border-radius: 12px;
   color: white;
@@ -1625,7 +2906,7 @@ float: inline-end;
         font-size: large;
       }
       #rowingmachine-submit {
-        background-color: #4CAF50; /* Green */
+        background-color: #4B646E; /* Green */
         border: none;
         border-radius: 12px;
         color: white;
@@ -1636,7 +2917,7 @@ float: inline-end;
         font-size: 16px;
       }
       #rowingmachine-Date {
-        background-color: #4CAF50; /* Green */
+        background-color: #4B646E; /* Green */
         border: none;
         border-radius: 12px;
         color: white;
@@ -1677,7 +2958,7 @@ float: inline-end;
           font-size: large;
         }
         #spinbike-submit {
-          background-color: #4CAF50; /* Green */
+          background-color: #4B646E; /* Green */
           border: none;
           border-radius: 12px;
           color: white;
@@ -1688,7 +2969,7 @@ float: inline-end;
           font-size: 16px;
         }
         #spinbike-Date {
-          background-color: #4CAF50; /* Green */
+          background-color: #4B646E; /* Green */
           border: none;
           border-radius: 12px;
           color: white;
@@ -1729,7 +3010,7 @@ float: inline-end;
             font-size: large;
           }
           #stairmaster-submit {
-            background-color: #4CAF50; /* Green */
+            background-color: #4B646E; /* Green */
             border: none;
             border-radius: 12px;
             color: white;
@@ -1740,7 +3021,7 @@ float: inline-end;
             font-size: 16px;
           }
           #stairmaster-Date {
-            background-color: #4CAF50; /* Green */
+            background-color: #4B646E; /* Green */
             border: none;
             border-radius: 12px;
             color: white;
@@ -1781,7 +3062,7 @@ float: inline-end;
               font-size: large;
             }
             #treadmill-submit {
-              background-color: #4CAF50; /* Green */
+              background-color: #4B646E; /* Green */
               border: none;
               border-radius: 12px;
               color: white;
@@ -1792,7 +3073,7 @@ float: inline-end;
               font-size: 16px;
             }
             #treadmill-Date {
-              background-color: #4CAF50; /* Green */
+              background-color: #4B646E; /* Green */
               border: none;
               border-radius: 12px;
               color: white;
@@ -1833,7 +3114,7 @@ float: inline-end;
                 font-size: large;
               }
               #uprightbike-submit {
-                background-color: #4CAF50; /* Green */
+                background-color: #4B646E; /* Green */
                 border: none;
                 border-radius: 12px;
                 color: white;
@@ -1844,7 +3125,7 @@ float: inline-end;
                 font-size: 16px;
               }
               #uprightbike-Date {
-                background-color: #4CAF50; /* Green */
+                background-color: #4B646E; /* Green */
                 border: none;
                 border-radius: 12px;
                 color: white;
