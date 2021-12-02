@@ -2,7 +2,7 @@
     display: block;
     height: 85px;
     line-height: 35px;
-    background-color: #333;
+    background-color: rgb(60, 70, 70);
 }
 /* Remove bullets, margin and padding */
 .myNav ul {
@@ -24,10 +24,28 @@
 .myNav li a.active {
     background-color: #3786E1;
 }
-.g-signin2 {
+.LoginScreen {
     float: right;
     text-align: center;
     padding: 25px 16px;
+    width: 50;
+    height: 50;
+}
+
+.LogoutScreen {
+    float: right;
+    padding: 25px 16px;
+}
+
+.button {
+  float: right ;
+}
+
+.userDetails {
+  position: relative;
+  right: 110px; bottom:70px;
+  color: white
+  
 }
 
 #pic {
@@ -55,7 +73,7 @@
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: rgb(60, 70, 70); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -66,14 +84,14 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
   }
 
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
-    color: #f1f1f1;
+    color: #e90202;
   }
 
   /* Position and style the close button (top right corner) */
@@ -89,7 +107,7 @@
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
+    background-color: rgb(75, 100, 110);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -116,4 +134,7 @@
 
   body h1 {
     text-align: center;
+    color: white;
   }
+
+
