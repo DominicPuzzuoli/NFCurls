@@ -168,29 +168,31 @@
 <script>
 var labelsArray = [];
 var dataArray = [];
+let test1 = [];
+let test2 = [];
+
 
 db.collection("abCrunchMachine").get().then((snapshot) => {
   snapshot.docs.forEach(doc => {
     var item = doc.data();
-
+    let dateSplit = item.Date.split("-");
+    let actualDate = new Date(dateSplit[0],dateSplit[1] - 1,dateSplit[2]);
     var Weight_1 = item.Weight_1;
-    dataArray.push(Weight_1);
+    dataArray.push({Weight: Weight_1, actualDate: actualDate });
+  });
 
-    var Date = toDate(item.Date);
-    Date.toDate();
-    labelsArray.push(Date);
-    
-  
-  })
-})
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
+  dataArray.sort(function(a,b){
+        return b.actualDate - a.actualDate;
+  });
+
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: labelsArray,
+        labels: dataArray.map(e => {return e.actualDate}),
         datasets: [{
             label: 'Weight(In lbs)',
-            data: dataArray,
+            data: dataArray.map(e => {return e.Weight}),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -228,6 +230,53 @@ const myChart = new Chart(ctx, {
         }
     }
 });
+})
+
+/*const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: dataArray.map(e => {return e.actualDate}),
+        datasets: [{
+            label: 'Weight(In lbs)',
+            data: dataArray.map(e => {return e.Weight}),
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            },
+            x: {
+                type: 'time',
+                time: {
+                  unit: "day"
+                },
+                distribution: 'series'
+                
+                
+                
+            }   
+        }
+    }
+});*/
 </script>
 
 

@@ -334,6 +334,7 @@
 
           const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
 
+
           var val = document.getElementById('abCrunchMachine-Sets').value;
 
           if (val =='1 Set'){
@@ -343,7 +344,7 @@
             let Reps_1 = document.getElementById('abCrunchMachine-Reps1').value
             const Reps1 = Number(Reps_1);
             let obj = {
-            Date: date,
+            Date: date1,
             User_ID: uid,
             Weight_1: Weight1,
             Reps_1: Reps1,
@@ -372,7 +373,7 @@
             const Reps2 = Number(Reps_2);
 
             let obj = {
-            Date: date,
+            Date: date1,
             User_ID: uid,
             Weight_1: Weight1,
             Reps_1: Reps1,
@@ -408,7 +409,7 @@
             const Reps3 = Number(Reps_3);
 
             let obj = {
-            Date: date,
+            Date: date1,
             User_ID: uid,
             Weight_1: Weight1,
             Reps_1: Reps1,
@@ -449,7 +450,7 @@
             const Reps4 = Number(Reps_4);
 
             let obj = {
-            Date: date,
+            Date: date1,
             User_ID: uid,
             Weight_1: Weight1,
             Reps_1: Reps1,
@@ -497,7 +498,7 @@
             const Reps5 = Number(Reps_5);
 
             let obj = {
-            Date: date,
+            Date: date1,
             User_ID: uid,
             Weight_1: Weight1,
             Reps_1: Reps1,
