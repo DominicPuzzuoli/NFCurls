@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="/CSS/style.css" type="text/css">
-<link rel="stylesheet" href="/CSS/form.css" type="text/css">
-
+  <link rel="stylesheet" href="/CSS/form.css" type="text/css">
   <meta charset="UTF-8">
   <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.memory.js"></script>
@@ -13,6 +12,7 @@
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <meta charset="utf-8"/>
     <title>Chest Flye Machine</title>
 
@@ -56,7 +56,7 @@
 
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="Homepage.html">Home</a>
+        <a href="../Homepage.html">Home</a>
         <a href="/index.html">About</a>
         <a href="/Pages/Workouts.html">Workouts</a>
         <a href="/Pages/about.html">Contact</a>
@@ -149,109 +149,87 @@
    </script>
 
 
-<body>
-  <!--Form Submission-->
-  <section>
-    <div class="div-chestFlyeMachine">
-    <form id="chestFlyeMachine">
-      <fieldset>
-        <legend> Ab Crunch Machine</legend>
-        <label for="date"> Date:</label>
-        <input type="date" id="chestFlyeMachine-Date" autocomplete="on">
-        <br>
-        <br>
-        <label>Choose the total amount of Sets: </label>
-        <select onchange="totSets(this);" name="Total Sets" id="chestFlyeMachine-Sets">
-          <option value="1 Set">1 Sets</option>
-          <option value="2 Set">2 Sets</option>
-          <option value="3 Set">3 Sets</option>
-          <option value="4 Set">4 Sets</option>
-          <option value="5 Set">5 Sets</option>
-        </select>
-        <br>
-        <br>
-        <label for="Weight" id="Weight1">Enter the Weight(In Lbs) for Set 1: </label>
-        <input type="number" id="chestFlyeMachine-Weight1" required>
-        <br>
-        <br>
-        <label for="reps" id="Reps1"> Enter total Reps for Set 1:</label>
-        <input type="number" name="reps" id="chestFlyeMachine-Reps1" required>
-        <br>
-        <br>
-        <label for="Weight" id="Weight2">Enter the Weight(In Lbs) for Set 2: </label>
-        <input type="number" id="chestFlyeMachine-Weight2" >
-        <br>
-        <br>
-        <label for="reps" id="Reps2"> Enter total Reps for Set 2:</label>
-        <input type="number" name="reps" id="chestFlyeMachine-Reps2" >
-        <br>
-        <br>
-        <label for="Weight" id="Weight3">Enter the Weight(In Lbs) for Set 3: </label>
-        <input type="number" id="chestFlyeMachine-Weight3" >
-        <br>
-        <br>
-        <label for="reps" id="Reps3"> Enter Total Reps for Set3:</label>
-        <input type="number" name="reps" id="chestFlyeMachine-Reps3" >
-        <br>
-        <br>
-        <label for="Weight" id="Weight4">Enter the Weight(In Lbs for Set 4): </label>
-        <input type="number" id="chestFlyeMachine-Weight4" >
-        <br>
-        <br>
-        <label for="reps" id="Reps4"> Enter Total Reps for Set 4:</label>
-        <input type="number" name="reps" id="chestFlyeMachine-Reps4" >
-        <br>
-        <br>
-        <label for="Weight" id ="Weight5">Enter the Weight(In Lbs) for Set 5: </label>
-        <input type="number" id="chestFlyeMachine-Weight5" >
-        <br>
-        <br>
-        <label for="reps" id="Reps5"> Enter Total Reps for Set 5:</label>
-        <input type="number" name="reps" id="chestFlyeMachine-Reps5" >
-        <br>
-        <br>
-      
-    </fieldset>
-  </form>
-  <br>
-  <button id="chestFlyeMachine-submit">Submit Data</button>
-</div>
-</section>
-<script>
-  function totSets(that) {
-    if (that.value == "1 Set") {
-      document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
-      document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
-      document.getElementById("Reps1").style.display = "block";
-      document.getElementById("Weight1").style.display = "block";
-
-
-      document.getElementById("Weight2").style.display = "none";
-      document.getElementById("Reps2").style.display = "none";
-      document.getElementById("chestFlyeMachine-Weight2").style.display = "none";
-      document.getElementById("chestFlyeMachine-Reps2").style.display = "none";
-      document.getElementById("Weight3").style.display = "none";
-      document.getElementById("Reps3").style.display = "none";
-      document.getElementById("chestFlyeMachine-Weight3").style.display = "none";
-      document.getElementById("chestFlyeMachine-Reps3").style.display = "none";
-      document.getElementById("Weight4").style.display = "none";
-      document.getElementById("Reps4").style.display = "none";
-      document.getElementById("chestFlyeMachine-Weight4").style.display = "none";
-      document.getElementById("chestFlyeMachine-Reps4").style.display = "none";
-      document.getElementById("Weight5").style.display = "none";
-      document.getElementById("Reps5").style.display = "none";
-      document.getElementById("chestFlyeMachine-Weight5").style.display = "none";
-      document.getElementById("chestFlyeMachine-Reps5").style.display = "none";
-    } if (that.value == "2 Set"){
+  <body>
+    <!--Form Submission-->
+    <section>
+      <div class="div-chestFlyeMachine">
+      <form id="chestFlyeMachine">
+        <fieldset>
+          <legend> Chest Flye Machine</legend>
+          <label for="date"> Date:</label>
+          <input type="date" id="chestFlyeMachine-Date" autocomplete="on">
+          <br>
+          <br>
+          <label>Choose the total amount of Sets: </label>
+          <select onchange="totSets(this);" name="Total Sets" id="chestFlyeMachine-Sets">
+            <option value="1 Set">1 Sets</option>
+            <option value="2 Set">2 Sets</option>
+            <option value="3 Set">3 Sets</option>
+            <option value="4 Set">4 Sets</option>
+            <option value="5 Set">5 Sets</option>
+          </select>
+          <br>
+          <br>
+          <label for="Weight" id="Weight1">Enter the Weight(In Lbs) for Set 1: </label>
+          <input type="number" id="chestFlyeMachine-Weight1" required>
+          <br>
+          <br>
+          <label for="reps" id="Reps1"> Enter total Reps for Set 1:</label>
+          <input type="number" name="reps" id="chestFlyeMachine-Reps1" required>
+          <br>
+          <br>
+          <label for="Weight" id="Weight2">Enter the Weight(In Lbs) for Set 2: </label>
+          <input type="number" id="chestFlyeMachine-Weight2" >
+          <br>
+          <br>
+          <label for="reps" id="Reps2"> Enter total Reps for Set 2:</label>
+          <input type="number" name="reps" id="chestFlyeMachine-Reps2" >
+          <br>
+          <br>
+          <label for="Weight" id="Weight3">Enter the Weight(In Lbs) for Set 3: </label>
+          <input type="number" id="chestFlyeMachine-Weight3" >
+          <br>
+          <br>
+          <label for="reps" id="Reps3"> Enter Total Reps for Set3:</label>
+          <input type="number" name="reps" id="chestFlyeMachine-Reps3" >
+          <br>
+          <br>
+          <label for="Weight" id="Weight4">Enter the Weight(In Lbs for Set 4): </label>
+          <input type="number" id="chestFlyeMachine-Weight4" >
+          <br>
+          <br>
+          <label for="reps" id="Reps4"> Enter Total Reps for Set 4:</label>
+          <input type="number" name="reps" id="chestFlyeMachine-Reps4" >
+          <br>
+          <br>
+          <label for="Weight" id ="Weight5">Enter the Weight(In Lbs) for Set 5: </label>
+          <input type="number" id="chestFlyeMachine-Weight5" >
+          <br>
+          <br>
+          <label for="reps" id="Reps5"> Enter Total Reps for Set 5:</label>
+          <input type="number" name="reps" id="chestFlyeMachine-Reps5" >
+          <br>
+          <br>
+        
+      </fieldset>
+    </form>
+    <br>
+    <button id="chestFlyeMachine-submit">Submit Data</button>
+  </div>
+  </section>
+  <script>
+    function totSets(that) {
+      if (that.value == "1 Set") {
         document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
         document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
         document.getElementById("Reps1").style.display = "block";
         document.getElementById("Weight1").style.display = "block";
-        document.getElementById("Weight2").style.display = "block";
-        document.getElementById("Reps2").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight2").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps2").style.display = "block";
 
+
+        document.getElementById("Weight2").style.display = "none";
+        document.getElementById("Reps2").style.display = "none";
+        document.getElementById("chestFlyeMachine-Weight2").style.display = "none";
+        document.getElementById("chestFlyeMachine-Reps2").style.display = "none";
         document.getElementById("Weight3").style.display = "none";
         document.getElementById("Reps3").style.display = "none";
         document.getElementById("chestFlyeMachine-Weight3").style.display = "none";
@@ -264,351 +242,378 @@
         document.getElementById("Reps5").style.display = "none";
         document.getElementById("chestFlyeMachine-Weight5").style.display = "none";
         document.getElementById("chestFlyeMachine-Reps5").style.display = "none";
-    } if (that.value == "3 Set"){
-        document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
-        document.getElementById("Reps1").style.display = "block";
-        document.getElementById("Weight1").style.display = "block";
-        document.getElementById("Weight2").style.display = "block";
-        document.getElementById("Reps2").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight2").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps2").style.display = "block";
-        document.getElementById("Weight3").style.display = "block";
-        document.getElementById("Reps3").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight3").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps3").style.display = "block";
-        
-        document.getElementById("Weight4").style.display = "none";
-        document.getElementById("Reps4").style.display = "none";
-        document.getElementById("chestFlyeMachine-Weight4").style.display = "none";
-        document.getElementById("chestFlyeMachine-Reps4").style.display = "none";
-        document.getElementById("Weight5").style.display = "none";
-        document.getElementById("Reps5").style.display = "none";
-        document.getElementById("chestFlyeMachine-Weight5").style.display = "none";
-        document.getElementById("chestFlyeMachine-Reps5").style.display = "none";
-    } if (that.value == "4 Set"){
-        document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
-        document.getElementById("Reps1").style.display = "block";
-        document.getElementById("Weight1").style.display = "block";
-        document.getElementById("Weight2").style.display = "block";
-        document.getElementById("Reps2").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight2").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps2").style.display = "block";
-        document.getElementById("Weight3").style.display = "block";
-        document.getElementById("Reps3").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight3").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps3").style.display = "block";
-        document.getElementById("Weight4").style.display = "block";
-        document.getElementById("Reps4").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight4").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps4").style.display = "block";
-        
-        document.getElementById("Weight5").style.display = "none";
-        document.getElementById("Reps5").style.display = "none";
-        document.getElementById("chestFlyeMachine-Weight5").style.display = "none";
-        document.getElementById("chestFlyeMachine-Reps5").style.display = "none";
+      } if (that.value == "2 Set"){
+          document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight2").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps2").style.display = "block";
 
-    } if (that.value == "5 Set"){
-        document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
-        document.getElementById("Reps1").style.display = "block";
-        document.getElementById("Weight1").style.display = "block";
-        document.getElementById("Weight2").style.display = "block";
-        document.getElementById("Reps2").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight2").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps2").style.display = "block";
-        document.getElementById("Weight3").style.display = "block";
-        document.getElementById("Reps3").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight3").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps3").style.display = "block";
-        document.getElementById("Weight4").style.display = "block";
-        document.getElementById("Reps4").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight4").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps4").style.display = "block";
-        document.getElementById("Weight5").style.display = "block";
-        document.getElementById("Reps5").style.display = "block";
-        document.getElementById("chestFlyeMachine-Weight5").style.display = "block";
-        document.getElementById("chestFlyeMachine-Reps5").style.display = "block";
-        
+          document.getElementById("Weight3").style.display = "none";
+          document.getElementById("Reps3").style.display = "none";
+          document.getElementById("chestFlyeMachine-Weight3").style.display = "none";
+          document.getElementById("chestFlyeMachine-Reps3").style.display = "none";
+          document.getElementById("Weight4").style.display = "none";
+          document.getElementById("Reps4").style.display = "none";
+          document.getElementById("chestFlyeMachine-Weight4").style.display = "none";
+          document.getElementById("chestFlyeMachine-Reps4").style.display = "none";
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("chestFlyeMachine-Weight5").style.display = "none";
+          document.getElementById("chestFlyeMachine-Reps5").style.display = "none";
+      } if (that.value == "3 Set"){
+          document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight2").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight3").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps3").style.display = "block";
+          
+          document.getElementById("Weight4").style.display = "none";
+          document.getElementById("Reps4").style.display = "none";
+          document.getElementById("chestFlyeMachine-Weight4").style.display = "none";
+          document.getElementById("chestFlyeMachine-Reps4").style.display = "none";
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("chestFlyeMachine-Weight5").style.display = "none";
+          document.getElementById("chestFlyeMachine-Reps5").style.display = "none";
+      } if (that.value == "4 Set"){
+          document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight2").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight3").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps3").style.display = "block";
+          document.getElementById("Weight4").style.display = "block";
+          document.getElementById("Reps4").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight4").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps4").style.display = "block";
+          
+          document.getElementById("Weight5").style.display = "none";
+          document.getElementById("Reps5").style.display = "none";
+          document.getElementById("chestFlyeMachine-Weight5").style.display = "none";
+          document.getElementById("chestFlyeMachine-Reps5").style.display = "none";
+
+      } if (that.value == "5 Set"){
+          document.getElementById("chestFlyeMachine-Weight1").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps1").style.display = "block";
+          document.getElementById("Reps1").style.display = "block";
+          document.getElementById("Weight1").style.display = "block";
+          document.getElementById("Weight2").style.display = "block";
+          document.getElementById("Reps2").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight2").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps2").style.display = "block";
+          document.getElementById("Weight3").style.display = "block";
+          document.getElementById("Reps3").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight3").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps3").style.display = "block";
+          document.getElementById("Weight4").style.display = "block";
+          document.getElementById("Reps4").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight4").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps4").style.display = "block";
+          document.getElementById("Weight5").style.display = "block";
+          document.getElementById("Reps5").style.display = "block";
+          document.getElementById("chestFlyeMachine-Weight5").style.display = "block";
+          document.getElementById("chestFlyeMachine-Reps5").style.display = "block";
+          
+      }
+
+      
     }
+  </script>
 
+
+
+
+    <!--Google Authentication-->
+    <script>
+      var firebaseConfig ={
+      apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
+      authDomain: "nfcurls.firebaseapp.com",
+      databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
+      projectId: "nfcurls",
+      storageBucket: "nfcurls.appspot.com",
+      messagingSenderId: "48180444980",
+      appId: "1:48180444980:web:682281cf5debcb7811ef61",
+      measurementId: "G-T2CF60NQPB"
+    };
+      firebase.initializeApp(firebaseConfig);
+      document.getElementById('dashboard').style.display="none"
     
-  }
-</script>
-
-
-
-
-  <!--Google Authentication-->
-  <script>
-    var firebaseConfig ={
-    apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
-    authDomain: "nfcurls.firebaseapp.com",
-    databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
-    projectId: "nfcurls",
-    storageBucket: "nfcurls.appspot.com",
-    messagingSenderId: "48180444980",
-    appId: "1:48180444980:web:682281cf5debcb7811ef61",
-    measurementId: "G-T2CF60NQPB"
-  };
-    firebase.initializeApp(firebaseConfig);
-    document.getElementById('dashboard').style.display="none"
-  
-  
-    document.getElementById('login').addEventListener('click', GoogleLogin)
-    document.getElementById('logout').addEventListener('click', LogoutUser)
     
-    let provider = new firebase.auth.GoogleAuthProvider()
-  
-    function GoogleLogin(){
-      console.log('Login Btn Call')
-      firebase.auth().signInWithPopup(provider).then(res=>{
-        console.log(res.user)
-        document.getElementById('LoginScreen').style.display="none"
-        document.getElementById('dashboard').style.display="block"
-        showUserDetails(res.user)
-      }).catch(e=>{
-        console.log(e)
-      })
-    }
-    function showUserDetails(user){
-
+      document.getElementById('login').addEventListener('click', GoogleLogin)
+      document.getElementById('logout').addEventListener('click', LogoutUser)
       
-          document.getElementById('userDetails').innerHTML = `
-            <img src="${user.photoURL}" style="width:10%">
-            <p>Name: ${user.displayName}</p>
-            <p>Email: ${user.email}</p>
-            <p>UID: ${user.uid}</p>
-          `
-        }
-  
-        function checkAuthState(){
-          firebase.auth().onAuthStateChanged(user=>{
-            if(user){
-              document.getElementById('LoginScreen').style.display="none"
-              document.getElementById('dashboard').style.display="block"
-              showUserDetails(user)
-            }else{
-  
-            }
-          })
-        }
-  
-    function LogoutUser(){
-      console.log('Logout Btn Call')
-      firebase.auth().signOut().then(()=>{
-        document.getElementById('LoginScreen').style.display="block"
-        document.getElementById('dashboard').style.display="none"
-  
-      }).catch(e=>{
-  
-        console.log(e)
-      })
-    }
-      checkAuthState()
-      
-      document.getElementById('chestFlyeMachine-submit').addEventListener('click', addData)
-      
-      function addData(){
-        
-        let user = firebase.auth().currentUser;
-
-        let uid = user.uid
-
-        let date1 = document.getElementById('chestFlyeMachine-Date').value
-       
-        const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
-
-        var val = document.getElementById('chestFlyeMachine-Sets').value;
-        
-        if (val =='1 Set'){
-          let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
-          const Weight1 = Number(Weight_1);
-
-          let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
-          const Reps1 = Number(Reps_1);
-          let obj = {
-          Date: date,
-          User_ID: uid,
-          Weight_1: Weight1,
-          Reps_1: Reps1,            
-        }
-        
-        firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
-          console.log(doc.id)
+      let provider = new firebase.auth.GoogleAuthProvider()
+    
+      function GoogleLogin(){
+        console.log('Login Btn Call')
+        firebase.auth().signInWithPopup(provider).then(res=>{
+          console.log(res.user)
+          document.getElementById('LoginScreen').style.display="none"
+          document.getElementById('dashboard').style.display="block"
+          showUserDetails(res.user)
         }).catch(e=>{
-            console.log(e)
+          console.log(e)
         })
+      }
+      function showUserDetails(user){
 
-        document.getElementById("chestFlyeMachine").reset();
-        alert("Data Submission Successful!")
         
-        }
-        else if (val =='2 Set') {
-          let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
-          const Weight1 = Number(Weight_1);
-          let Weight_2 = document.getElementById('chestFlyeMachine-Weight2').value
-          const Weight2 = Number(Weight_2);
+            document.getElementById('userDetails').innerHTML = `
+              <img src="${user.photoURL}" style="width:10%">
+              <p>Name: ${user.displayName}</p>
+              <p>Email: ${user.email}</p>
+              <p>UID: ${user.uid}</p>
+            `
+          }
+    
+          function checkAuthState(){
+            firebase.auth().onAuthStateChanged(user=>{
+              if(user){
+                document.getElementById('LoginScreen').style.display="none"
+                document.getElementById('dashboard').style.display="block"
+                showUserDetails(user)
+              }else{
+    
+              }
+            })
+          }
+    
+      function LogoutUser(){
+        console.log('Logout Btn Call')
+        firebase.auth().signOut().then(()=>{
+          document.getElementById('LoginScreen').style.display="block"
+          document.getElementById('dashboard').style.display="none"
+    
+        }).catch(e=>{
+    
+          console.log(e)
+        })
+      }
+        checkAuthState()
+        
+        document.getElementById('chestFlyeMachine-submit').addEventListener('click', addData)
+        
+        function addData(){
+          
+          let user = firebase.auth().currentUser;
 
+          let uid = user.uid
 
-          let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
-          const Reps1 = Number(Reps_1);
-          let Reps_2 = document.getElementById('chestFlyeMachine-Reps2').value
-          const Reps2 = Number(Reps_2);
-
-          let obj = {
-          Date: date,
-          User_ID: uid,
-          Weight_1: Weight1,
-          Reps_1: Reps1,
-          Weight_2: Weight2,
-          Reps_2: Reps2,
+          let date1 = document.getElementById('chestFlyeMachine-Date').value
          
-        }
-        
-        firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
-          console.log(doc.id)
-        }).catch(e=>{
-            console.log(e)
-        })
+          const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
 
-        document.getElementById("chestFlyeMachine").reset();
-        alert("Data Submission Successful!")
-        
-        }
-        else if (val =='3 Set'){
-          let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
-          const Weight1 = Number(Weight_1);
-          let Weight_2 = document.getElementById('chestFlyeMachine-Weight2').value
-          const Weight2 = Number(Weight_2);
-          let Weight_3 = document.getElementById('chestFlyeMachine-Weight3').value
-          const Weight3 = Number(Weight_3);
-
-
-          let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
-          const Reps1 = Number(Reps_1);
-          let Reps_2 = document.getElementById('chestFlyeMachine-Reps2').value
-          const Reps2 = Number(Reps_2);
-          let Reps_3 = document.getElementById('chestFlyeMachine-Reps3').value
-          const Reps3 = Number(Reps_3);
-
-          let obj = {
-          Date: date,
-          User_ID: uid,
-          Weight_1: Weight1,
-          Reps_1: Reps1,
-          Weight_2: Weight2,
-          Reps_2: Reps2,
-          Weight_3: Weight3,
-          Reps_3: Reps3,           
-        }
-        
-        firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
-          console.log(doc.id)
-        }).catch(e=>{
-            console.log(e)
-        })
-
-        document.getElementById("chestFlyeMachine").reset();
-        alert("Data Submission Successful!")
-        
-        }
-        else if (val =='4 Set') {
-          let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
-          const Weight1 = Number(Weight_1);
-          let Weight_2 = document.getElementById('chestFlyeMachine-Weight2').value
-          const Weight2 = Number(Weight_2);
-          let Weight_3 = document.getElementById('chestFlyeMachine-Weight3').value
-          const Weight3 = Number(Weight_3);
-          let Weight_4 = document.getElementById('chestFlyeMachine-Weight4').value
-          const Weight4 = Number(Weight_4);
-
-
-          let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
-          const Reps1 = Number(Reps_1);
-          let Reps_2 = document.getElementById('chestFlyeMachine-Reps2').value
-          const Reps2 = Number(Reps_2);
-          let Reps_3 = document.getElementById('chestFlyeMachine-Reps3').value
-          const Reps3 = Number(Reps_3);
-          let Reps_4 = document.getElementById('chestFlyeMachine-Reps4').value
-          const Reps4 = Number(Reps_4);
-
-          let obj = {
-          Date: date,
-          User_ID: uid,
-          Weight_1: Weight1,
-          Reps_1: Reps1,
-          Weight_2: Weight2,
-          Reps_2: Reps2,
-          Weight_3: Weight3,
-          Reps_3: Reps3,
-          Weight_4: Weight4,
-          Reps_4: Reps4,
-
+          var val = document.getElementById('chestFlyeMachine-Sets').value;
           
-        }
-        
-        firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
-          console.log(doc.id)
-        }).catch(e=>{
-            console.log(e)
-        })
+          if (val =='1 Set'){
+            let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
 
-        document.getElementById("chestFlyeMachine").reset();
-        alert("Data Submission Successful!")
-        
-        }
-        else if (val =='5 Set'){
-          let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
-          const Weight1 = Number(Weight_1);
-          let Weight_2 = document.getElementById('chestFlyeMachine-Weight2').value
-          const Weight2 = Number(Weight_2);
-          let Weight_3 = document.getElementById('chestFlyeMachine-Weight3').value
-          const Weight3 = Number(Weight_3);
-          let Weight_4 = document.getElementById('chestFlyeMachine-Weight4').value
-          const Weight4 = Number(Weight_4);
-          let Weight_5 = document.getElementById('chestFlyeMachine-Weight5').value
-          const Weight5 = Number(Weight_5);
-
-          let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
-          const Reps1 = Number(Reps_1);
-          let Reps_2 = document.getElementById('chestFlyeMachine-Reps2').value
-          const Reps2 = Number(Reps_2);
-          let Reps_3 = document.getElementById('chestFlyeMachine-Reps3').value
-          const Reps3 = Number(Reps_3);
-          let Reps_4 = document.getElementById('chestFlyeMachine-Reps4').value
-          const Reps4 = Number(Reps_4);
-          let Reps_5 = document.getElementById('chestFlyeMachine-Reps5').value
-          const Reps5 = Number(Reps_5);
-
-          let obj = {
-          Date: date,
-          User_ID: uid,
-          Weight_1: Weight1,
-          Reps_1: Reps1,
-          Weight_2: Weight2,
-          Reps_2: Reps2,
-          Weight_3: Weight3,
-          Reps_3: Reps3,
-          Weight_4: Weight4,
-          Reps_4: Reps4,
-          Weight_5: Weight5,
-          Reps_5: Reps5,
+            let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,            
+          }
           
-        }
-        
-        firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
-          console.log(doc.id)
-        }).catch(e=>{
-            console.log(e)
-        })
+          firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
 
-        document.getElementById("chestFlyeMachine").reset();
-        alert("Data Submission Successful!")
-        }
-      }  
-     </script>
-</body>
-</html>
+          document.getElementById("chestFlyeMachine").reset();
+          alert("Data Submission Successful!")
+          
+          }
+          else if (val =='2 Set') {
+            let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+            let Weight_2 = document.getElementById('chestFlyeMachine-Weight2').value
+            const Weight2 = Number(Weight_2);
+
+
+            let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let Reps_2 = document.getElementById('chestFlyeMachine-Reps2').value
+            const Reps2 = Number(Reps_2);
+
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,
+            Weight_2: Weight2,
+            Reps_2: Reps2,
+           
+          }
+          
+          firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+
+          document.getElementById("chestFlyeMachine").reset();
+          alert("Data Submission Successful!")
+          
+          }
+          else if (val =='3 Set'){
+            let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+            let Weight_2 = document.getElementById('chestFlyeMachine-Weight2').value
+            const Weight2 = Number(Weight_2);
+            let Weight_3 = document.getElementById('chestFlyeMachine-Weight3').value
+            const Weight3 = Number(Weight_3);
+
+
+            let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let Reps_2 = document.getElementById('chestFlyeMachine-Reps2').value
+            const Reps2 = Number(Reps_2);
+            let Reps_3 = document.getElementById('chestFlyeMachine-Reps3').value
+            const Reps3 = Number(Reps_3);
+
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,
+            Weight_2: Weight2,
+            Reps_2: Reps2,
+            Weight_3: Weight3,
+            Reps_3: Reps3,           
+          }
+          
+          firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+
+          document.getElementById("chestFlyeMachine").reset();
+          alert("Data Submission Successful!")
+          
+          }
+          else if (val =='4 Set') {
+            let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+            let Weight_2 = document.getElementById('chestFlyeMachine-Weight2').value
+            const Weight2 = Number(Weight_2);
+            let Weight_3 = document.getElementById('chestFlyeMachine-Weight3').value
+            const Weight3 = Number(Weight_3);
+            let Weight_4 = document.getElementById('chestFlyeMachine-Weight4').value
+            const Weight4 = Number(Weight_4);
+
+
+            let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let Reps_2 = document.getElementById('chestFlyeMachine-Reps2').value
+            const Reps2 = Number(Reps_2);
+            let Reps_3 = document.getElementById('chestFlyeMachine-Reps3').value
+            const Reps3 = Number(Reps_3);
+            let Reps_4 = document.getElementById('chestFlyeMachine-Reps4').value
+            const Reps4 = Number(Reps_4);
+
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,
+            Weight_2: Weight2,
+            Reps_2: Reps2,
+            Weight_3: Weight3,
+            Reps_3: Reps3,
+            Weight_4: Weight4,
+            Reps_4: Reps4,
+
+            
+          }
+          
+          firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+
+          document.getElementById("chestFlyeMachine").reset();
+          alert("Data Submission Successful!")
+          
+          }
+          else if (val =='5 Set'){
+            let Weight_1 = document.getElementById('chestFlyeMachine-Weight1').value
+            const Weight1 = Number(Weight_1);
+            let Weight_2 = document.getElementById('chestFlyeMachine-Weight2').value
+            const Weight2 = Number(Weight_2);
+            let Weight_3 = document.getElementById('chestFlyeMachine-Weight3').value
+            const Weight3 = Number(Weight_3);
+            let Weight_4 = document.getElementById('chestFlyeMachine-Weight4').value
+            const Weight4 = Number(Weight_4);
+            let Weight_5 = document.getElementById('chestFlyeMachine-Weight5').value
+            const Weight5 = Number(Weight_5);
+
+            let Reps_1 = document.getElementById('chestFlyeMachine-Reps1').value
+            const Reps1 = Number(Reps_1);
+            let Reps_2 = document.getElementById('chestFlyeMachine-Reps2').value
+            const Reps2 = Number(Reps_2);
+            let Reps_3 = document.getElementById('chestFlyeMachine-Reps3').value
+            const Reps3 = Number(Reps_3);
+            let Reps_4 = document.getElementById('chestFlyeMachine-Reps4').value
+            const Reps4 = Number(Reps_4);
+            let Reps_5 = document.getElementById('chestFlyeMachine-Reps5').value
+            const Reps5 = Number(Reps_5);
+
+            let obj = {
+            Date: date,
+            User_ID: uid,
+            Weight_1: Weight1,
+            Reps_1: Reps1,
+            Weight_2: Weight2,
+            Reps_2: Reps2,
+            Weight_3: Weight3,
+            Reps_3: Reps3,
+            Weight_4: Weight4,
+            Reps_4: Reps4,
+            Weight_5: Weight5,
+            Reps_5: Reps5,
+            
+          }
+          
+          firebase.firestore().collection('chestFlyeMachine').add(obj).then(doc=>{
+            console.log(doc.id)
+          }).catch(e=>{
+              console.log(e)
+          })
+
+          document.getElementById("chestFlyeMachine").reset();
+          alert("Data Submission Successful!")
+          }
+        }  
+       </script>
+
+
+
+
+    
+  </body>
+  </html>
 
