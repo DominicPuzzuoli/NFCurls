@@ -1,76 +1,153 @@
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="/CSS/style.css" type="text/css">
-  <link rel="stylesheet" href="/CSS/form.css" type="text/css">
+<link rel="stylesheet" href="/CSS/form.css" type="text/css">
+
   <meta charset="UTF-8">
   <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.memory.js"></script>
 <!-- Don't change the format for any other products. -->
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
+<!-- etc. -->
+  <head>
+    <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8"/>
+    <title>Leg Adduction</title>
+
+    <script src="/scripts/onSignIn.js"></script>
   </head>
-  <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <meta charset="utf-8"/>
-  <title>Leg Adduction</title>
-  </head>
+  <body>
+
+      <script type="module" src="/scripts/readData.js"></script>
+      <script type="module" src="/scripts/writeData.js"></script>
+      <script src="/scripts/sideBar.js"></script>
 
 
-      <script type ="module" src="/script.js"></script>
-      <meta charset="utf-8"/>
-      <title>NFCurls</title>
+      <style>    
+        .data{
+          display:none ;
+        }
+      </style>
 
-      <script src="/scripts/onSignIn.js"></script>
-    </head>
-    <body>
-        <script type="module" src="/scripts/readData.js"></script>
-        <script type="module" src="/scripts/writeData.js"></script>
-        <script src="/scripts/sideBar.js"></script>
+      <nav class ="myNav">
+        <ul>
+        <div id="main">
+        <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
+        </div>
+
+        <div id ="LoginScreen" class="LoginScreen">
+          <button id="login"><img src="/img/signin-button.png" height="50" width="200" alt=""></button>
+    
+        </div>
+       <img id = "logoimg" src="/img/nfcurls_copy-removebg-preview.png" height= "100" width = "400" alt="">
+    
+        <div id= "LogoutScreen" class="LogoutScreen">
+          <button id="logout"><img src="/img/signout.png" height="40" width="100" alt =""></button>
+          <div id="userDetails" class="userDetails"> </div>
+        </div>
+
+          </div></li>
 
 
-        <style>
-          .data{
-            display:none ;
+        </ul>
+      </nav>
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Homepage.html">Home</a>
+        <a href="/index.html">About</a>
+        <a href="/Pages/Workouts.html">Workouts</a>
+        <a href="/Pages/about.html">Contact</a>
+      </div>
+
+
+   <script>
+  var firebaseConfig ={
+  apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
+  authDomain: "nfcurls.firebaseapp.com",
+  databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
+  projectId: "nfcurls",
+  storageBucket: "nfcurls.appspot.com",
+  messagingSenderId: "48180444980",
+  appId: "1:48180444980:web:682281cf5debcb7811ef61",
+  measurementId: "G-T2CF60NQPB"
+};
+  firebase.initializeApp(firebaseConfig);
+  document.getElementById('LogoutScreen').style.display="none"
+
+
+  document.getElementById('login').addEventListener('click', GoogleLogin)
+  document.getElementById('logout').addEventListener('click', LogoutUser)
+  
+  let provider = new firebase.auth.GoogleAuthProvider()
+
+  function GoogleLogin(){
+    console.log('Login Btn Call')
+    firebase.auth().signInWithPopup(provider).then(res=>{
+      console.log(res.user)
+      document.getElementById('LoginScreen').style.display="none"
+      document.getElementById('LogoutScreen').style.display="block"
+      showUserDetails(res.user)
+    }).catch(e=>{
+      console.log(e)
+    })
+  }
+  function showUserDetails(user){
+        document.getElementById('userDetails').innerHTML = `
+          <img src="${user.photoURL}" style="width:40%"> 
+          <p> ${user.displayName}</p>
+        `
+      }
+
+      function checkAuthState(){
+        firebase.auth().onAuthStateChanged(user=>{
+          if(user){
+            document.getElementById('LoginScreen').style.display="none"
+            document.getElementById('LogoutScreen').style.display="block"
+            showUserDetails(user)
+          }else{
+
           }
-        </style>
-        <div id ="LoginScreen">
-          <button id="login">Login with google</button>
+        })
+      }
+
+  function LogoutUser(){
+    console.log('Logout Btn Call')
+    firebase.auth().signOut().then(()=>{
+      document.getElementById('LoginScreen').style.display="block"
+      document.getElementById('LogoutScreen').style.display="none"
+
+    }).catch(e=>{
+
+      console.log(e)
+    })
+  }
+    checkAuthState()
     
-        </div>
+    document.getElementById('addDataBtn').addEventListener('click', addData)
     
-        <div id= "dashboard">
-          <div id="userDetails"> </div>
-          <button id="logout">logout</button>
-        </div>
+    function addData(){
 
-        <nav class ="myNav">
-          <ul>
-          <div id="main">
-          <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
-          </div>
+      let workout = document.getElementById('workout').value
 
-            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
-            <li><div class="data">
-              <img id="pic" class="img-circle" width="100" height="100"/>
-              <!---<a id ="fullName" href="" ></a>--->
-              <!--This above could be used to display the user name is we want-->
-              <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
+      let obj = {
+        workouttype : workout
 
-            </div></li>
+      }
+      firebase.firestore().collection('workoutdata').add(obj).then(doc=>{
+        console.log(doc.id)
+      }).catch(e=>{
+          console.log(e)
+      })
+    }
 
+    //reference
 
-          </ul>
-        </nav>
+    
+   </script>
 
-        <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="/Pages/Workouts.html">Workouts</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
 
   <body>
     <section>
