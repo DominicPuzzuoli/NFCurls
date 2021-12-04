@@ -356,7 +356,7 @@
   float: inline-end;
   }
 
-  #chestFlyMachine {
+  #chestFlyeMachine {
       background-color: rgb(247, 242, 242);
       box-sizing: border-box;
       text-align: left;
@@ -365,7 +365,7 @@
       margin-right: auto;
       height: auto;
     }
-    .div-chestFlyMachine {
+    .div-chestFlyeMachine {
 
       margin: 0 auto;
       max-width:400px;
@@ -375,18 +375,18 @@
 
     }
 
-    .div-chestFlyMachine legend {
+    .div-chestFlyeMachine legend {
       text-align:center;
       font-weight:100;
       font-size:2em;
       margin-bottom:10px;
     }
 
-    .div-chestFlyMachine label {
+    .div-chestFlyeMachine label {
       display: block;
       font-size: large;
     }
-    .div-chestFlyMachine input {
+    .div-chestFlyeMachine input {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -395,7 +395,7 @@
       border-radius: 4px;
       box-sizing: border-box;
     }
-    .div-chestFlyMachine select {
+    .div-chestFlyeMachine select {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -404,7 +404,7 @@
       border-radius: 4px;
       box-sizing: border-box;
     }
-    #chestFlyMachine-submit {
+    #chestFlyeMachine-submit {
       background-color: #4B646E; /* Green */
       border: none;
       border-radius: 12px;
@@ -415,7 +415,7 @@
       display: inline-block;
       font-size: 16px;
     }
-    #chestFlyMachine-Date {
+    #chestFlyeMachine-Date {
       background-color: #4B646E; /* Green */
       border: none;
       border-radius: 12px;

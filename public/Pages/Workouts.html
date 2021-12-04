@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+  <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+  <link rel="stylesheet" href="../CSS/workouts.css" type="text/css">
   <meta charset="UTF-8">
 
   <head>
@@ -30,23 +31,62 @@
       </style>
 
       <!-- The below styling code is for the positions of the columns-->
-      <style>
-        * {
-          box-sizing: border-box;
-        }
-
+       <style>
+          a {
+            text-decoration:none;
+          }
         /* Create four equal columns that floats next to each other */
         .column {
           float: left;
-          width: 50%;
+          width: 25%;
+          height: 1440px;
           padding: 20px;
+          background-position:
         }
-
+        .interior {
+          text-align: center;
+          border-top-left-radius: 70px;
+          border-bottom-right-radius: 70px;
+          border: 1px solid;
+          border-color: grey;
+          background-color: rgb(75,100,110);
+          color: white;
+          text-decoration: none;
+          opacity: 76%;
+        }
+        .column a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          text-decoration: none;
+        }
+        .row a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          text-decoration: none;
+          }
         /* Clear floats after the columns */
         .row:after {
           content: "";
           display: table;
           clear: both;
+        }
+        #col1 {
+          background-image: url("../img/4th.jpg");
+          background-position: 45% 60%;
+        }
+        #col2 {
+          background-image: url("../img/pexels-leon-ardho-1552242.jpg");
+          background-position: 10% 50%;
+        }
+        #col3 {
+          background-image: url("../img/machines.jpg");
+          background-position: 40% 50%;
+        }
+        #col4 {
+          background-image: url("../img/pexels-leon-ardho-1552106.jpg");
+          background-position: 50% 50%;
         }
         </style>
 
@@ -77,32 +117,39 @@
         <a href="#">Clients</a>
         <a href="#">Contact</a>
       </div>
-
-      <h1>Workouts</h1>
       <div class="row">
-        <div class="column" style="background-color:#aaa;">
-            <a href ="basicworkouts.html">
-            <h2>Basic</h2>
-            </a>
-          <p>burpees, jump ropes, etc...</p>
-        </div>
-        <div class="column" style="background-color:#bbb;">
-           <a href = "cardioworkouts.html">
-          <h2>Cardio</h2>
+        <div class="column" id="col1" style="background-color:#669DB3FF;">
+          <a href ="basicworkouts.html" style="text-decoration:none">
+            <div class="interior">
+            <h2 style="text-decoration: none;">Basic</h2>
+            <p>burpees, jump ropes, etc...</p>
+            </div>
           </a>
+        </div>
+        <div class="column" id="col2" style="background-color:#F0F6F7FF;">
+           <a href = "cardioworkouts.html">
+          <div class=interior>
+          <h2>Cardio</h2>
           <p>bike,eliptical, etc...</p>
         </div>
-        <div class="column" style="background-color:#aaa;">
+          </a>
+        </div>
+        <div class="column" id="col3" style="background-color:#A89C94FF; ">
             <a href = "machineworkouts.html">
+            <div class="interior">
             <h2>Machines</h2>
-            </a>
             <p>Ab crunch, leg curl, etc...</p>
           </div>
-          <div class="column" style="background-color:#bbb;">
-            <a href ="weightworkouts.html">
-            <h2>Weights</h2>
             </a>
+          </div>
+          <div class="column" id="col4" style="background-color:#FF4F58FF;">
+            <a href ="weightworkouts.html">
+            <div class="interior">
+            <h2>Weights</h2>
             <p>bench press, chest press, etc...</p>
+
+          </div>
+            </a>
           </div>
       </div>
 
