@@ -7,36 +7,60 @@
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.memory.js"></script>
 <!-- Don't change the format for any other products. -->
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
+<!-- etc. -->
+  <head>
+    <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="utf-8"/>
+    <title> Chest Press </title>
+
+    <script src="/scripts/onSignIn.js"></script>
   </head>
-  <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <meta charset="utf-8"/>
-  <title>Chest Press</title>
-  <link rel="shortcut icon" type="image/jpg" href="/img/curl.jpg"/>
-    </head>
-    <body>
-        <script type="module" src="/scripts/readData.js"></script>
-        <script type="module" src="/scripts/writeData.js"></script>
-        <script src="/scripts/sideBar.js"></script>
+  <body>
+
+      <script type="module" src="/scripts/readData.js"></script>
+      <script type="module" src="/scripts/writeData.js"></script>
+      <script src="/scripts/sideBar.js"></script>
 
 
-        <nav class ="myNav">
+      <style>    
+        .data{
+          display:none ;
+        }
+      </style>
 
-          <div id="main">
-          <button class="openbtn" onclick="openNav()">&#9776; View Pages</button>
-          <br>
-          </div>
-
-        <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="/Pages/about.html">About</a>
-          <a href="#">Services</a>
-          <a href="/Pages/Workouts.html">Workouts</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+      <nav class ="myNav">
+        <ul>
+        <div id="main">
+        <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
         </div>
+
+        <div id ="LoginScreen" class="LoginScreen">
+          <button id="login"><img src="/img/signin-button.png" height="50" width="200" alt=""></button>
+    
+        </div>
+       <img id = "logoimg" src="/img/nfcurls_copy-removebg-preview.png" height= "100" width = "400" alt="">
+    
+        <div id= "LogoutScreen" class="LogoutScreen">
+          <button id="logout"><img src="/img/signout.png" height="40" width="100" alt =""></button>
+          <div id="userDetails" class="userDetails"> </div>
+        </div>
+
+          </div></li>
+
+
+        </ul>
+      </nav>
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../Homepage.html">Home</a>
+        <a href="/index.html">About</a>
+        <a href="/Pages/Workouts.html">Workouts</a>
+        <a href="/Pages/about.html">Contact</a>
+      </div>
 
 
         <style>
@@ -322,6 +346,8 @@
     })
   }
     checkAuthState()
+    
+   
 
     document.getElementById('chestPress-submit').addEventListener('click', addData)
 

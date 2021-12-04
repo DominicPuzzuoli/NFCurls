@@ -356,124 +356,124 @@
   float: inline-end;
   }
 
-  #chestFlyMachine {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-chestFlyMachine {
-
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
-
-    }
-
-    .div-chestFlyMachine legend {
-      text-align:center;
-      font-weight:100;
-      font-size:2em;
-      margin-bottom:10px;
-    }
-
-    .div-chestFlyMachine label {
-      display: block;
-      font-size: large;
-    }
-    .div-chestFlyMachine input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-chestFlyMachine select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    #chestFlyMachine-submit {
-      background-color: #4B646E; /* Green */
-      border: none;
-      border-radius: 12px;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-    }
-    #chestFlyMachine-Date {
-      background-color: #4B646E; /* Green */
-      border: none;
-      border-radius: 12px;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-    }
-  #chestFlyeMachine-Sets {
-  float: inline-end;
+  #chestFlyeMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
   }
-  #chestFlyeMachine-Weight1 {
-  float: inline-end;
-  }
-  #chestFlyeMachine-Weight2 {
-  float: inline-end;
+  .div-chestFlyeMachine {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
 
   }
-  #chestFlyeMachine-Weight3 {
-  float: inline-end;
 
+  .div-chestFlyeMachine legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
   }
-  #chestFlyeMachine-Weight4 {
-  float: inline-end;
 
+  .div-chestFlyeMachine label {
+    display: block;
+    font-size: large;
   }
-  #chestFlyeMachine-Weight5 {
-  float: inline-end;
-
+  .div-chestFlyeMachine input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
-  #chestFlyeMachine-Reps1 {
-  float: inline-end;
+  .div-chestFlyeMachine select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
-  #chestFlyeMachine-Reps2 {
-  float: inline-end;
-
-  }
-  #chestFlyeMachine-Reps3 {
-  float: inline-end;
-
-  }
-  #chestFlyeMachine-Reps4 {
-  float: inline-end;
-
-  }
-  #chestFlyeMachine-Reps5 {
-  float: inline-end;
-
+  #chestFlyeMachine-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
   #chestFlyeMachine-Date {
-  float: inline-end;
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
+#chestFlyeMachine-Sets {
+float: inline-end;
+}
+#chestFlyeMachine-Weight1 {
+float: inline-end;
+}
+#chestFlyeMachine-Weight2 {
+float: inline-end;
 
-  #chestFlyeMachine-Sets {
-  float: inline-end;
-  }
+}
+#chestFlyeMachine-Weight3 {
+float: inline-end;
+
+}
+#chestFlyeMachine-Weight4 {
+float: inline-end;
+
+}
+#chestFlyeMachine-Weight5 {
+float: inline-end;
+
+}
+#chestFlyeMachine-Reps1 {
+float: inline-end;
+}
+#chestFlyeMachine-Reps2 {
+float: inline-end;
+
+}
+#chestFlyeMachine-Reps3 {
+float: inline-end;
+
+}
+#chestFlyeMachine-Reps4 {
+float: inline-end;
+
+}
+#chestFlyeMachine-Reps5 {
+float: inline-end;
+
+}
+#chestFlyeMachine-Date {
+float: inline-end;
+}
+
+#chestFlyeMachine-Sets {
+float: inline-end;
+}
 
   #chestPress {
       background-color: rgb(247, 242, 242);
@@ -2378,6 +2378,124 @@ float: inline-end;
   #squats-Sets {
   float: inline-end;
   }
+  #seatedCalfMachine {
+    background-color: rgb(247, 242, 242);
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  .div-seatedCalfMachine {
+
+    margin: 0 auto;
+    max-width:400px;
+    margin:50px 20px;
+    background:#fff;
+    padding:2px;
+
+  }
+
+  .div-seatedCalfMachine legend {
+    text-align:center;
+    font-weight:100;
+    font-size:2em;
+    margin-bottom:10px;
+  }
+
+  .div-seatedCalfMachine label {
+    display: block;
+    font-size: large;
+  }
+  .div-seatedCalfMachine input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-seatedCalfMachine select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #seatedCalfMachine-submit {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #seatedCalfMachine-Date {
+    background-color: #4B646E; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+#seatedCalfMachine-Sets {
+float: inline-end;
+}
+#seatedCalfMachine-Weight1 {
+float: inline-end;
+}
+#seatedCalfMachine-Weight2 {
+float: inline-end;
+
+}
+#seatedCalfMachine-Weight3 {
+float: inline-end;
+
+}
+#seatedCalfMachine-Weight4 {
+float: inline-end;
+
+}
+#seatedCalfMachine-Weight5 {
+float: inline-end;
+
+}
+#seatedCalfMachine-Reps1 {
+float: inline-end;
+}
+#seatedCalfMachine-Reps2 {
+float: inline-end;
+
+}
+#seatedCalfMachine-Reps3 {
+float: inline-end;
+
+}
+#seatedCalfMachine-Reps4 {
+float: inline-end;
+
+}
+#seatedCalfMachine-Reps5 {
+float: inline-end;
+
+}
+#seatedCalfMachine-Date {
+float: inline-end;
+}
+
+#seatedCalfMachine-Sets {
+float: inline-end;
+}
 
   #standingCalfMachine {
       background-color: rgb(247, 242, 242);
