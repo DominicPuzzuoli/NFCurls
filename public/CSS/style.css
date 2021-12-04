@@ -32,6 +32,12 @@
     height: 50;
 }
 
+#logoimg {
+  float: center;
+  position: absolute;
+  left: 530px;
+}
+
 .LogoutScreen {
     float: right;
     padding: 25px 16px;
@@ -136,5 +142,3 @@
     text-align: center;
     color: white;
   }
-
-
