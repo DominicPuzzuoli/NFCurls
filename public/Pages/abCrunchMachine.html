@@ -9,6 +9,12 @@
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
 <!-- etc. -->
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -264,6 +270,7 @@
       measurementId: "G-T2CF60NQPB"
     };
       firebase.initializeApp(firebaseConfig);
+      var db = firebase.firestore(firebase);
       document.getElementById('LogoutScreen').style.display="none"
     
     
@@ -516,6 +523,7 @@
           }
         }
        </script>
+
 <canvas id="myChart" width="400" height="400"></canvas>
 <script>
 var labelsArray = [];
@@ -583,9 +591,7 @@ db.collection("abCrunchMachine").get().then((snapshot) => {
     }
 });
 })
-
-
-
+</script>
 
   </body>
   </html>
