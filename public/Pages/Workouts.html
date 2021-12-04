@@ -29,30 +29,28 @@
       <script src="/scripts/sideBar.js"></script>
 
 
-      <style>    
-        .data{
-          display:none ;
-        }
-      </style>
-
+     
+      <div>
       <nav class ="myNav">
         <ul>
         <div id="main">
-        <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
+        <button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
         </div>
 
         <div id ="LoginScreen" class="LoginScreen">
           <button id="login"><img src="/img/signin-button.png" height="50" width="200" alt=""></button>
     
         </div>
+        <div>
        <img id = "logoimg" src="/img/nfcurls_copy-removebg-preview.png" height= "100" width = "400" alt="">
-    
+     
+      </div>
         <div id= "LogoutScreen" class="LogoutScreen">
           <button id="logout"><img src="/img/signout.png" height="40" width="100" alt =""></button>
           <div id="userDetails" class="userDetails"> </div>
         </div>
 
-          </div></li>
+      </div>
 
 
         </ul>
@@ -318,23 +316,14 @@
 
       <!-- The below styling code is for the positions of the columns-->
        <style>
-          a {
-            text-decoration:none;
-          }
+        
         /* Create four equal columns that floats next to each other */
-        .column {
-          float: left;
-          width: 25%;
-          height: 1440px;
-          padding: 20px;
-          background-position:
-        }
+        
         .interior {
           font-family: 'Arial';
           font-size: 22px;
           text-align: center;
-          border-top-left-radius: 70px;
-          border-bottom-right-radius: 70px;
+         
           border: 1px solid;
           border-color: grey;
           background-color: rgb(75,100,110);
@@ -370,22 +359,7 @@
           display: table;
           clear: both;
         }
-        #col1 {
-          background-image: url("../img/4th.jpg");
-          background-position: 45% 60%;
-        }
-        #col2 {
-          background-image: url("../img/pexels-leon-ardho-1552242.jpg");
-          background-position: 10% 50%;
-        }
-        #col3 {
-          background-image: url("../img/machines.jpg");
-          background-position: 40% 50%;
-        }
-        #col4 {
-          background-image: url("../img/pexels-leon-ardho-1552106.jpg");
-          background-position: 50% 50%;
-        }
+     
         </style>
 
       
@@ -394,7 +368,7 @@
         <div class="column" id="col1" style="background-color:#669DB3FF;">
           <a href ="basicworkouts.html" style="text-decoration:none">
             <div class="interior">
-            <h2 style="text-decoration: none;">Basic</h2>
+            <h2>Basic</h2>
             <p>burpees, jump ropes, etc...</p>
             </div>
           </a>
