@@ -9,6 +9,7 @@
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
 <!-- etc. -->
   <head>
+    <!--These three cdn scripts below need to be added to each chart js page-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
@@ -270,7 +271,10 @@
       measurementId: "G-T2CF60NQPB"
     };
       firebase.initializeApp(firebaseConfig);
+
+      //This line below needs to be added to each chart js page
       var db = firebase.firestore(firebase);
+
       document.getElementById('LogoutScreen').style.display="none"
     
     
@@ -342,6 +346,7 @@
 
             let Reps_1 = document.getElementById('abCrunchMachine-Reps1').value
             const Reps1 = Number(Reps_1);
+            //for the date lilne below, the date needs to be changed to date1 to make it submit as a string
             let obj = {
             Date: date1,
             User_ID: uid,
