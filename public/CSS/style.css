@@ -50,8 +50,8 @@
 
 #logoimg {
   float: center;
-  position: relative;
-  left: 335px;
+  position: absolute;
+  left: 520px;
 }
 
 #pic {
@@ -136,6 +136,10 @@
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+    #logoimg {
+      float: left;
+    position: absolute;
+    }
   }
 
   body h1 {
