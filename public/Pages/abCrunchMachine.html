@@ -536,6 +536,20 @@ var dataArray = [];
 let test1 = [];
 let test2 = [];
 
+let colors = [  'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)' ];
+                
+
+                let backgroundColor = [  'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)' ]
 
 db.collection("abCrunchMachine").get().then((snapshot) => {
   snapshot.docs.forEach(doc => {
@@ -557,59 +571,74 @@ db.collection("abCrunchMachine").get().then((snapshot) => {
     var Reps_4 = item.Reps_4;
     var Reps_5 = item.Reps_5;
     
-    dataArray.push({Weight: Weight_1, actualDate: actualDate, });
+    dataArray.push({
+      actualDate: actualDate, 
+      Weight1: Weight_1, 
+      Weight2: Weight_2, 
+      Weight3: Weight_3, 
+      Weight4: Weight_4, 
+      Weight5: Weight_5, 
+      Reps_1: item.Reps_1,
+      Reps_2: item.Reps_2,
+      Reps_3: item.Reps_3,
+      Reps_4: item.Reps_4,
+      Reps_5: item.Reps_5
+     });
   }});
 
   dataArray.sort(function(a,b){
-        return b.actualDate - a.actualDate;
+        return a.actualDate - b.actualDate;
   });
 
+
+  let masterWeight1 = dataArray.map(e => {return (e.Weight1) ? Number(e.Weight1) : 0});
+  let masterWeight2 = dataArray.map(e => {return (e.Weight2) ? Number(e.Weight2) : 0});
+  let masterWeight3 = dataArray.map(e => {return (e.Weight3) ? Number(e.Weight3) : 0});
+  let masterWeight4 = dataArray.map(e => {return (e.Weight4) ? Number(e.Weight4) : 0});
+  let masterWeight5 = dataArray.map(e => {return (e.Weight5) ? Number(e.Weight5) : 0});
+
+  let masterDate = dataArray.map(e => {return (e.actualDate) ? String(e.actualDate).substr(0,10) : 0});
+
+  let masterDataset = [masterWeight1,masterWeight2,masterWeight3,masterWeight4,masterWeight5];
+  let masterLabel = ["Weight1","Weight2","Weight3","Weight4","Weight5"];
+
   const ctx = document.getElementById('myChart').getContext('2d');
+
+  const data = {
+    datasets: []
+  }
+
+  for (var i = 0 ; i < masterDataset.length; i++){   
+    var dataset1 = {
+          label: masterLabel[i],
+          data: masterDataset[i],
+          backgroundColor: backgroundColor[i],
+          //fill: false,
+    }
+    data.datasets.push(dataset1);
+  }
+  
   const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: dataArray.map(e => {return e.actualDate}),
-        datasets: [{
-            label: 'Weight(In lbs)',
-            data: dataArray.map(e => {return e.Weight}),
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
+      labels: masterDate,
+      datasets: data.datasets
     },
     options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            },
-            x: {
-                type: 'time',
-                time: {
-                  unit: "day"
-                },
-                distribution: 'series'
-                
-                
-                
-            }   
-        }
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Line Chart'
+      }
     }
+  }
 });
-})
+
+});
 </script>
 
   </body>
