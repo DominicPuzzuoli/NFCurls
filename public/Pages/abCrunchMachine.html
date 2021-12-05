@@ -561,6 +561,15 @@ db.collection("abCrunchMachine").get().then((snapshot) => {
     let dateSplit = item.Date.split("-");
     let actualDate = new Date(dateSplit[0],dateSplit[1] - 1,dateSplit[2]);
     var Weight_1 = item.Weight_1;
+    var Weight_2 = item.Weight_2;
+    var Weight_3 = item.Weight_3;
+    var Weight_4 = item.Weight_4;
+    var Weight_5 = item.Weight_5;
+    var Reps_1 = item.Reps_1;
+    var Reps_2 = item.Reps_2;
+    var Reps_3 = item.Reps_3;
+    var Reps_4 = item.Reps_4;
+    var Reps_5 = item.Reps_5;
     
     dataArray.push({
       actualDate: actualDate, 
@@ -590,8 +599,11 @@ db.collection("abCrunchMachine").get().then((snapshot) => {
 
   let masterDate = dataArray.map(e => {return (e.actualDate) ? String(e.actualDate).substr(0,10) : 0});
 
+
+
   let masterDataset = [masterWeight1,masterWeight2,masterWeight3,masterWeight4,masterWeight5];
   let masterLabel = ["Weight1","Weight2","Weight3","Weight4","Weight5"];
+
 
   const ctx = document.getElementById('myChart').getContext('2d');
 
