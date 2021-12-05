@@ -539,12 +539,26 @@ let test2 = [];
 
 db.collection("abCrunchMachine").get().then((snapshot) => {
   snapshot.docs.forEach(doc => {
+    let user = firebase.auth().currentUser;
+    let uid = user.uid;
     var item = doc.data();
+    var userid = item.User_ID;
+    if (userid == uid){
     let dateSplit = item.Date.split("-");
     let actualDate = new Date(dateSplit[0],dateSplit[1] - 1,dateSplit[2]);
     var Weight_1 = item.Weight_1;
-    dataArray.push({Weight: Weight_1, actualDate: actualDate });
-  });
+    var Weight_2 = item.Weight_2;
+    var Weight_3 = item.Weight_3;
+    var Weight_4 = item.Weight_4;
+    var Weight_5 = item.Weight_5;
+    var Reps_1 = item.Reps_1;
+    var Reps_2 = item.Reps_2;
+    var Reps_3 = item.Reps_3;
+    var Reps_4 = item.Reps_4;
+    var Reps_5 = item.Reps_5;
+    
+    dataArray.push({Weight: Weight_1, actualDate: actualDate, });
+  }});
 
   dataArray.sort(function(a,b){
         return b.actualDate - a.actualDate;
