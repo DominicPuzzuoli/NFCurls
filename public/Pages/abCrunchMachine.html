@@ -334,9 +334,7 @@
 
           let uid = user.uid
 
-          let date1 = document.getElementById('abCrunchMachine-Date').value
-
-          const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
+          let date = document.getElementById('abCrunchMachine-Date').value
 
           var val = document.getElementById('abCrunchMachine-Sets').value;
 
@@ -348,7 +346,7 @@
             const Reps1 = Number(Reps_1);
             //for the date lilne below, the date needs to be changed to date1 to make it submit as a string
             let obj = {
-            Date: date1,
+            Date: date,
             User_ID: uid,
             Weight_1: Weight1,
             Reps_1: Reps1,
@@ -591,11 +589,13 @@ db.collection("abCrunchMachine").get().then((snapshot) => {
   });
 
 
-  let masterWeight1 = dataArray.map(e => {return (e.Weight1) ? Number(e.Weight1) : 0});
+  let masterWeight1 = dataArray.map(e => {return (e.Weight1) ? Number(e.Weight1) : 0}),;
   let masterWeight2 = dataArray.map(e => {return (e.Weight2) ? Number(e.Weight2) : 0});
   let masterWeight3 = dataArray.map(e => {return (e.Weight3) ? Number(e.Weight3) : 0});
   let masterWeight4 = dataArray.map(e => {return (e.Weight4) ? Number(e.Weight4) : 0});
   let masterWeight5 = dataArray.map(e => {return (e.Weight5) ? Number(e.Weight5) : 0});
+
+  
 
   let masterDate = dataArray.map(e => {return (e.actualDate) ? String(e.actualDate).substr(0,10) : 0});
 
