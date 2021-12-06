@@ -71,6 +71,7 @@
   <body>
     <section>
       <div class="div-chestFlyeMachine">
+        <!--Look into changing action to the add data javascript-->
       <form id="chestFlyeMachine" action="#" method="post">
         <fieldset>
           <legend> Chest Flye Machine</legend>
@@ -130,11 +131,28 @@
           <br>
 
       </fieldset>
+      <button id="chestFlyeMachine-submit">Submit Data</button>
     </form>
     <br>
-    <button id="chestFlyeMachine-submit">Submit Data</button>
   </div>
   </section>
+  <script>
+  document.getElementById("Weight2").style.display = "none";
+    document.getElementById("Reps2").style.display = "none";
+    document.getElementById("chestFlyeMachine-Weight2").style.display = "none";
+    document.getElementById("chestFlyeMachine-Reps2").style.display = "none";
+    document.getElementById("Weight3").style.display = "none";
+    document.getElementById("Reps3").style.display = "none";
+    document.getElementById("chestFlyeMachine-Weight3").style.display = "none";
+    document.getElementById("chestFlyeMachine-Reps3").style.display = "none";
+    document.getElementById("Weight4").style.display = "none";
+    document.getElementById("Reps4").style.display = "none";
+    document.getElementById("chestFlyeMachine-Weight4").style.display = "none";
+    document.getElementById("chestFlyeMachine-Reps4").style.display = "none";
+    document.getElementById("Weight5").style.display = "none";
+    document.getElementById("Reps5").style.display = "none";
+    document.getElementById("chestFlyeMachine-Weight5").style.display = "none";
+    document.getElementById("chestFlyeMachine-Reps5").style.display = "none";</script>
   <script>
     function totSets(that) {
       if (that.value == "1 Set") {
