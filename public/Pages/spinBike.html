@@ -78,7 +78,7 @@
         <input type="date" id="spinBike-Date" autocomplete="on" required>
         <br>
         <br>
-        <label for="totalspinBike" id="spinBike">Enter the total number of spinBike: </label>
+        <label for="totalspinBike" id="spinBike">Enter the time spent on the Spinbike (In Minutes): </label>
         <input type="number" id="spinBike-Total" required>
         <br>
     </fieldset>
@@ -218,11 +218,11 @@ db.collection("spinBike").get().then((snapshot) => {
 
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: dataArray.map(e => {return e.actualDate}),
         datasets: [{
-            label: 'Total(Burpees)',
+            label: 'Total Spin Bike Time(In Minutes)',
             data: dataArray.map(e => {return e.Total}),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',

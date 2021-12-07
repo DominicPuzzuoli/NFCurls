@@ -78,7 +78,7 @@
         <input type="date" id="rowingMachine-Date" autocomplete="on" required>
         <br>
         <br>
-        <label for="totalrowingMachine" id="rowingMachine">Enter the total number of rowingMachine: </label>
+        <label for="totalrowingMachine" id="rowingMachine">Enter the time spent on the Rowing Machine (In Minutes): </label>
         <input type="number" id="rowingMachine-Total" required>
         <br>
     </fieldset>
@@ -218,11 +218,11 @@ db.collection("rowingMachine").get().then((snapshot) => {
 
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: dataArray.map(e => {return e.actualDate}),
         datasets: [{
-            label: 'Total(Burpees)',
+            label: 'Total Row Machine Time(In Minutes)',
             data: dataArray.map(e => {return e.Total}),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',

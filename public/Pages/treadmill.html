@@ -78,7 +78,7 @@
         <input type="date" id="treadmill-Date" autocomplete="on" required>
         <br>
         <br>
-        <label for="totaltreadmill" id="treadmill">Enter the total number of treadmill: </label>
+        <label for="totaltreadmill" id="treadmill">Enter the time spent on the Treadmill (In Minutes): </label>
         <input type="number" id="treadmill-Total" required>
         <br>
     </fieldset>
@@ -218,11 +218,11 @@ db.collection("treadmill").get().then((snapshot) => {
 
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: dataArray.map(e => {return e.actualDate}),
         datasets: [{
-            label: 'Total(Burpees)',
+            label: 'Total Treadmill Time(In Minutes)',
             data: dataArray.map(e => {return e.Total}),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',

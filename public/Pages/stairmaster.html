@@ -78,7 +78,7 @@
         <input type="date" id="stairmaster-Date" autocomplete="on" required>
         <br>
         <br>
-        <label for="totalstairmaster" id="stairmaster">Enter the total number of stairmaster: </label>
+        <label for="totalstairmaster" id="stairmaster">Enter the time spent on the Stairmaster (In Minutes): </label>
         <input type="number" id="stairmaster-Total" required>
         <br>
     </fieldset>
@@ -218,11 +218,11 @@ db.collection("stairmaster").get().then((snapshot) => {
 
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: dataArray.map(e => {return e.actualDate}),
         datasets: [{
-            label: 'Total(Burpees)',
+            label: 'Total Stairmaster Time(In Minutes)',
             data: dataArray.map(e => {return e.Total}),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
