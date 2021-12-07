@@ -2624,23 +2624,21 @@ float: inline-end;
     }
 
     #jumpRope {
-        background-color: rgb(247, 242, 242);
-        box-sizing: border-box;
-        text-align: left;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-      }
-      .div-jumpRope {
-
-        margin: 0 auto;
-        max-width:400px;
-        margin:50px 20px;
-        background:#fff;
-        padding:2px;
-
-      }
+      background-color: rgb(247, 242, 242);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+    .div-jumpRope {
+  
+      display: flex;
+      justify-content: center;
+      margin-top: 5%;
+      align-items: center;
+      width: 100%;
+  
+    }
 
       .div-jumpRope legend {
         text-align:center;
@@ -2676,24 +2674,22 @@ float: inline-end;
         font-size: 16px;
       }
 
-        #planks {
-            background-color: rgb(247, 242, 242);
-            box-sizing: border-box;
-            text-align: left;
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            height: auto;
-          }
-          .div-planks {
-
-            margin: 0 auto;
-            max-width:400px;
-            margin:50px 20px;
-            background:#fff;
-            padding:2px;
-
-          }
+      #planks {
+        background-color: rgb(247, 242, 242);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+      .div-planks {
+    
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        align-items: center;
+        width: 100%;
+    
+      }
 
           .div-planks legend {
             text-align:center;
@@ -2729,24 +2725,22 @@ float: inline-end;
             font-size: 16px;
           }
 
-            #pushUps {
-                background-color: rgb(247, 242, 242);
-                box-sizing: border-box;
-                text-align: left;
-                display: inline-block;
-                margin-left: auto;
-                margin-right: auto;
-                height: auto;
-              }
-              .div-pushUps {
-
-                margin: 0 auto;
-                max-width:400px;
-                margin:50px 20px;
-                background:#fff;
-                padding:2px;
-
-              }
+          #pushups {
+            background-color: rgb(247, 242, 242);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+          }
+          .div-pushUps {
+        
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            align-items: center;
+            width: 100%;
+        
+          }
 
               .div-pushUps legend {
                 text-align:center;
@@ -2783,23 +2777,21 @@ float: inline-end;
               }
 
               #pullups {
-                  background-color: rgb(247, 242, 242);
-                  box-sizing: border-box;
-                  text-align: left;
-                  display: inline-block;
-                  margin-left: auto;
-                  margin-right: auto;
-                  height: auto;
-                }
-                .div-pullups {
-
-                  margin: 0 auto;
-                  max-width:400px;
-                  margin:50px 20px;
-                  background:#fff;
-                  padding:2px;
-
-                }
+                background-color: rgb(247, 242, 242);
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+              }
+              .div-pullups {
+            
+                display: flex;
+                justify-content: center;
+                margin-top: 5%;
+                align-items: center;
+                width: 100%;
+            
+              }
 
                 .div-pullups legend {
                   text-align:center;
@@ -2836,23 +2828,21 @@ float: inline-end;
                 }
 
                 #situps {
-                    background-color: rgb(247, 242, 242);
-                    box-sizing: border-box;
-                    text-align: left;
-                    display: inline-block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    height: auto;
-                  }
-                  .div-situps {
-
-                    margin: 0 auto;
-                    max-width:400px;
-                    margin:50px 20px;
-                    background:#fff;
-                    padding:2px;
-
-                  }
+                  background-color: rgb(247, 242, 242);
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  width: 100%;
+                }
+                .div-situps {
+              
+                  display: flex;
+                  justify-content: center;
+                  margin-top: 5%;
+                  align-items: center;
+                  width: 100%;
+              
+                }
 
                   .div-situps legend {
                     text-align:center;
@@ -2888,15 +2878,22 @@ float: inline-end;
                     font-size: 16px;
                   }
 
+#elliptical {
+background-color: rgb(247, 242, 242);
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100%;
+                  }
 .div-elliptical {
-
-  margin: 0 auto;
-  max-width:400px;
-	margin:50px 20px;
-	background:#fff;
-	padding:2px;
-
-}
+                
+display: flex;
+justify-content: center;
+margin-top: 5%;
+align-items: center;
+width: 100%;
+                
+                  }
 
 .div-elliptical legend {
   text-align:center;
@@ -2933,51 +2930,36 @@ float: inline-end;
   font-size: 16px;
 }
 
- #elliptical {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+
+#rowingMachine {
+  background-color: rgb(247, 242, 242);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.div-rowingMachine {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+  width: 100%;
+
 }
 
-#elliptical-Total {
-    float: inline-end;
-    }
-
-    #rowingmachine {
-        background-color: rgb(247, 242, 242);
-        box-sizing: border-box;
-        text-align: left;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-      }
-      .div-rowingmachine {
-
-        margin: 0 auto;
-        max-width:400px;
-      	margin:50px 20px;
-      	background:#fff;
-      	padding:2px;
-
-      }
-
-      .div-rowingmachine legend {
+      .div-rowingMachine legend {
         text-align:center;
         font-weight:100;
         font-size:2em;
         margin-bottom:10px;
       }
 
-      .div-rowingmachine label {
+      .div-rowingMachine label {
         display: block;
         font-size: large;
       }
-      #rowingmachine-submit {
+      #rowingMachine-submit {
         background-color: #4B646E; /* Green */
         border: none;
         border-radius: 12px;
@@ -2988,7 +2970,7 @@ float: inline-end;
         display: inline-block;
         font-size: 16px;
       }
-      #rowingmachine-Date {
+      #rowingMachine-Date {
         background-color: #4B646E; /* Green */
         border: none;
         border-radius: 12px;
@@ -2999,26 +2981,24 @@ float: inline-end;
         display: inline-block;
         font-size: 16px;
       }
-      #spinbike {
-          background-color: rgb(247, 242, 242);
-          box-sizing: border-box;
-          text-align: left;
-          display: inline-block;
-          margin-left: auto;
-          margin-right: auto;
-          height: auto;
-        }
-        .div-spinbike {
+      #spinBike {
+        background-color: rgb(247, 242, 242);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+      .div-spinBike {
+    
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        align-items: center;
+        width: 100%;
+    
+      }
 
-          margin: 0 auto;
-          max-width:400px;
-          margin:50px 20px;
-          background:#fff;
-          padding:2px;
-
-        }
-
-        .div-spinbike legend {
+        .div-spinBike legend {
           text-align:center;
           font-weight:100;
           font-size:2em;
@@ -3029,7 +3009,7 @@ float: inline-end;
           display: block;
           font-size: large;
         }
-        #spinbike-submit {
+        #spinBike-submit {
           background-color: #4B646E; /* Green */
           border: none;
           border-radius: 12px;
@@ -3040,7 +3020,7 @@ float: inline-end;
           display: inline-block;
           font-size: 16px;
         }
-        #spinbike-Date {
+        #spinBike-Date {
           background-color: #4B646E; /* Green */
           border: none;
           border-radius: 12px;
@@ -3052,23 +3032,21 @@ float: inline-end;
           font-size: 16px;
         }
         #stairmaster {
-            background-color: rgb(247, 242, 242);
-            box-sizing: border-box;
-            text-align: left;
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            height: auto;
-          }
-          .div-stairmaster {
-
-            margin: 0 auto;
-            max-width:400px;
-            margin:50px 20px;
-            background:#fff;
-            padding:2px;
-
-          }
+          background-color: rgb(247, 242, 242);
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+        }
+        .div-stairmaster {
+      
+          display: flex;
+          justify-content: center;
+          margin-top: 5%;
+          align-items: center;
+          width: 100%;
+      
+        }
 
           .div-stairmaster legend {
             text-align:center;
@@ -3104,24 +3082,21 @@ float: inline-end;
             font-size: 16px;
           }
           #treadmill {
-              background-color: rgb(247, 242, 242);
-              box-sizing: border-box;
-              text-align: left;
-              display: inline-block;
-              margin-left: auto;
-              margin-right: auto;
-              height: auto;
-            }
-            .div-treadmill {
-
-              margin: 0 auto;
-              max-width:400px;
-              margin:50px 20px;
-              background:#fff;
-              padding:2px;
-
-            }
-
+            background-color: rgb(247, 242, 242);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+          }
+          .div-treadmill {
+        
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            align-items: center;
+            width: 100%;
+        
+          }
             .div-treadmill legend {
               text-align:center;
               font-weight:100;
@@ -3155,33 +3130,31 @@ float: inline-end;
               display: inline-block;
               font-size: 16px;
             }
-            #uprightbike {
-                background-color: rgb(247, 242, 242);
-                box-sizing: border-box;
-                text-align: left;
-                display: inline-block;
-                margin-left: auto;
-                margin-right: auto;
-                height: auto;
-              }
-              .div-uprightbike {
+            #uprightBike {
+              background-color: rgb(247, 242, 242);
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              width: 100%;
+            }
+            .div-uprightBike {
+          
+              display: flex;
+              justify-content: center;
+              margin-top: 5%;
+              align-items: center;
+              width: 100%;
+          
+            }
 
-                margin: 0 auto;
-                max-width:400px;
-                margin:50px 20px;
-                background:#fff;
-                padding:2px;
-
-              }
-
-              .div-uprightbike legend {
+              .div-uprightBike legend {
                 text-align:center;
                 font-weight:100;
                 font-size:2em;
                 margin-bottom:10px;
               }
 
-              .div-uprightbike label {
+              .div-uprightBike label {
                 display: block;
                 font-size: large;
               }
@@ -3196,7 +3169,7 @@ float: inline-end;
                 display: inline-block;
                 font-size: 16px;
               }
-              #uprightbike-Date {
+              #uprightBike-Date {
                 background-color: #4B646E; /* Green */
                 border: none;
                 border-radius: 12px;
