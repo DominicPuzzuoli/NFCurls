@@ -45,13 +45,13 @@
   position: relative;
   right: 110px; bottom:70px;
   color: white
-  
+
 }
 
 #logoimg {
   float: center;
-  position: absolute;
-  left: 520px;
+  position: relative;
+
 }
 
 #pic {
@@ -138,11 +138,6 @@
     .sidebar a {font-size: 18px;}
     #logoimg {
       float: left;
-    position: absolute;
+      position: absolute;
     }
-  }
-
-  body h1 {
-    text-align: center;
-    color: white;
   }
