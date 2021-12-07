@@ -2223,23 +2223,21 @@ float: inline-end;
   }
 
   #squats {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-squats {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-squats {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-squats legend {
       text-align:center;
@@ -2342,20 +2340,18 @@ float: inline-end;
   }
   #seatedCalfMachine {
     background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
   .div-seatedCalfMachine {
 
-    margin: 0 auto;
-    max-width:400px;
-    margin:50px 20px;
-    background:#fff;
-    padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
   }
 
@@ -2459,24 +2455,22 @@ float: inline-end;
 float: inline-end;
 }
 
-  #standingCalfMachine {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-standingCalfMachine {
+#standingCalfMachine {
+  background-color: rgb(247, 242, 242);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.div-standingCalfMachine {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+  width: 100%;
 
-    }
+}
 
     .div-standingCalfMachine legend {
       text-align:center;
@@ -2579,23 +2573,21 @@ float: inline-end;
   }
 
   #burpees {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-burpees {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-burpees {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-burpees legend {
       text-align:center;
