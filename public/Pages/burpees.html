@@ -218,7 +218,7 @@ db.collection("burpees").get().then((snapshot) => {
 
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: dataArray.map(e => {return e.actualDate}),
         datasets: [{
