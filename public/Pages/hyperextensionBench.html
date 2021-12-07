@@ -70,17 +70,17 @@
 
   <body>
     <section>
-      <div class="div-hyperExtensionBench">
+      <div class="div-hyperextensionBench">
         <!--Look into changing action to the add data javascript-->
-      <form id="hyperExtensionBench" method = "post" role = "form">
+      <form id="hyperextensionBench" method = "post" role = "form">
         <fieldset>
           <legend> Hyper Extension Bench</legend>
           <label for="date"> Date:</label>
-          <input type="date" id="hyperExtensionBench-Date" autocomplete="on" required>
+          <input type="date" id="hyperextensionBench-Date" autocomplete="on" required>
           <br>
           <br>
           <label>Choose the total amount of Sets: </label>
-          <select onchange="totSets(this);" name="Total Sets" id="hyperExtensionBench-Sets">
+          <select onchange="totSets(this);" name="Total Sets" id="hyperextensionBench-Sets">
             <option value="1 Set">1 Sets</option>
             <option value="2 Set">2 Sets</option>
             <option value="3 Set">3 Sets</option>
@@ -90,46 +90,46 @@
           <br>
           <br>
           <label for="Weight" id="Weight1">Enter the Weight(In Lbs) for Set 1: </label>
-          <input type="number" id="hyperExtensionBench-Weight1" required>
+          <input type="number" id="hyperextensionBench-Weight1" required>
           <br>
           <br>
           <label for="reps" id="Reps1"> Enter total Reps for Set 1:</label>
-          <input type="number" name="reps" id="hyperExtensionBench-Reps1" required>
+          <input type="number" name="reps" id="hyperextensionBench-Reps1" required>
           <br>
           <br>
           <label for="Weight" id="Weight2">Enter the Weight(In Lbs) for Set 2: </label>
-          <input type="number" id="hyperExtensionBench-Weight2" >
+          <input type="number" id="hyperextensionBench-Weight2" >
           <br>
           <br>
           <label for="reps" id="Reps2"> Enter total Reps for Set 2:</label>
-          <input type="number" name="reps" id="hyperExtensionBench-Reps2" >
+          <input type="number" name="reps" id="hyperextensionBench-Reps2" >
           <br>
           <br>
           <label for="Weight" id="Weight3">Enter the Weight(In Lbs) for Set 3: </label>
-          <input type="number" id="hyperExtensionBench-Weight3" >
+          <input type="number" id="hyperextensionBench-Weight3" >
           <br>
           <br>
           <label for="reps" id="Reps3"> Enter Total Reps for Set3:</label>
-          <input type="number" name="reps" id="hyperExtensionBench-Reps3" >
+          <input type="number" name="reps" id="hyperextensionBench-Reps3" >
           <br>
           <br>
           <label for="Weight" id="Weight4">Enter the Weight(In Lbs for Set 4): </label>
-          <input type="number" id="hyperExtensionBench-Weight4" >
+          <input type="number" id="hyperextensionBench-Weight4" >
           <br>
           <br>
           <label for="reps" id="Reps4"> Enter Total Reps for Set 4:</label>
-          <input type="number" name="reps" id="hyperExtensionBench-Reps4" >
+          <input type="number" name="reps" id="hyperextensionBench-Reps4" >
           <br>
           <br>
           <label for="Weight" id ="Weight5">Enter the Weight(In Lbs) for Set 5: </label>
-          <input type="number" id="hyperExtensionBench-Weight5" >
+          <input type="number" id="hyperextensionBench-Weight5" >
           <br>
           <br>
           <label for="reps" id="Reps5"> Enter Total Reps for Set 5:</label>
-          <input type="number" name="reps" id="hyperExtensionBench-Reps5" >
+          <input type="number" name="reps" id="hyperextensionBench-Reps5" >
           <br>
           <br>
-          <button id="hyperExtensionBench-submit">Submit Data</button>
+          <button id="hyperextensionBench-submit">Submit Data</button>
 
       </fieldset>
     </form>
@@ -139,133 +139,133 @@
   <script>
   document.getElementById("Weight2").style.display = "none";
     document.getElementById("Reps2").style.display = "none";
-    document.getElementById("hyperExtensionBench-Weight2").style.display = "none";
-    document.getElementById("hyperExtensionBench-Reps2").style.display = "none";
+    document.getElementById("hyperextensionBench-Weight2").style.display = "none";
+    document.getElementById("hyperextensionBench-Reps2").style.display = "none";
     document.getElementById("Weight3").style.display = "none";
     document.getElementById("Reps3").style.display = "none";
-    document.getElementById("hyperExtensionBench-Weight3").style.display = "none";
-    document.getElementById("hyperExtensionBench-Reps3").style.display = "none";
+    document.getElementById("hyperextensionBench-Weight3").style.display = "none";
+    document.getElementById("hyperextensionBench-Reps3").style.display = "none";
     document.getElementById("Weight4").style.display = "none";
     document.getElementById("Reps4").style.display = "none";
-    document.getElementById("hyperExtensionBench-Weight4").style.display = "none";
-    document.getElementById("hyperExtensionBench-Reps4").style.display = "none";
+    document.getElementById("hyperextensionBench-Weight4").style.display = "none";
+    document.getElementById("hyperextensionBench-Reps4").style.display = "none";
     document.getElementById("Weight5").style.display = "none";
     document.getElementById("Reps5").style.display = "none";
-    document.getElementById("hyperExtensionBench-Weight5").style.display = "none";
-    document.getElementById("hyperExtensionBench-Reps5").style.display = "none";</script>
+    document.getElementById("hyperextensionBench-Weight5").style.display = "none";
+    document.getElementById("hyperextensionBench-Reps5").style.display = "none";</script>
   <script>
     function totSets(that) {
       if (that.value == "1 Set") {
-        document.getElementById("hyperExtensionBench-Weight1").style.display = "block";
-        document.getElementById("hyperExtensionBench-Reps1").style.display = "block";
+        document.getElementById("hyperextensionBench-Weight1").style.display = "block";
+        document.getElementById("hyperextensionBench-Reps1").style.display = "block";
         document.getElementById("Reps1").style.display = "block";
         document.getElementById("Weight1").style.display = "block";
 
 
         document.getElementById("Weight2").style.display = "none";
         document.getElementById("Reps2").style.display = "none";
-        document.getElementById("hyperExtensionBench-Weight2").style.display = "none";
-        document.getElementById("hyperExtensionBench-Reps2").style.display = "none";
+        document.getElementById("hyperextensionBench-Weight2").style.display = "none";
+        document.getElementById("hyperextensionBench-Reps2").style.display = "none";
         document.getElementById("Weight3").style.display = "none";
         document.getElementById("Reps3").style.display = "none";
-        document.getElementById("hyperExtensionBench-Weight3").style.display = "none";
-        document.getElementById("hyperExtensionBench-Reps3").style.display = "none";
+        document.getElementById("hyperextensionBench-Weight3").style.display = "none";
+        document.getElementById("hyperextensionBench-Reps3").style.display = "none";
         document.getElementById("Weight4").style.display = "none";
         document.getElementById("Reps4").style.display = "none";
-        document.getElementById("hyperExtensionBench-Weight4").style.display = "none";
-        document.getElementById("hyperExtensionBench-Reps4").style.display = "none";
+        document.getElementById("hyperextensionBench-Weight4").style.display = "none";
+        document.getElementById("hyperextensionBench-Reps4").style.display = "none";
         document.getElementById("Weight5").style.display = "none";
         document.getElementById("Reps5").style.display = "none";
-        document.getElementById("hyperExtensionBench-Weight5").style.display = "none";
-        document.getElementById("hyperExtensionBench-Reps5").style.display = "none";
+        document.getElementById("hyperextensionBench-Weight5").style.display = "none";
+        document.getElementById("hyperextensionBench-Reps5").style.display = "none";
       } if (that.value == "2 Set"){
-          document.getElementById("hyperExtensionBench-Weight1").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps1").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight1").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps1").style.display = "block";
           document.getElementById("Reps1").style.display = "block";
           document.getElementById("Weight1").style.display = "block";
           document.getElementById("Weight2").style.display = "block";
           document.getElementById("Reps2").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight2").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps2").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight2").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps2").style.display = "block";
 
           document.getElementById("Weight3").style.display = "none";
           document.getElementById("Reps3").style.display = "none";
-          document.getElementById("hyperExtensionBench-Weight3").style.display = "none";
-          document.getElementById("hyperExtensionBench-Reps3").style.display = "none";
+          document.getElementById("hyperextensionBench-Weight3").style.display = "none";
+          document.getElementById("hyperextensionBench-Reps3").style.display = "none";
           document.getElementById("Weight4").style.display = "none";
           document.getElementById("Reps4").style.display = "none";
-          document.getElementById("hyperExtensionBench-Weight4").style.display = "none";
-          document.getElementById("hyperExtensionBench-Reps4").style.display = "none";
+          document.getElementById("hyperextensionBench-Weight4").style.display = "none";
+          document.getElementById("hyperextensionBench-Reps4").style.display = "none";
           document.getElementById("Weight5").style.display = "none";
           document.getElementById("Reps5").style.display = "none";
-          document.getElementById("hyperExtensionBench-Weight5").style.display = "none";
-          document.getElementById("hyperExtensionBench-Reps5").style.display = "none";
+          document.getElementById("hyperextensionBench-Weight5").style.display = "none";
+          document.getElementById("hyperextensionBench-Reps5").style.display = "none";
       } if (that.value == "3 Set"){
-          document.getElementById("hyperExtensionBench-Weight1").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps1").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight1").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps1").style.display = "block";
           document.getElementById("Reps1").style.display = "block";
           document.getElementById("Weight1").style.display = "block";
           document.getElementById("Weight2").style.display = "block";
           document.getElementById("Reps2").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight2").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps2").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight2").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps2").style.display = "block";
           document.getElementById("Weight3").style.display = "block";
           document.getElementById("Reps3").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight3").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps3").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight3").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps3").style.display = "block";
 
           document.getElementById("Weight4").style.display = "none";
           document.getElementById("Reps4").style.display = "none";
-          document.getElementById("hyperExtensionBench-Weight4").style.display = "none";
-          document.getElementById("hyperExtensionBench-Reps4").style.display = "none";
+          document.getElementById("hyperextensionBench-Weight4").style.display = "none";
+          document.getElementById("hyperextensionBench-Reps4").style.display = "none";
           document.getElementById("Weight5").style.display = "none";
           document.getElementById("Reps5").style.display = "none";
-          document.getElementById("hyperExtensionBench-Weight5").style.display = "none";
-          document.getElementById("hyperExtensionBench-Reps5").style.display = "none";
+          document.getElementById("hyperextensionBench-Weight5").style.display = "none";
+          document.getElementById("hyperextensionBench-Reps5").style.display = "none";
       } if (that.value == "4 Set"){
-          document.getElementById("hyperExtensionBench-Weight1").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps1").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight1").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps1").style.display = "block";
           document.getElementById("Reps1").style.display = "block";
           document.getElementById("Weight1").style.display = "block";
           document.getElementById("Weight2").style.display = "block";
           document.getElementById("Reps2").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight2").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps2").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight2").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps2").style.display = "block";
           document.getElementById("Weight3").style.display = "block";
           document.getElementById("Reps3").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight3").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps3").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight3").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps3").style.display = "block";
           document.getElementById("Weight4").style.display = "block";
           document.getElementById("Reps4").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight4").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps4").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight4").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps4").style.display = "block";
 
           document.getElementById("Weight5").style.display = "none";
           document.getElementById("Reps5").style.display = "none";
-          document.getElementById("hyperExtensionBench-Weight5").style.display = "none";
-          document.getElementById("hyperExtensionBench-Reps5").style.display = "none";
+          document.getElementById("hyperextensionBench-Weight5").style.display = "none";
+          document.getElementById("hyperextensionBench-Reps5").style.display = "none";
 
       } if (that.value == "5 Set"){
-          document.getElementById("hyperExtensionBench-Weight1").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps1").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight1").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps1").style.display = "block";
           document.getElementById("Reps1").style.display = "block";
           document.getElementById("Weight1").style.display = "block";
           document.getElementById("Weight2").style.display = "block";
           document.getElementById("Reps2").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight2").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps2").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight2").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps2").style.display = "block";
           document.getElementById("Weight3").style.display = "block";
           document.getElementById("Reps3").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight3").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps3").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight3").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps3").style.display = "block";
           document.getElementById("Weight4").style.display = "block";
           document.getElementById("Reps4").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight4").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps4").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight4").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps4").style.display = "block";
           document.getElementById("Weight5").style.display = "block";
           document.getElementById("Reps5").style.display = "block";
-          document.getElementById("hyperExtensionBench-Weight5").style.display = "block";
-          document.getElementById("hyperExtensionBench-Reps5").style.display = "block";
+          document.getElementById("hyperextensionBench-Weight5").style.display = "block";
+          document.getElementById("hyperextensionBench-Reps5").style.display = "block";
 
       }
 
@@ -344,7 +344,7 @@
    
    
 
-    //document.getElementById('hyperExtensionBench-submit').addEventListener('click', addData)
+    //document.getElementById('hyperextensionBench-submit').addEventListener('click', addData)
 
     function addData(){
 
@@ -352,16 +352,16 @@
 
       let uid = user.uid
 
-      let date = document.getElementById('hyperExtensionBench-Date').value
+      let date = document.getElementById('hyperextensionBench-Date').value
 
 
-      var val = document.getElementById('hyperExtensionBench-Sets').value;
+      var val = document.getElementById('hyperextensionBench-Sets').value;
 
       if (val =='1 Set'){
-        let Weight_1 = document.getElementById('hyperExtensionBench-Weight1').value
+        let Weight_1 = document.getElementById('hyperextensionBench-Weight1').value
         const Weight1 = Number(Weight_1);
 
-        let Reps_1 = document.getElementById('hyperExtensionBench-Reps1').value
+        let Reps_1 = document.getElementById('hyperextensionBench-Reps1').value
         const Reps1 = Number(Reps_1);
         let obj = {
         Date: date,
@@ -370,26 +370,26 @@
         Reps_1: Reps1,
       }
 
-      firebase.firestore().collection('hyperExtensionBench').add(obj).then(doc=>{
+      firebase.firestore().collection('hyperextensionBench').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
 
-      document.getElementById("hyperExtensionBench").reset();
+      document.getElementById("hyperextensionBench").reset();
       alert("Data Submission Successful!")
 
       }
       else if (val =='2 Set') {
-        let Weight_1 = document.getElementById('hyperExtensionBench-Weight1').value
+        let Weight_1 = document.getElementById('hyperextensionBench-Weight1').value
         const Weight1 = Number(Weight_1);
-        let Weight_2 = document.getElementById('hyperExtensionBench-Weight2').value
+        let Weight_2 = document.getElementById('hyperextensionBench-Weight2').value
         const Weight2 = Number(Weight_2);
 
 
-        let Reps_1 = document.getElementById('hyperExtensionBench-Reps1').value
+        let Reps_1 = document.getElementById('hyperextensionBench-Reps1').value
         const Reps1 = Number(Reps_1);
-        let Reps_2 = document.getElementById('hyperExtensionBench-Reps2').value
+        let Reps_2 = document.getElementById('hyperextensionBench-Reps2').value
         const Reps2 = Number(Reps_2);
 
         let obj = {
@@ -402,30 +402,30 @@
 
       }
 
-      firebase.firestore().collection('hyperExtensionBench').add(obj).then(doc=>{
+      firebase.firestore().collection('hyperextensionBench').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
 
-      document.getElementById("hyperExtensionBench").reset();
+      document.getElementById("hyperextensionBench").reset();
       alert("Data Submission Successful!")
 
       }
       else if (val =='3 Set'){
-        let Weight_1 = document.getElementById('hyperExtensionBench-Weight1').value
+        let Weight_1 = document.getElementById('hyperextensionBench-Weight1').value
         const Weight1 = Number(Weight_1);
-        let Weight_2 = document.getElementById('hyperExtensionBench-Weight2').value
+        let Weight_2 = document.getElementById('hyperextensionBench-Weight2').value
         const Weight2 = Number(Weight_2);
-        let Weight_3 = document.getElementById('hyperExtensionBench-Weight3').value
+        let Weight_3 = document.getElementById('hyperextensionBench-Weight3').value
         const Weight3 = Number(Weight_3);
 
 
-        let Reps_1 = document.getElementById('hyperExtensionBench-Reps1').value
+        let Reps_1 = document.getElementById('hyperextensionBench-Reps1').value
         const Reps1 = Number(Reps_1);
-        let Reps_2 = document.getElementById('hyperExtensionBench-Reps2').value
+        let Reps_2 = document.getElementById('hyperextensionBench-Reps2').value
         const Reps2 = Number(Reps_2);
-        let Reps_3 = document.getElementById('hyperExtensionBench-Reps3').value
+        let Reps_3 = document.getElementById('hyperextensionBench-Reps3').value
         const Reps3 = Number(Reps_3);
 
         let obj = {
@@ -439,34 +439,34 @@
         Reps_3: Reps3,
       }
 
-      firebase.firestore().collection('hyperExtensionBench').add(obj).then(doc=>{
+      firebase.firestore().collection('hyperextensionBench').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
 
-      document.getElementById("hyperExtensionBench").reset();
+      document.getElementById("hyperextensionBench").reset();
       alert("Data Submission Successful!")
 
       }
       else if (val =='4 Set') {
-        let Weight_1 = document.getElementById('hyperExtensionBench-Weight1').value
+        let Weight_1 = document.getElementById('hyperextensionBench-Weight1').value
         const Weight1 = Number(Weight_1);
-        let Weight_2 = document.getElementById('hyperExtensionBench-Weight2').value
+        let Weight_2 = document.getElementById('hyperextensionBench-Weight2').value
         const Weight2 = Number(Weight_2);
-        let Weight_3 = document.getElementById('hyperExtensionBench-Weight3').value
+        let Weight_3 = document.getElementById('hyperextensionBench-Weight3').value
         const Weight3 = Number(Weight_3);
-        let Weight_4 = document.getElementById('hyperExtensionBench-Weight4').value
+        let Weight_4 = document.getElementById('hyperextensionBench-Weight4').value
         const Weight4 = Number(Weight_4);
 
 
-        let Reps_1 = document.getElementById('hyperExtensionBench-Reps1').value
+        let Reps_1 = document.getElementById('hyperextensionBench-Reps1').value
         const Reps1 = Number(Reps_1);
-        let Reps_2 = document.getElementById('hyperExtensionBench-Reps2').value
+        let Reps_2 = document.getElementById('hyperextensionBench-Reps2').value
         const Reps2 = Number(Reps_2);
-        let Reps_3 = document.getElementById('hyperExtensionBench-Reps3').value
+        let Reps_3 = document.getElementById('hyperextensionBench-Reps3').value
         const Reps3 = Number(Reps_3);
-        let Reps_4 = document.getElementById('hyperExtensionBench-Reps4').value
+        let Reps_4 = document.getElementById('hyperextensionBench-Reps4').value
         const Reps4 = Number(Reps_4);
 
         let obj = {
@@ -484,37 +484,37 @@
 
       }
 
-      firebase.firestore().collection('hyperExtensionBench').add(obj).then(doc=>{
+      firebase.firestore().collection('hyperextensionBench').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
 
-      document.getElementById("hyperExtensionBench").reset();
+      document.getElementById("hyperextensionBench").reset();
       alert("Data Submission Successful!")
 
       }
       else if (val =='5 Set'){
-        let Weight_1 = document.getElementById('hyperExtensionBench-Weight1').value
+        let Weight_1 = document.getElementById('hyperextensionBench-Weight1').value
         const Weight1 = Number(Weight_1);
-        let Weight_2 = document.getElementById('hyperExtensionBench-Weight2').value
+        let Weight_2 = document.getElementById('hyperextensionBench-Weight2').value
         const Weight2 = Number(Weight_2);
-        let Weight_3 = document.getElementById('hyperExtensionBench-Weight3').value
+        let Weight_3 = document.getElementById('hyperextensionBench-Weight3').value
         const Weight3 = Number(Weight_3);
-        let Weight_4 = document.getElementById('hyperExtensionBench-Weight4').value
+        let Weight_4 = document.getElementById('hyperextensionBench-Weight4').value
         const Weight4 = Number(Weight_4);
-        let Weight_5 = document.getElementById('hyperExtensionBench-Weight5').value
+        let Weight_5 = document.getElementById('hyperextensionBench-Weight5').value
         const Weight5 = Number(Weight_5);
 
-        let Reps_1 = document.getElementById('hyperExtensionBench-Reps1').value
+        let Reps_1 = document.getElementById('hyperextensionBench-Reps1').value
         const Reps1 = Number(Reps_1);
-        let Reps_2 = document.getElementById('hyperExtensionBench-Reps2').value
+        let Reps_2 = document.getElementById('hyperextensionBench-Reps2').value
         const Reps2 = Number(Reps_2);
-        let Reps_3 = document.getElementById('hyperExtensionBench-Reps3').value
+        let Reps_3 = document.getElementById('hyperextensionBench-Reps3').value
         const Reps3 = Number(Reps_3);
-        let Reps_4 = document.getElementById('hyperExtensionBench-Reps4').value
+        let Reps_4 = document.getElementById('hyperextensionBench-Reps4').value
         const Reps4 = Number(Reps_4);
-        let Reps_5 = document.getElementById('hyperExtensionBench-Reps5').value
+        let Reps_5 = document.getElementById('hyperextensionBench-Reps5').value
         const Reps5 = Number(Reps_5);
 
         let obj = {
@@ -533,18 +533,18 @@
 
       }
 
-      firebase.firestore().collection('hyperExtensionBench').add(obj).then(doc=>{
+      firebase.firestore().collection('hyperextensionBench').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
 
-      document.getElementById("hyperExtensionBench").reset();
+      document.getElementById("hyperextensionBench").reset();
       alert("Data Submission Successful!")
       }
     }
 
-    $("#hyperExtensionBench-submit").click(function() {
+    $("#hyperextensionBench-submit").click(function() {
     addData();
   });
    </script>
@@ -584,7 +584,7 @@ let colors = [  'rgba(255, 99, 132, 0.2)',
                 'rgba(255, 159, 64, 1)',
                 'rgba(255, 159, 64, 1)' ]
 
-db.collection("hyperExtensionBench").get().then((snapshot) => {
+db.collection("hyperextensionBench").get().then((snapshot) => {
   snapshot.docs.forEach(doc => {
     let user = firebase.auth().currentUser;
     let uid = user.uid;
