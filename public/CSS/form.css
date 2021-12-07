@@ -26,24 +26,7 @@
     display: block;
     font-size: large;
   }
-  .div-abCrunchMachine input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .div-abCrunchMachine select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+
   #abCrunchMachine-submit {
     background-color: #4B646E; /* Green */
     border: none;
@@ -143,24 +126,7 @@
     display: block;
     font-size: large;
   }
-  .div-benchPress input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .div-benchPress select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+
   #benchPress-submit {
     background-color: #4B646E; /* Green */
     border: none;
@@ -261,24 +227,7 @@
         display: block;
         font-size: large;
       }
-      .div-cableMachine input {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      .div-cableMachine select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
+
       #cableMachine-submit {
         background-color: #4B646E; /* Green */
         border: none;
@@ -377,24 +326,6 @@
   .div-chestFlyeMachine label {
     display: block;
     font-size: large;
-  }
-  .div-chestFlyeMachine input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .div-chestFlyeMachine select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
   }
   #chestFlyeMachine-submit {
     background-color: #4B646E; /* Green */
@@ -495,24 +426,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-chestPress input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-chestPress select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #chestPress-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -612,24 +526,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-declinePressMachine input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-declinePressMachine select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #declinePressMachine-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -729,24 +626,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-hacksquat input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-hacksquat select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #hacksquat-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -846,24 +726,7 @@ float: inline-end;
     display: block;
     font-size: large;
   }
-  .div-hyperextensionBench input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .div-hyperextensionBench select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+
   #hyperextensionBench-submit {
     background-color: #4B646E; /* Green */
     border: none;
@@ -963,24 +826,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-inclinePressMachine input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-inclinePressMachine select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #inclinePressMachine-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -1080,24 +926,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-latPulldown input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-latPulldown select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #latPulldown-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -1197,24 +1026,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-legAbduction input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-legAbduction select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #legAbduction-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -1314,24 +1126,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-legAdduction input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-legAdduction select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #legAdduction-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -1431,24 +1226,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-legCurl input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-legCurl select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #legCurl-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -1548,24 +1326,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-legExtension input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-legExtension select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #legExtension-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -1665,24 +1426,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-legPress input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-legPress select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #legPress-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -1782,24 +1526,7 @@ float: inline-end;
     display: block;
     font-size: large;
   }
-  .div-lunges input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .div-lunges select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+
   #lunges-submit {
     background-color: #4B646E; /* Green */
     border: none;
@@ -1822,6 +1549,7 @@ float: inline-end;
     display: inline-block;
     font-size: 16px;
   }
+
   #lunges-Sets {
   float: inline-end;
   }
@@ -1898,24 +1626,6 @@ float: inline-end;
     .div-seatedArmCurl label {
       display: block;
       font-size: large;
-    }
-    .div-seatedArmCurl input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-seatedArmCurl select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
     }
     #seatedArmCurl-submit {
       background-color: #4B646E; /* Green */
@@ -2016,24 +1726,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-seatedArmExtension input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-seatedArmExtension select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #seatedArmExtension-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -2133,24 +1826,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-seatedCalfMachine input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-seatedCalfMachine select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #seatedCalfMachine-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -2250,24 +1926,7 @@ float: inline-end;
       display: block;
       font-size: large;
     }
-    .div-squats input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-squats select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+
     #squats-submit {
       background-color: #4B646E; /* Green */
       border: none;
@@ -2366,24 +2025,7 @@ float: inline-end;
     display: block;
     font-size: large;
   }
-  .div-seatedCalfMachine input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .div-seatedCalfMachine select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+
   #seatedCalfMachine-submit {
     background-color: #4B646E; /* Green */
     border: none;
@@ -2482,24 +2124,6 @@ float: inline-end;
     .div-standingCalfMachine label {
       display: block;
       font-size: large;
-    }
-    .div-standingCalfMachine input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    .div-standingCalfMachine select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
     }
     #standingCalfMachine-submit {
       background-color: #4B646E; /* Green */
