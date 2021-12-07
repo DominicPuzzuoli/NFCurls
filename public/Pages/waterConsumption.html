@@ -9,12 +9,19 @@
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
 <!-- etc. -->
   <head>
+        <!--These three cdn scripts below need to be added to each chart js page-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+       
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <meta charset="utf-8"/>
-    <title> Water Consumption</title>
+    <title> Water Consumption </title>
 
     <script src="/scripts/onSignIn.js"></script>
   </head>
@@ -61,22 +68,23 @@
         <a href="/Pages/Workouts.html">Workouts</a>
         <a href="/Pages/about.html">Contact</a>
       </div>
+
 <section>
-    <div class="div-burpees">
-    <form id="water" action="#" method="post">
+    <div class="div-waterConsumption">
+    <form id="waterConsumption" action="#" method="post">
       <fieldset>
         <legend>Water Consumption</legend>
         <label for="date" > Date:</label>
-        <input type="date" id="water-Date" autocomplete="on" required>
+        <input type="date" id="waterConsumption-Date" autocomplete="on" required>
         <br>
         <br>
-        <label for="totalwater" id="water">Enter the number of water bottles consumed today: </label>
-        <input type="number" id="water-Total" required>
+        <label for="totalwaterConsumption" id="waterConsumption">Enter number of water bottles consumed: </label>
+        <input type="number" id="waterConsumption-Total" required>
         <br>
     </fieldset>
   </form>
   <br>
-  <button id="water-submit">Submit Data</button>
+  <button id="waterConsumption-submit">Submit Data</button>
 </div>
 </section>
 
@@ -93,7 +101,10 @@
   measurementId: "G-T2CF60NQPB"
 };
   firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore(firebase);
+
   document.getElementById('LogoutScreen').style.display="none"
+
 
 
   document.getElementById('login').addEventListener('click', GoogleLogin)
@@ -143,10 +154,8 @@
     })
   }
     checkAuthState()
-    
-   
 
-    document.getElementById('water-submit').addEventListener('click', addData)
+    document.getElementById('waterConsumption-submit').addEventListener('click', addData)
 
     function addData(){
 
@@ -154,31 +163,105 @@
 
       let uid = user.uid
 
-      let date1 = document.getElementById('water-Date').value
+      let date1 = document.getElementById('waterConsumption-Date').value
 
       const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
 
       
 
       
-      let Totals = document.getElementById('water-Total').value
+      let Totals = document.getElementById('waterConsumption-Total').value
       const Total = Number(Totals);
         
       let obj = {
-        Date: date,
+        Date: date1,
         User_ID: uid,
         Total_Amount: Total,
         }
 
-      firebase.firestore().collection('water').add(obj).then(doc=>{
+      firebase.firestore().collection('waterConsumption').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
 
-      document.getElementById("water").reset();
+      document.getElementById("waterConsumption").reset();
       alert("Data Submission Successful!")
     }
    </script>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var labelsArray = [];
+var dataArray = [];
+let test1 = [];
+let test2 = [];
+
+
+db.collection("waterConsumption").get().then((snapshot) => {
+  snapshot.docs.forEach(doc => {
+    let user = firebase.auth().currentUser;
+    let uid = user.uid;
+    var item = doc.data();
+    var userid = item.User_ID;
+    if (userid == uid){
+    let dateSplit = item.Date.split("-");
+    let actualDate = new Date(dateSplit[0],dateSplit[1] - 1,dateSplit[2]);
+    var totalwaterConsumption = item.Total_Amount;
+    
+    dataArray.push({Total: totalwaterConsumption, actualDate: actualDate, });
+  }});
+
+  dataArray.sort(function(a,b){
+        return b.actualDate - a.actualDate;
+  });
+
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: dataArray.map(e => {return e.actualDate}),
+        datasets: [{
+            label: 'Total(Burpees)',
+            data: dataArray.map(e => {return e.Total}),
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            },
+            x: {
+                type: 'time',
+                time: {
+                  unit: "day"
+                },
+                distribution: 'series'
+                
+                
+                
+            }   
+        }
+    }
+});
+})
+</script>
 </body>
 </html>

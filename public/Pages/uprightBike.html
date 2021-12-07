@@ -9,6 +9,13 @@
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
 <!-- etc. -->
   <head>
+        <!--These three cdn scripts below need to be added to each chart js page-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+       
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -61,29 +68,25 @@
         <a href="/Pages/Workouts.html">Workouts</a>
         <a href="/Pages/about.html">Contact</a>
       </div>
-        <!--End of code for sidebar navigation-->
 
-<!--Form for submitting workout data-->
 <section>
-    <div class="div-uprightbike">
-    <form id="uprightbike" action="#" method="post">
+    <div class="div-uprightBike">
+    <form id="uprightBike" action="#" method="post">
       <fieldset>
         <legend>Upright Bike</legend>
         <label for="date" > Date:</label>
-        <input type="date" id="uprightbike-Date" autocomplete="on" required>
+        <input type="date" id="uprightBike-Date" autocomplete="on" required>
         <br>
         <br>
-        <label for="totalRowingMachine" id="uprightbike">Enter the Total Time spend on the Upright Bike (In Minutes): </label>
-        <input type="number" id="uprightbike-Total" required>
+        <label for="totaluprightBike" id="uprightBike">Enter the total number of uprightBike: </label>
+        <input type="number" id="uprightBike-Total" required>
         <br>
-      
     </fieldset>
   </form>
   <br>
-  <button id="uprightbike-submit">Submit Data</button>
+  <button id="uprightBike-submit">Submit Data</button>
 </div>
 </section>
-<!--End of workout form-->
 
 <!--Google Authentication-->
 <script>
@@ -98,7 +101,10 @@
   measurementId: "G-T2CF60NQPB"
 };
   firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore(firebase);
+
   document.getElementById('LogoutScreen').style.display="none"
+
 
 
   document.getElementById('login').addEventListener('click', GoogleLogin)
@@ -148,10 +154,8 @@
     })
   }
     checkAuthState()
-    
-   
 
-    document.getElementById('uprightbike-submit').addEventListener('click', addData)
+    document.getElementById('uprightBike-submit').addEventListener('click', addData)
 
     function addData(){
 
@@ -159,31 +163,105 @@
 
       let uid = user.uid
 
-      let date1 = document.getElementById('uprightbike-Date').value
+      let date1 = document.getElementById('uprightBike-Date').value
 
       const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
 
       
 
       
-      let Totals = document.getElementById('uprightbike-Total').value
+      let Totals = document.getElementById('uprightBike-Total').value
       const Total = Number(Totals);
         
       let obj = {
-        Date: date,
+        Date: date1,
         User_ID: uid,
-        Total_Time: Total,
+        Total_Amount: Total,
         }
 
-      firebase.firestore().collection('uprightbike').add(obj).then(doc=>{
+      firebase.firestore().collection('uprightBike').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
 
-      document.getElementById("uprightbike").reset();
-      alert("Data Submission uprightbike!")
+      document.getElementById("uprightBike").reset();
+      alert("Data Submission Successful!")
     }
    </script>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var labelsArray = [];
+var dataArray = [];
+let test1 = [];
+let test2 = [];
+
+
+db.collection("uprightBike").get().then((snapshot) => {
+  snapshot.docs.forEach(doc => {
+    let user = firebase.auth().currentUser;
+    let uid = user.uid;
+    var item = doc.data();
+    var userid = item.User_ID;
+    if (userid == uid){
+    let dateSplit = item.Date.split("-");
+    let actualDate = new Date(dateSplit[0],dateSplit[1] - 1,dateSplit[2]);
+    var totaluprightBike = item.Total_Amount;
+    
+    dataArray.push({Total: totaluprightBike, actualDate: actualDate, });
+  }});
+
+  dataArray.sort(function(a,b){
+        return b.actualDate - a.actualDate;
+  });
+
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: dataArray.map(e => {return e.actualDate}),
+        datasets: [{
+            label: 'Total(Burpees)',
+            data: dataArray.map(e => {return e.Total}),
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            },
+            x: {
+                type: 'time',
+                time: {
+                  unit: "day"
+                },
+                distribution: 'series'
+                
+                
+                
+            }   
+        }
+    }
+});
+})
+</script>
 </body>
 </html>
