@@ -26,7 +26,7 @@
       <script src="/scripts/sideBar.js"></script>
 
 
-      <style>    
+      <style>
         .data{
           display:none ;
         }
@@ -40,10 +40,10 @@
 
         <div id ="LoginScreen" class="LoginScreen">
           <button id="login"><img src="/img/signin-button.png" height="50" width="200" alt=""></button>
-    
+
         </div>
        <img id = "logoimg" src="/img/nfcurls_copy-removebg-preview.png" height= "100" width = "400" alt="">
-    
+
         <div id= "LogoutScreen" class="LogoutScreen">
           <button id="logout"><img src="/img/signout.png" height="40" width="100" alt =""></button>
           <div id="userDetails" class="userDetails"> </div>
@@ -81,7 +81,7 @@
 
   document.getElementById('login').addEventListener('click', GoogleLogin)
   document.getElementById('logout').addEventListener('click', LogoutUser)
-  
+
   let provider = new firebase.auth.GoogleAuthProvider()
 
   function GoogleLogin(){
@@ -97,7 +97,7 @@
   }
   function showUserDetails(user){
         document.getElementById('userDetails').innerHTML = `
-          <img src="${user.photoURL}" style="width:40%"> 
+          <img src="${user.photoURL}" style="width:40%">
           <p> ${user.displayName}</p>
         `
       }
@@ -126,11 +126,11 @@
     })
   }
     checkAuthState()
-    
+
 
     //reference
 
-    
+
    </script>
 
     <div class="container" id="basicDiv">
