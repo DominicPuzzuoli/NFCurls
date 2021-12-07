@@ -70,21 +70,21 @@
       </div>
 
 <section>
-    <div class="div-pushUps">
-    <form id="pushUps" action="#" method="post">
+    <div class="div-pushups">
+    <form id="pushups" action="#" method="post">
       <fieldset>
         <legend>Pushups</legend>
         <label for="date" > Date:</label>
-        <input type="date" id="pushUps-Date" autocomplete="on" required>
+        <input type="date" id="pushups-Date" autocomplete="on" required>
         <br>
         <br>
-        <label for="totalPushUps" id="pushUps">Enter the total number of PushUps: </label>
-        <input type="number" id="pushUps-Total" required>
+        <label for="totalPushUps" id="pushups">Enter the total number of PushUps: </label>
+        <input type="number" id="pushups-Total" required>
         <br>
       
     </fieldset>
     <br>
-    <button id="pushUps-submit">Submit Data</button>
+    <button id="pushups-submit">Submit Data</button>
   </form>
   
 </div>
@@ -156,7 +156,7 @@
     checkAuthState()
     
    
-    document.getElementById('pushUps-submit').addEventListener('click', addData)
+    document.getElementById('pushups-submit').addEventListener('click', addData)
 
     function addData(){
 
@@ -164,14 +164,14 @@
 
       let uid = user.uid
 
-      let date = document.getElementById('pushUps-Date').value
+      let date = document.getElementById('pushups-Date').value
 
       //const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
 
       
 
       
-      let Totals = document.getElementById('pushUps-Total').value
+      let Totals = document.getElementById('pushups-Total').value
       const Total = Number(Totals);
         
       let obj = {
@@ -180,13 +180,13 @@
         Total_Amount: Total,
         }
 
-      firebase.firestore().collection('pushUps').add(obj).then(doc=>{
+      firebase.firestore().collection('pushups').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
 
-      document.getElementById("pushUps").reset();
+      document.getElementById("pushups").reset();
       alert("Data Submission Successful!")
     }
    </script>
@@ -199,7 +199,7 @@ let test1 = [];
 let test2 = [];
 
 
-db.collection("pushUps").get().then((snapshot) => {
+db.collection("pushups").get().then((snapshot) => {
   snapshot.docs.forEach(doc => {
     let user = firebase.auth().currentUser;
     let uid = user.uid;
