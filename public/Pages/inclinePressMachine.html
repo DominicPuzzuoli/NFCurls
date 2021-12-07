@@ -9,6 +9,12 @@
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
 <!-- etc. -->
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -65,7 +71,8 @@
   <body>
     <section>
       <div class="div-inclinePressMachine">
-      <form id="inclinePressMachine" action="#" method="post">
+        <!--Look into changing action to the add data javascript-->
+      <form id="inclinePressMachine" method = "post" role = "form">
         <fieldset>
           <legend> Incline Press Machine</legend>
           <label for="date"> Date:</label>
@@ -122,13 +129,30 @@
           <input type="number" name="reps" id="inclinePressMachine-Reps5" >
           <br>
           <br>
+          <button id="inclinePressMachine-submit">Submit Data</button>
 
       </fieldset>
     </form>
     <br>
-    <button id="inclinePressMachine-submit">Submit Data</button>
   </div>
   </section>
+  <script>
+  document.getElementById("Weight2").style.display = "none";
+    document.getElementById("Reps2").style.display = "none";
+    document.getElementById("inclinePressMachine-Weight2").style.display = "none";
+    document.getElementById("inclinePressMachine-Reps2").style.display = "none";
+    document.getElementById("Weight3").style.display = "none";
+    document.getElementById("Reps3").style.display = "none";
+    document.getElementById("inclinePressMachine-Weight3").style.display = "none";
+    document.getElementById("inclinePressMachine-Reps3").style.display = "none";
+    document.getElementById("Weight4").style.display = "none";
+    document.getElementById("Reps4").style.display = "none";
+    document.getElementById("inclinePressMachine-Weight4").style.display = "none";
+    document.getElementById("inclinePressMachine-Reps4").style.display = "none";
+    document.getElementById("Weight5").style.display = "none";
+    document.getElementById("Reps5").style.display = "none";
+    document.getElementById("inclinePressMachine-Weight5").style.display = "none";
+    document.getElementById("inclinePressMachine-Reps5").style.display = "none";</script>
   <script>
     function totSets(that) {
       if (that.value == "1 Set") {
@@ -248,75 +272,79 @@
 
     }
   </script>
-  <!--Google Authentication-->
-  <script>
-    var firebaseConfig ={
-    apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
-    authDomain: "nfcurls.firebaseapp.com",
-    databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
-    projectId: "nfcurls",
-    storageBucket: "nfcurls.appspot.com",
-    messagingSenderId: "48180444980",
-    appId: "1:48180444980:web:682281cf5debcb7811ef61",
-    measurementId: "G-T2CF60NQPB"
-  };
-    firebase.initializeApp(firebaseConfig);
-    document.getElementById('LogoutScreen').style.display="none"
-  
-  
-    document.getElementById('login').addEventListener('click', GoogleLogin)
-    document.getElementById('logout').addEventListener('click', LogoutUser)
-    
-    let provider = new firebase.auth.GoogleAuthProvider()
-  
-    function GoogleLogin(){
-      console.log('Login Btn Call')
-      firebase.auth().signInWithPopup(provider).then(res=>{
-        console.log(res.user)
-        document.getElementById('LoginScreen').style.display="none"
-        document.getElementById('LogoutScreen').style.display="block"
-        showUserDetails(res.user)
-      }).catch(e=>{
-        console.log(e)
-      })
-    }
-    function showUserDetails(user){
-          document.getElementById('userDetails').innerHTML = `
-            <img src="${user.photoURL}" style="width:40%"> 
-            <p> ${user.displayName}</p>
-          `
-        }
-  
-        function checkAuthState(){
-          firebase.auth().onAuthStateChanged(user=>{
-            if(user){
-              document.getElementById('LoginScreen').style.display="none"
-              document.getElementById('LogoutScreen').style.display="block"
-              showUserDetails(user)
-            }else{
-  
-            }
-          })
-        }
-  
-    function LogoutUser(){
-      console.log('Logout Btn Call')
-      firebase.auth().signOut().then(()=>{
-        document.getElementById('LoginScreen').style.display="block"
-        document.getElementById('LogoutScreen').style.display="none"
-  
-      }).catch(e=>{
-  
-        console.log(e)
-      })
-    }
-      checkAuthState()
-      
-     
-      
-     
 
-    document.getElementById('inclinePressMachine-submit').addEventListener('click', addData)
+
+</script>
+<!--Google Authentication-->
+<script>
+  var firebaseConfig ={
+  apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
+  authDomain: "nfcurls.firebaseapp.com",
+  databaseURL: "https://nfcurls-default-rtdb.firebaseio.com",
+  projectId: "nfcurls",
+  storageBucket: "nfcurls.appspot.com",
+  messagingSenderId: "48180444980",
+  appId: "1:48180444980:web:682281cf5debcb7811ef61",
+  measurementId: "G-T2CF60NQPB"
+};
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore(firebase);
+
+  document.getElementById('LogoutScreen').style.display="none"
+
+
+  document.getElementById('login').addEventListener('click', GoogleLogin)
+  document.getElementById('logout').addEventListener('click', LogoutUser)
+  
+  let provider = new firebase.auth.GoogleAuthProvider()
+
+  function GoogleLogin(){
+    console.log('Login Btn Call')
+    firebase.auth().signInWithPopup(provider).then(res=>{
+      console.log(res.user)
+      document.getElementById('LoginScreen').style.display="none"
+      document.getElementById('LogoutScreen').style.display="block"
+      showUserDetails(res.user)
+    }).catch(e=>{
+      console.log(e)
+    })
+  }
+  function showUserDetails(user){
+        document.getElementById('userDetails').innerHTML = `
+          <img src="${user.photoURL}" style="width:40%"> 
+          <p> ${user.displayName}</p>
+        `
+      }
+
+      function checkAuthState(){
+        firebase.auth().onAuthStateChanged(user=>{
+          if(user){
+            document.getElementById('LoginScreen').style.display="none"
+            document.getElementById('LogoutScreen').style.display="block"
+            showUserDetails(user)
+          }else{
+
+          }
+        })
+      }
+
+  function LogoutUser(){
+    console.log('Logout Btn Call')
+    firebase.auth().signOut().then(()=>{
+      document.getElementById('LoginScreen').style.display="block"
+      document.getElementById('LogoutScreen').style.display="none"
+
+    }).catch(e=>{
+
+      console.log(e)
+    })
+  }
+    checkAuthState()
+    
+   
+   
+
+    //document.getElementById('inclinePressMachine-submit').addEventListener('click', addData)
 
     function addData(){
 
@@ -324,9 +352,8 @@
 
       let uid = user.uid
 
-      let date1 = document.getElementById('inclinePressMachine-Date').value
+      let date = document.getElementById('inclinePressMachine-Date').value
 
-      const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
 
       var val = document.getElementById('inclinePressMachine-Sets').value;
 
@@ -516,6 +543,145 @@
       alert("Data Submission Successful!")
       }
     }
+
+    $("#inclinePressMachine-submit").submit(function() {
+    addData();
+  });
    </script>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var labelsArray = [];
+var dataArray = [];
+let test1 = [];
+let test2 = [];
+
+let colors = [  'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)' ];
+                
+
+                let backgroundColor = [  
+                'rgba(255, 99, 132, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)' ]
+
+db.collection("inclinePressMachine").get().then((snapshot) => {
+  snapshot.docs.forEach(doc => {
+    let user = firebase.auth().currentUser;
+    let uid = user.uid;
+    var item = doc.data();
+    var userid = item.User_ID;
+    if (userid == uid){
+    let dateSplit = item.Date.split("-");
+    let actualDate = new Date(dateSplit[0],dateSplit[1] - 1,dateSplit[2]);
+    var Weight_1 = item.Weight_1;
+    var Weight_2 = item.Weight_2;
+    var Weight_3 = item.Weight_3;
+    var Weight_4 = item.Weight_4;
+    var Weight_5 = item.Weight_5;
+    var Reps_1 = item.Reps_1;
+    var Reps_2 = item.Reps_2;
+    var Reps_3 = item.Reps_3;
+    var Reps_4 = item.Reps_4;
+    var Reps_5 = item.Reps_5;
+    
+    dataArray.push({
+      actualDate: actualDate, 
+      Weight1: Weight_1, 
+      Weight2: Weight_2, 
+      Weight3: Weight_3, 
+      Weight4: Weight_4, 
+      Weight5: Weight_5, 
+      Reps1: Reps_1,
+      Reps2: Reps_2,
+      Reps3: Reps_3,
+      Reps4: Reps_4,
+      Reps5: Reps_5
+     });
+  }});
+
+  dataArray.sort(function(a,b){
+        return a.actualDate - b.actualDate;
+  });
+
+
+  let masterWeight1 = dataArray.map(e => {return (e.Weight1) ? Number(e.Weight1) : 0});
+  let masterWeight2 = dataArray.map(e => {return (e.Weight2) ? Number(e.Weight2) : 0});
+  let masterWeight3 = dataArray.map(e => {return (e.Weight3) ? Number(e.Weight3) : 0});
+  let masterWeight4 = dataArray.map(e => {return (e.Weight4) ? Number(e.Weight4) : 0});
+  let masterWeight5 = dataArray.map(e => {return (e.Weight5) ? Number(e.Weight5) : 0});
+
+  let masterReps1 = dataArray.map(e => {return (e.Reps1) ? Number(e.Reps1) : 0});
+  let masterReps2 = dataArray.map(e => {return (e.Reps2) ? Number(e.Reps2) : 0});
+  let masterReps3 = dataArray.map(e => {return (e.Reps3) ? Number(e.Reps3) : 0});
+  let masterReps4 = dataArray.map(e => {return (e.Reps4) ? Number(e.Reps4) : 0});
+  let masterReps5 = dataArray.map(e => {return (e.Reps5) ? Number(e.Reps5) : 0});
+
+  let masterDate = dataArray.map(e => {return (e.actualDate) ? String(e.actualDate).substr(0,10) : 0});
+
+
+
+  let masterDataset = [masterWeight1,masterReps1, masterWeight2, masterReps2, masterWeight3, masterReps3, masterWeight4,masterReps4, masterWeight5, masterReps5];
+  let masterLabel = ["Weight1","Reps1","Weight2","Reps2","Weight3", "Reps3", "Weight4","Reps4", "Weight5","Reps5"];
+
+
+  const ctx = document.getElementById('myChart').getContext('2d');
+
+  const data = {
+    datasets: []
+  }
+
+  for (var i = 0 ; i < masterDataset.length; i++){   
+    var dataset1 = {
+          label: masterLabel[i],
+          data: masterDataset[i],
+          backgroundColor: backgroundColor[i],
+          //fill: false,
+    }
+    data.datasets.push(dataset1);
+  }
+  
+  const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: masterDate,
+      datasets: data.datasets
+    },
+    options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Line Chart'
+      }
+    }
+  }
+});
+
+});
+</script>
+
   </body>
   </html>

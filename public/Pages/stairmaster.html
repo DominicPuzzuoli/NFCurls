@@ -9,12 +9,19 @@
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
 <!-- etc. -->
   <head>
+        <!--These three cdn scripts below need to be added to each chart js page-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+       
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <meta charset="utf-8"/>
-    <title> Stair Master </title>
+    <title> Stairmaster </title>
 
     <script src="/scripts/onSignIn.js"></script>
   </head>
@@ -71,16 +78,16 @@
         <input type="date" id="stairmaster-Date" autocomplete="on" required>
         <br>
         <br>
-        <label for="totalStairMaster" id="stairmaster">Enter the Total Time spend on the Stairmaster (In Minutes): </label>
+        <label for="totalstairmaster" id="stairmaster">Enter the total number of stairmaster: </label>
         <input type="number" id="stairmaster-Total" required>
         <br>
-      
     </fieldset>
   </form>
   <br>
   <button id="stairmaster-submit">Submit Data</button>
 </div>
 </section>
+
 <!--Google Authentication-->
 <script>
   var firebaseConfig ={
@@ -94,7 +101,10 @@
   measurementId: "G-T2CF60NQPB"
 };
   firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore(firebase);
+
   document.getElementById('LogoutScreen').style.display="none"
+
 
 
   document.getElementById('login').addEventListener('click', GoogleLogin)
@@ -144,8 +154,6 @@
     })
   }
     checkAuthState()
-    
-   
 
     document.getElementById('stairmaster-submit').addEventListener('click', addData)
 
@@ -166,9 +174,9 @@
       const Total = Number(Totals);
         
       let obj = {
-        Date: date,
+        Date: date1,
         User_ID: uid,
-        Total_Time: Total,
+        Total_Amount: Total,
         }
 
       firebase.firestore().collection('stairmaster').add(obj).then(doc=>{
@@ -181,5 +189,79 @@
       alert("Data Submission Successful!")
     }
    </script>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var labelsArray = [];
+var dataArray = [];
+let test1 = [];
+let test2 = [];
+
+
+db.collection("stairmaster").get().then((snapshot) => {
+  snapshot.docs.forEach(doc => {
+    let user = firebase.auth().currentUser;
+    let uid = user.uid;
+    var item = doc.data();
+    var userid = item.User_ID;
+    if (userid == uid){
+    let dateSplit = item.Date.split("-");
+    let actualDate = new Date(dateSplit[0],dateSplit[1] - 1,dateSplit[2]);
+    var totalstairmaster = item.Total_Amount;
+    
+    dataArray.push({Total: totalstairmaster, actualDate: actualDate, });
+  }});
+
+  dataArray.sort(function(a,b){
+        return b.actualDate - a.actualDate;
+  });
+
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: dataArray.map(e => {return e.actualDate}),
+        datasets: [{
+            label: 'Total(Burpees)',
+            data: dataArray.map(e => {return e.Total}),
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            },
+            x: {
+                type: 'time',
+                time: {
+                  unit: "day"
+                },
+                distribution: 'series'
+                
+                
+                
+            }   
+        }
+    }
+});
+})
+</script>
 </body>
 </html>
