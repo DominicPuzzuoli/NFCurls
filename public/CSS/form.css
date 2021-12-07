@@ -2732,7 +2732,7 @@ float: inline-end;
             text-align: center;
             width: 100%;
           }
-          .div-pushUps {
+          .div-pushups {
         
             display: flex;
             justify-content: center;
@@ -2742,18 +2742,18 @@ float: inline-end;
         
           }
 
-              .div-pushUps legend {
+              .div-pushups legend {
                 text-align:center;
                 font-weight:100;
                 font-size:2em;
                 margin-bottom:10px;
               }
 
-              .div-pushUps label {
+              .div-pushups label {
                 display: block;
                 font-size: large;
               }
-              #pushUps-submit {
+              #pushups-submit {
                 background-color: #4B646E; /* Green */
                 border: none;
                 border-radius: 12px;
@@ -2764,7 +2764,7 @@ float: inline-end;
                 display: inline-block;
                 font-size: 16px;
               }
-              #pushUps-Date {
+              #pushups-Date {
                 background-color: #4B646E; /* Green */
                 border: none;
                 border-radius: 12px;
