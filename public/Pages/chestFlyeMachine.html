@@ -72,7 +72,7 @@
     <section>
       <div class="div-chestFlyeMachine">
         <!--Look into changing action to the add data javascript-->
-      <form id="chestFlyeMachine" action="#" method="post">
+      <form id="chestFlyeMachine" method = "post" role = "form">
         <fieldset>
           <legend> Chest Flye Machine</legend>
           <label for="date"> Date:</label>
@@ -129,9 +129,9 @@
           <input type="number" name="reps" id="chestFlyeMachine-Reps5" >
           <br>
           <br>
+          <button id="chestFlyeMachine-submit">Submit Data</button>
 
       </fieldset>
-      <button id="chestFlyeMachine-submit">Submit Data</button>
     </form>
     <br>
   </div>
@@ -344,7 +344,7 @@
    
    
 
-    document.getElementById('chestFlyeMachine-submit').addEventListener('click', addData)
+    //document.getElementById('chestFlyeMachine-submit').addEventListener('click', addData)
 
     function addData(){
 
@@ -543,6 +543,10 @@
       alert("Data Submission Successful!")
       }
     }
+
+    $("#chestFlyeMachine-submit").submit(function() {
+    addData();
+  });
    </script>
 
 <canvas id="myChart" width="400" height="400"></canvas>
