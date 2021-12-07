@@ -47,7 +47,14 @@
   color: white
 
 }
-
+.userDetails img {
+  position: relative;
+  bottom: 1%;
+  left:20%;
+}
+#LogoutScreen {
+  position: relative;
+}
 #logoimg {
   float: center;
   position: relative;
@@ -66,7 +73,9 @@
     text-align: center;
     padding: 25px 16px;
 }
-
+#col1 {
+  text-align: center;
+}
 
 
 
