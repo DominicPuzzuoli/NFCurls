@@ -28,3 +28,7 @@
 .container a {
   color: black;
 }
+#basicDiv, #machineDiv, #cardioDiv, #weightDiv {
+  width: 100%;
+  height: 100%;
+}
