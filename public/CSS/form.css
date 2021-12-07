@@ -233,24 +233,22 @@
 }
 
 
-    #cableMachine {
-        background-color: rgb(247, 242, 242);
-        box-sizing: border-box;
-        text-align: left;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-      }
-      .div-cableMachine {
+#cableMachine {
+  background-color: rgb(247, 242, 242);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.div-cableMachine {
 
-        margin: 0 auto;
-        max-width:400px;
-        margin:50px 20px;
-        background:#fff;
-        padding:2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+  width: 100%;
 
-      }
+}
 
       .div-cableMachine legend {
         text-align:center;
@@ -469,24 +467,22 @@ float: inline-end;
 float: inline-end;
 }
 
-  #chestPress {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-chestPress {
+#chestPress {
+  background-color: rgb(247, 242, 242);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.div-chestPress {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+  width: 100%;
 
-    }
+}
 
     .div-chestPress legend {
       text-align:center;
@@ -589,23 +585,21 @@ float: inline-end;
   }
 
   #declinePressMachine {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-declinePressMachine {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-declinePressMachine {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-declinePressMachine legend {
       text-align:center;
@@ -708,23 +702,21 @@ float: inline-end;
   }
 
   #hacksquat {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-hacksquat {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-hacksquat {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-hacksquat legend {
       text-align:center;
@@ -827,23 +819,21 @@ float: inline-end;
 }
 
 #hyperextensionBench {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
-  .div-hyperextensionBench {
+  background-color: rgb(247, 242, 242);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.div-hyperextensionBench {
 
-    margin: 0 auto;
-    max-width:400px;
-    margin:50px 20px;
-    background:#fff;
-    padding:2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+  width: 100%;
 
-  }
+}
 
   .div-hyperextensionBench legend {
     text-align:center;
@@ -946,23 +936,21 @@ float: inline-end;
   }
 
   #inclinePressMachine {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-inclinePressMachine {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-inclinePressMachine {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-inclinePressMachine legend {
       text-align:center;
@@ -1065,23 +1053,21 @@ float: inline-end;
   }
 
   #latPulldown {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-latPulldown {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-latPulldown {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-latPulldown legend {
       text-align:center;
@@ -1184,23 +1170,21 @@ float: inline-end;
   }
 
   #legAbduction {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-legAbduction {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-legAbduction {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-legAbduction legend {
       text-align:center;
@@ -1303,23 +1287,21 @@ float: inline-end;
   }
 
   #legAdduction {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-legAdduction {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-legAdduction {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-legAdduction legend {
       text-align:center;
@@ -1422,23 +1404,21 @@ float: inline-end;
   }
 
   #legCurl {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-legCurl {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-legCurl {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-legCurl legend {
       text-align:center;
@@ -1541,23 +1521,21 @@ float: inline-end;
   }
 
   #legExtension {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-legExtension {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-legExtension {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-legExtension legend {
       text-align:center;
@@ -1660,23 +1638,21 @@ float: inline-end;
   }
 
   #legPress {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-legPress {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-legPress {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-legPress legend {
       text-align:center;
@@ -1779,23 +1755,21 @@ float: inline-end;
 }
 
 #lunges {
-    background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
-  .div-lunges {
+  background-color: rgb(247, 242, 242);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.div-lunges{
 
-    margin: 0 auto;
-    max-width:400px;
-    margin:50px 20px;
-    background:#fff;
-    padding:2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+  width: 100%;
 
-  }
+}
 
   .div-lunges legend {
     text-align:center;
@@ -1898,23 +1872,21 @@ float: inline-end;
   }
 
   #seatedArmCurl {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-seatedArmCurl {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-seatedArmCurl {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-seatedArmCurl legend {
       text-align:center;
@@ -2017,23 +1989,21 @@ float: inline-end;
   }
 
   #seatedArmExtension {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-seatedArmExtension {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-seatedArmExtension {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-seatedArmExtension legend {
       text-align:center;
@@ -2135,37 +2105,35 @@ float: inline-end;
   float: inline-end;
   }
 
-  #seatedArmExtension {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-seatedArmExtension {
+  #seatedCalfMachine {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-seatedCalfMachine {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
-    .div-seatedArmExtension legend {
+    .div-seatedCalfMachine legend {
       text-align:center;
       font-weight:100;
       font-size:2em;
       margin-bottom:10px;
     }
 
-    .div-seatedArmExtension label {
+    .div-seatedCalfMachine label {
       display: block;
       font-size: large;
     }
-    .div-seatedArmExtension input {
+    .div-seatedCalfMachine input {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -2174,7 +2142,7 @@ float: inline-end;
       border-radius: 4px;
       box-sizing: border-box;
     }
-    .div-seatedArmExtension select {
+    .div-seatedCalfMachine select {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -2183,7 +2151,7 @@ float: inline-end;
       border-radius: 4px;
       box-sizing: border-box;
     }
-    #seatedArmExtension-submit {
+    #seatedCalfMachine-submit {
       background-color: #4B646E; /* Green */
       border: none;
       border-radius: 12px;
@@ -2194,7 +2162,7 @@ float: inline-end;
       display: inline-block;
       font-size: 16px;
     }
-    #seatedArmExtension-Date {
+    #seatedCalfMachine-Date {
       background-color: #4B646E; /* Green */
       border: none;
       border-radius: 12px;
@@ -2255,23 +2223,21 @@ float: inline-end;
   }
 
   #squats {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-squats {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-squats {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-squats legend {
       text-align:center;
@@ -2374,20 +2340,18 @@ float: inline-end;
   }
   #seatedCalfMachine {
     background-color: rgb(247, 242, 242);
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
   .div-seatedCalfMachine {
 
-    margin: 0 auto;
-    max-width:400px;
-    margin:50px 20px;
-    background:#fff;
-    padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
   }
 
@@ -2491,24 +2455,22 @@ float: inline-end;
 float: inline-end;
 }
 
-  #standingCalfMachine {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-standingCalfMachine {
+#standingCalfMachine {
+  background-color: rgb(247, 242, 242);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.div-standingCalfMachine {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+  width: 100%;
 
-    }
+}
 
     .div-standingCalfMachine legend {
       text-align:center;
@@ -2611,23 +2573,21 @@ float: inline-end;
   }
 
   #burpees {
-      background-color: rgb(247, 242, 242);
-      box-sizing: border-box;
-      text-align: left;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .div-burpees {
+    background-color: rgb(247, 242, 242);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .div-burpees {
 
-      margin: 0 auto;
-      max-width:400px;
-      margin:50px 20px;
-      background:#fff;
-      padding:2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
 
-    }
+  }
 
     .div-burpees legend {
       text-align:center;
