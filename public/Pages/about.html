@@ -23,7 +23,7 @@
       <script src="/scripts/sideBar.js"></script>
 
 
-      <style>    
+      <style>
         .data{
           display:none ;
         }
@@ -35,16 +35,7 @@
         <li><button class="openbtn" onclick="openNav()">&#9776; View Pages</button></li>
         </div>
 
-        <div id ="LoginScreen" class="LoginScreen">
-          <button id="login"><img src="/img/signin-button.png" height="50" width="200" alt=""></button>
-    
-        </div>
        <img id = "logoimg" src="/img/nfcurls_copy-removebg-preview.png" height= "100" width = "400" alt="">
-    
-        <div id= "LogoutScreen" class="LogoutScreen">
-          <button id="logout"><img src="/img/signout.png" height="40" width="100" alt =""></button>
-          <div id="userDetails" class="userDetails"> </div>
-        </div>
 
           </div></li>
 
@@ -78,7 +69,7 @@
 
   document.getElementById('login').addEventListener('click', GoogleLogin)
   document.getElementById('logout').addEventListener('click', LogoutUser)
-  
+
   let provider = new firebase.auth.GoogleAuthProvider()
 
   function GoogleLogin(){
@@ -94,7 +85,7 @@
   }
   function showUserDetails(user){
         document.getElementById('userDetails').innerHTML = `
-          <img src="${user.photoURL}" style="width:40%"> 
+          <img src="${user.photoURL}" style="width:40%">
           <p> ${user.displayName}</p>
         `
       }
@@ -123,9 +114,9 @@
     })
   }
     checkAuthState()
-    
+
     document.getElementById('addDataBtn').addEventListener('click', addData)
-    
+
     function addData(){
 
       let workout = document.getElementById('workout').value
@@ -143,7 +134,7 @@
 
     //reference
 
-    
+
    </script>
 
 
@@ -160,7 +151,6 @@
       <div class="container">
         <h2>Benjamin Lumsden</h2>
         <p class="title">Developer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>blumsden@oakland.edu</p>
         <p class="contactbutton"> <button onclick="location.href='mailto:blumsden@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
@@ -172,7 +162,6 @@
       <div class="container">
         <h2>Chad Bendig</h2>
         <p class="title">Product Owner</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>chad@oakland.edu</p>
         <p class="contactbutton"> <button onclick="location.href='mailto:chad@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
@@ -184,7 +173,6 @@
       <div class="container">
         <h2>Chris Ivory</h2>
         <p class="title">Developer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>cjivory@oakland.edu</p>
         <p class="contactbutton"> <button onclick="location.href='mailto:cjivory@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
@@ -196,7 +184,6 @@
       <div class="container">
         <h2>Tommy Jaboro</h2>
         <p class="title">Scrum Master</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>jaboro@oakland.edu</p>
         <p class="contactbutton"> <button onclick="location.href='mailto:jaboro@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
@@ -207,11 +194,9 @@
       <div class="container">
         <h2>Dominic Puzzuoli</h2>
         <p class="title">Developer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>puzzuoli@oakland.edu</p>
         <p class="contactbutton"> <button onclick="location.href='mailto:puzzuoli@oakland.edu'" class="button" type="button">Contact</button></p>
       </div>
     </div>
   </div>
 </div>
-
