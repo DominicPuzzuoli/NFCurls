@@ -2615,13 +2615,13 @@ float: inline-end;
       width: 100%;
     }
     .div-jumpRope {
-  
+
       display: flex;
       justify-content: center;
       margin-top: 5%;
       align-items: center;
       width: 100%;
-  
+
     }
 
       .div-jumpRope legend {
@@ -2666,13 +2666,13 @@ float: inline-end;
         width: 100%;
       }
       .div-planks {
-    
+
         display: flex;
         justify-content: center;
         margin-top: 5%;
         align-items: center;
         width: 100%;
-    
+
       }
 
           .div-planks legend {
@@ -2717,13 +2717,13 @@ float: inline-end;
             width: 100%;
           }
           .div-pushups {
-        
+
             display: flex;
             justify-content: center;
             margin-top: 5%;
             align-items: center;
             width: 100%;
-        
+
           }
 
               .div-pushups legend {
@@ -2768,13 +2768,13 @@ float: inline-end;
                 width: 100%;
               }
               .div-pullups {
-            
+
                 display: flex;
                 justify-content: center;
                 margin-top: 5%;
                 align-items: center;
                 width: 100%;
-            
+
               }
 
                 .div-pullups legend {
@@ -2819,13 +2819,13 @@ float: inline-end;
                   width: 100%;
                 }
                 .div-situps {
-              
+
                   display: flex;
                   justify-content: center;
                   margin-top: 5%;
                   align-items: center;
                   width: 100%;
-              
+
                 }
 
                   .div-situps legend {
@@ -2870,13 +2870,13 @@ text-align: center;
 width: 100%;
                   }
 .div-elliptical {
-                
+
 display: flex;
 justify-content: center;
 margin-top: 5%;
 align-items: center;
 width: 100%;
-                
+
                   }
 
 .div-elliptical legend {
@@ -2973,13 +2973,13 @@ width: 100%;
         width: 100%;
       }
       .div-spinBike {
-    
+
         display: flex;
         justify-content: center;
         margin-top: 5%;
         align-items: center;
         width: 100%;
-    
+
       }
 
         .div-spinBike legend {
@@ -3023,13 +3023,13 @@ width: 100%;
           width: 100%;
         }
         .div-stairmaster {
-      
+
           display: flex;
           justify-content: center;
           margin-top: 5%;
           align-items: center;
           width: 100%;
-      
+
         }
 
           .div-stairmaster legend {
@@ -3073,13 +3073,13 @@ width: 100%;
             width: 100%;
           }
           .div-treadmill {
-        
+
             display: flex;
             justify-content: center;
             margin-top: 5%;
             align-items: center;
             width: 100%;
-        
+
           }
             .div-treadmill legend {
               text-align:center;
@@ -3122,13 +3122,13 @@ width: 100%;
               width: 100%;
             }
             .div-uprightBike {
-          
+
               display: flex;
               justify-content: center;
               margin-top: 5%;
               align-items: center;
               width: 100%;
-          
+
             }
 
               .div-uprightBike legend {
@@ -3164,3 +3164,53 @@ width: 100%;
                 display: inline-block;
                 font-size: 16px;
               }
+              #waterConsumption {
+                background-color: rgb(247, 242, 242);
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+              }
+              .div-waterConsumption {
+
+                display: flex;
+                justify-content: center;
+                margin-top: 5%;
+                align-items: center;
+                width: 100%;
+
+              }
+
+                  .div-waterConsumption legend {
+                    text-align:center;
+                    font-weight:100;
+                    font-size:2em;
+                    margin-bottom:10px;
+                  }
+
+                  .div-waterConsumption label {
+                    display: block;
+                    font-size: large;
+                  }
+                  #waterConsumption-submit {
+                    background-color: #4B646E; /* Green */
+                    border: none;
+                    border-radius: 12px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                  }
+                  #waterConsumption-Date {
+                    background-color: #4B646E; /* Green */
+                    border: none;
+                    border-radius: 12px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                  }
