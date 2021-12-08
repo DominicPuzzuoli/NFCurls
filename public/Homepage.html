@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+  <link rel="stylesheet" href="/CSS/form.css" type="text/css">
   <meta charset="UTF-8">
   <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.memory.js"></script>
 <!-- Don't change the format for any other products. -->
 <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
 <!-- etc. -->
-
-<script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.js"></script>
   <head>
+        <!--These three cdn scripts below need to be added to each chart js page-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
-   
+
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 
     <meta name="google-signin-client_id" content="48180444980-7c2qdhtq2eonoc5di07i117cr68vg9d5.apps.googleusercontent.com">
@@ -21,12 +21,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <meta charset="utf-8"/>
-    <title>NFCurls</title>
-    <link rel="shortcut icon" type="image/jpg" href="/img/curl.jpg"/>
+    <title> Water Consumption </title>
+
     <script src="/scripts/onSignIn.js"></script>
   </head>
   <body>
-    
+
       <script type="module" src="/scripts/readData.js"></script>
       <script type="module" src="/scripts/writeData.js"></script>
       <script src="/scripts/sideBar.js"></script>
@@ -45,13 +45,13 @@
         </div>
 
         <div id ="LoginScreen" class="LoginScreen">
-          <button id="login"><img src="img/signin-button.png" height="50" width="200" alt=""></button>
+          <button id="login"><img src="/img/signin-button.png" height="50" width="200" alt=""></button>
 
         </div>
-        <img id = "logoimg" src="/img/nfcurls_copy-removebg-preview.png" height= "100" width = "400" alt="">
-        
+       <img id = "logoimg" src="/img/nfcurls_copy-removebg-preview.png" height= "100" width = "400" alt="">
+
         <div id= "LogoutScreen" class="LogoutScreen">
-          <button id="logout"><img src="img/signout.png" height="40" width="100" alt =""></button>
+          <button id="logout"><img src="/img/signout.png" height="40" width="100" alt =""></button>
           <div id="userDetails" class="userDetails"> </div>
         </div>
 
@@ -63,16 +63,34 @@
 
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="Homepage.html">Home</a>
+        <a href="../Homepage.html">Home</a>
         <a href="/index.html">About</a>
         <a href="/Pages/Workouts.html">Workouts</a>
         <a href="/Pages/about.html">Contact</a>
       </div>
 
+<section>
+    <div class="div-waterConsumption">
+    <form id="waterConsumption" action="#" method="post">
+      <fieldset>
+        <legend>Water Consumption</legend>
+        <label for="date" > Date:</label>
+        <input type="date" id="waterConsumption-Date" autocomplete="on" required>
+        <br>
+        <br>
+        <label for="totalwaterConsumption" id="waterConsumption">Enter amount of water consumed (In ounces):</label>
+        <input type="number" id="waterConsumption-Total" required>
+        <br>
+    </fieldset>
+    <br>
+    <button id="waterConsumption-submit">Submit Data</button>
+  </form>
 
+</div>
+</section>
 
-
-   <script>
+<!--Google Authentication-->
+<script>
   var firebaseConfig ={
   apiKey: "AIzaSyBYvjl_09gdM8dq1Uh__qjAERKDcPsyOAk",
   authDomain: "nfcurls.firebaseapp.com",
@@ -87,6 +105,7 @@
   var db = firebase.firestore(firebase);
 
   document.getElementById('LogoutScreen').style.display="none"
+
 
 
   document.getElementById('login').addEventListener('click', GoogleLogin)
@@ -137,56 +156,75 @@
   }
     checkAuthState()
 
-    document.getElementById('addDataBtn').addEventListener('click', addData)
+    document.getElementById('waterConsumption-submit').addEventListener('click', addData)
 
     function addData(){
 
-      let workout = document.getElementById('workout').value
+      let user = firebase.auth().currentUser;
+
+      let uid = user.uid
+
+      let date1 = document.getElementById('waterConsumption-Date').value
+
+      const date = firebase.firestore.Timestamp.fromDate(new Date(date1)).toDate();
+
+
+
+
+      let Totals = document.getElementById('waterConsumption-Total').value
+      const Total = Number(Totals);
 
       let obj = {
-        workouttype : workout
+        Date: date1,
+        User_ID: uid,
+        Total_Amount: Total,
+        }
 
-      }
-      firebase.firestore().collection('workoutdata').add(obj).then(doc=>{
+      firebase.firestore().collection('waterConsumption').add(obj).then(doc=>{
         console.log(doc.id)
       }).catch(e=>{
           console.log(e)
       })
+
+      document.getElementById("waterConsumption").reset();
+      alert("Data Submission Successful!")
     }
-
-    //reference
-
-
    </script>
-
 
 <canvas id="myChart" width="400" height="400"></canvas>
 <script>
 var labelsArray = [];
 var dataArray = [];
+let test1 = [];
+let test2 = [];
 
-db.collection("abCrunchMachine").get().then((snapshot) => {
+
+db.collection("waterConsumption").get().then((snapshot) => {
   snapshot.docs.forEach(doc => {
+    let user = firebase.auth().currentUser;
+    let uid = user.uid;
     var item = doc.data();
+    var userid = item.User_ID;
+    if (userid == uid){
+    let dateSplit = item.Date.split("-");
+    let actualDate = new Date(dateSplit[0],dateSplit[1] - 1,dateSplit[2]);
+    var totalwaterConsumption = item.Total_Amount;
 
-    var Weight_1 = item.Weight_1;
-    dataArray.push(Weight_1);
+    dataArray.push({Total: totalwaterConsumption, actualDate: actualDate, });
+  }});
 
-    var Date = toDate(item.Date);
-    Date.toDate();
-    labelsArray.push(Date);
-    
-  
-  })
-})
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'line',
+  dataArray.sort(function(a,b){
+        return b.actualDate - a.actualDate;
+  });
+
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'bar',
     data: {
-        labels: labelsArray,
+        labels: dataArray.map(e => {return e.actualDate}),
         datasets: [{
-            label: 'Weight(In lbs)',
-            data: dataArray,
+            label: 'Water Consumption (Ounces)',
+            data: dataArray.map(e => {return e.Total}),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -217,15 +255,14 @@ const myChart = new Chart(ctx, {
                   unit: "day"
                 },
                 distribution: 'series'
-                
-                
-                
-            }   
+
+
+
+            }
         }
     }
 });
+})
 </script>
-
-
-  </body>
+</body>
 </html>
