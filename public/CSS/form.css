@@ -1783,6 +1783,24 @@ float: inline-end;
     font-size: large;
   }
 
+  .div-lunges input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .div-lunges select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
   #lunges-submit {
     background-color: #4B646E; /* Green */
     border: none;
